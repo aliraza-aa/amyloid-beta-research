@@ -5,3 +5,4 @@ PLUMED_input_files
 *.trr
 *.xtc
 PLUMED_input_files.zip
+note.txt
