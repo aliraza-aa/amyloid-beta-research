@@ -6,3 +6,4 @@ PLUMED_input_files
 *.xtc
 PLUMED_input_files.zip
 note.txt
+.ipynb_checkpoints
