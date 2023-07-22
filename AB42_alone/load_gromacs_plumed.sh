@@ -10,12 +10,6 @@ module load mpi/openmpi/4.0.5/gnu-10.2.0
 module load python3/3.9-gnu-10.2.0
 module load libmatheval
 module load flex
+module use ~/modulefiles
 module load plumed-2.9.0-gnu-10.2.0
-
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/zcbtar9/software/plumed/2.9.0/gnu-10.2.0/openblas/lib"
-
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0/lib64"
-
-export PATH="$PATH:/home/zcbtar9/software/plumed/2.9.0/gnu-10.2.0/openblas/bin"
-
-export PATH="$PATH:/home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0/bin"
+module load gromacs-2022.5-plumed-2.9.0

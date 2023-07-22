@@ -1,699 +1,680 @@
-;
-;	File 'topol.top' was generated
-;	By user: unknown (0)
-;	On host: DESKTOP-ES25TEI
-;	At date: Thu Jul 20 01:59:30 2023
-;
-;	This is a standalone topology file
-;
-;	Created by:
-;	            :-) GROMACS - gmx pdb2gmx, 2021.4-Ubuntu-2021.4-2 (-:
-;	
-;	Executable:   /usr/bin/gmx
-;	Data prefix:  /usr
-;	Working dir:  /mnt/c/Users/dell/projects/amyloid-beta-research/AB42_alone/system
-;	Command line:
-;	  gmx pdb2gmx -f template.pdb
-;	Force field was read from current directory or a relative path - path added.
-;
-
 ; Include forcefield parameters
-#include "./charmm22star.ff/forcefield.itp"
+#include "charmm22star.ff/forcefield.itp"
 
 [ moleculetype ]
 ; Name            nrexcl
-Protein_chain_A     3
+Protein             3
 
 [ atoms ]
 ;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
 ; residue   1 ASP rtp ASP  q  0.0
-     1        NH3      1    ASP      N      1       -0.3    14.0027
-     2         HC      1    ASP     H1      2       0.33      1.008
-     3         HC      1    ASP     H2      3       0.33      1.008
-     4         HC      1    ASP     H3      4       0.33      1.008
-     5        CT1      1    ASP     CA      5       0.21     12.011
-     6         HB      1    ASP     HA      6        0.1      1.008
-     7        CT2      1    ASP     CB      7      -0.28     12.011
-     8         HA      1    ASP    HB1      8       0.05      1.008
-     9         HA      1    ASP    HB2      9       0.05      1.008
-    10         CC      1    ASP     CG     10       0.56     12.011
-    11         OC      1    ASP    OD1     11      -0.69     15.999
-    12         OC      1    ASP    OD2     12      -0.69     15.999
-    13          C      1    ASP      C     13       0.51     12.011
+     1        NH3      1    ASP      N      1       -0.3    14.0027   ; qtot -0.3
+     2         HC      1    ASP     H1      2       0.33      1.008   ; qtot 0.03
+     3         HC      1    ASP     H2      3       0.33      1.008   ; qtot 0.36
+     4         HC      1    ASP     H3      4       0.33      1.008   ; qtot 0.69
+     5        CT1      1    ASP     CA      5       0.21     12.011   ; qtot 0.9
+     6         HB      1    ASP     HA      6        0.1      1.008   ; qtot 1
+     7        CT2      1    ASP     CB      7      -0.28     12.011   ; qtot 0.72
+     8         HA      1    ASP    HB1      8       0.05      1.008   ; qtot 0.77
+     9         HA      1    ASP    HB2      9       0.05      1.008   ; qtot 0.82
+    10         CC      1    ASP     CG     10       0.56     12.011   ; qtot 1.38
+    11         OC      1    ASP    OD1     11      -0.69     15.999   ; qtot 0.69
+    12         OC      1    ASP    OD2     12      -0.69     15.999   ; qtot 0
+    13          C      1    ASP      C     13       0.51     12.011   ; qtot 0.51
     14          O      1    ASP      O     14      -0.51     15.999   ; qtot 0
 ; residue   2 ALA rtp ALA  q  0.0
-    15        NH1      2    ALA      N     15      -0.47     14.007
-    16          H      2    ALA     HN     16       0.31      1.008
-    17        CT1      2    ALA     CA     17       0.07     12.011
-    18         HB      2    ALA     HA     18       0.09      1.008
-    19        CT3      2    ALA     CB     19      -0.27     12.011
-    20         HA      2    ALA    HB1     20       0.09      1.008
-    21         HA      2    ALA    HB2     21       0.09      1.008
-    22         HA      2    ALA    HB3     22       0.09      1.008
-    23          C      2    ALA      C     23       0.51     12.011
+    15        NH1      2    ALA      N     15      -0.47     14.007   ; qtot -0.47
+    16          H      2    ALA     HN     16       0.31      1.008   ; qtot -0.16
+    17        CT1      2    ALA     CA     17       0.07     12.011   ; qtot -0.09
+    18         HB      2    ALA     HA     18       0.09      1.008   ; qtot 0
+    19        CT3      2    ALA     CB     19      -0.27     12.011   ; qtot -0.27
+    20         HA      2    ALA    HB1     20       0.09      1.008   ; qtot -0.18
+    21         HA      2    ALA    HB2     21       0.09      1.008   ; qtot -0.09
+    22         HA      2    ALA    HB3     22       0.09      1.008   ; qtot 0
+    23          C      2    ALA      C     23       0.51     12.011   ; qtot 0.51
     24          O      2    ALA      O     24      -0.51     15.999   ; qtot 0
 ; residue   3 GLU rtp GLU  q -1.0
-    25        NH1      3    GLU      N     25      -0.47     14.007
-    26          H      3    GLU     HN     26       0.31      1.008
-    27        CT1      3    GLU     CA     27       0.07     12.011
-    28         HB      3    GLU     HA     28       0.09      1.008
-    29        CT2      3    GLU     CB     29      -0.18     12.011
-    30         HA      3    GLU    HB1     30       0.09      1.008
-    31         HA      3    GLU    HB2     31       0.09      1.008
-    32        CT2      3    GLU     CG     32      -0.28     12.011
-    33         HA      3    GLU    HG1     33       0.05      1.008
-    34         HA      3    GLU    HG2     34       0.05      1.008
-    35         CC      3    GLU     CD     35       0.56     12.011
-    36         OC      3    GLU    OE1     36      -0.69     15.999
-    37         OC      3    GLU    OE2     37      -0.69     15.999
-    38          C      3    GLU      C     38       0.51     12.011
+    25        NH1      3    GLU      N     25      -0.47     14.007   ; qtot -0.47
+    26          H      3    GLU     HN     26       0.31      1.008   ; qtot -0.16
+    27        CT1      3    GLU     CA     27       0.07     12.011   ; qtot -0.09
+    28         HB      3    GLU     HA     28       0.09      1.008   ; qtot 0
+    29        CT2      3    GLU     CB     29      -0.18     12.011   ; qtot -0.18
+    30         HA      3    GLU    HB1     30       0.09      1.008   ; qtot -0.09
+    31         HA      3    GLU    HB2     31       0.09      1.008   ; qtot 0
+    32        CT2      3    GLU     CG     32      -0.28     12.011   ; qtot -0.28
+    33         HA      3    GLU    HG1     33       0.05      1.008   ; qtot -0.23
+    34         HA      3    GLU    HG2     34       0.05      1.008   ; qtot -0.18
+    35         CC      3    GLU     CD     35       0.56     12.011   ; qtot 0.38
+    36         OC      3    GLU    OE1     36      -0.69     15.999   ; qtot -0.31
+    37         OC      3    GLU    OE2     37      -0.69     15.999   ; qtot -1
+    38          C      3    GLU      C     38       0.51     12.011   ; qtot -0.49
     39          O      3    GLU      O     39      -0.51     15.999   ; qtot -1
 ; residue   4 PHE rtp PHE  q  0.0
-    40        NH1      4    PHE      N     40      -0.47     14.007
-    41          H      4    PHE     HN     41       0.31      1.008
-    42        CT1      4    PHE     CA     42       0.07     12.011
-    43         HB      4    PHE     HA     43       0.09      1.008
-    44        CT2      4    PHE     CB     44      -0.18     12.011
-    45         HA      4    PHE    HB1     45       0.09      1.008
-    46         HA      4    PHE    HB2     46       0.09      1.008
-    47         CA      4    PHE     CG     47          0     12.011
-    48         CA      4    PHE    CD1     48     -0.115     12.011
-    49         HP      4    PHE    HD1     49      0.115      1.008
-    50         CA      4    PHE    CE1     50     -0.115     12.011
-    51         HP      4    PHE    HE1     51      0.115      1.008
-    52         CA      4    PHE     CZ     52     -0.115     12.011
-    53         HP      4    PHE     HZ     53      0.115      1.008
-    54         CA      4    PHE    CD2     54     -0.115     12.011
-    55         HP      4    PHE    HD2     55      0.115      1.008
-    56         CA      4    PHE    CE2     56     -0.115     12.011
-    57         HP      4    PHE    HE2     57      0.115      1.008
-    58          C      4    PHE      C     58       0.51     12.011
+    40        NH1      4    PHE      N     40      -0.47     14.007   ; qtot -1.47
+    41          H      4    PHE     HN     41       0.31      1.008   ; qtot -1.16
+    42        CT1      4    PHE     CA     42       0.07     12.011   ; qtot -1.09
+    43         HB      4    PHE     HA     43       0.09      1.008   ; qtot -1
+    44        CT2      4    PHE     CB     44      -0.18     12.011   ; qtot -1.18
+    45         HA      4    PHE    HB1     45       0.09      1.008   ; qtot -1.09
+    46         HA      4    PHE    HB2     46       0.09      1.008   ; qtot -1
+    47         CA      4    PHE     CG     47          0     12.011   ; qtot -1
+    48         CA      4    PHE    CD1     48     -0.115     12.011   ; qtot -1.115
+    49         HP      4    PHE    HD1     49      0.115      1.008   ; qtot -1
+    50         CA      4    PHE    CE1     50     -0.115     12.011   ; qtot -1.115
+    51         HP      4    PHE    HE1     51      0.115      1.008   ; qtot -1
+    52         CA      4    PHE     CZ     52     -0.115     12.011   ; qtot -1.115
+    53         HP      4    PHE     HZ     53      0.115      1.008   ; qtot -1
+    54         CA      4    PHE    CD2     54     -0.115     12.011   ; qtot -1.115
+    55         HP      4    PHE    HD2     55      0.115      1.008   ; qtot -1
+    56         CA      4    PHE    CE2     56     -0.115     12.011   ; qtot -1.115
+    57         HP      4    PHE    HE2     57      0.115      1.008   ; qtot -1
+    58          C      4    PHE      C     58       0.51     12.011   ; qtot -0.49
     59          O      4    PHE      O     59      -0.51     15.999   ; qtot -1
 ; residue   5 ARG rtp ARG  q +1.0
-    60        NH1      5    ARG      N     60      -0.47     14.007
-    61          H      5    ARG     HN     61       0.31      1.008
-    62        CT1      5    ARG     CA     62       0.07     12.011
-    63         HB      5    ARG     HA     63       0.09      1.008
-    64        CT2      5    ARG     CB     64      -0.18     12.011
-    65         HA      5    ARG    HB1     65       0.09      1.008
-    66         HA      5    ARG    HB2     66       0.09      1.008
-    67        CT2      5    ARG     CG     67      -0.18     12.011
-    68         HA      5    ARG    HG1     68       0.09      1.008
-    69         HA      5    ARG    HG2     69       0.09      1.008
-    70        CT2      5    ARG     CD     70        0.2     12.011
-    71         HA      5    ARG    HD1     71       0.09      1.008
-    72         HA      5    ARG    HD2     72       0.09      1.008
-    73        NC2      5    ARG     NE     73      -0.61     14.007
-    74         HC      5    ARG     HE     74       0.38      1.008
-    75          C      5    ARG     CZ     75       0.49     12.011
-    76        NC2      5    ARG    NH1     76      -0.62     14.007
-    77         HC      5    ARG   HH11     77        0.4      1.008
-    78         HC      5    ARG   HH12     78        0.4      1.008
-    79        NC2      5    ARG    NH2     79      -0.62     14.007
-    80         HC      5    ARG   HH21     80        0.4      1.008
-    81         HC      5    ARG   HH22     81        0.4      1.008
-    82          C      5    ARG      C     82       0.51     12.011
+    60        NH1      5    ARG      N     60      -0.47     14.007   ; qtot -1.47
+    61          H      5    ARG     HN     61       0.31      1.008   ; qtot -1.16
+    62        CT1      5    ARG     CA     62       0.07     12.011   ; qtot -1.09
+    63         HB      5    ARG     HA     63       0.09      1.008   ; qtot -1
+    64        CT2      5    ARG     CB     64      -0.18     12.011   ; qtot -1.18
+    65         HA      5    ARG    HB1     65       0.09      1.008   ; qtot -1.09
+    66         HA      5    ARG    HB2     66       0.09      1.008   ; qtot -1
+    67        CT2      5    ARG     CG     67      -0.18     12.011   ; qtot -1.18
+    68         HA      5    ARG    HG1     68       0.09      1.008   ; qtot -1.09
+    69         HA      5    ARG    HG2     69       0.09      1.008   ; qtot -1
+    70        CT2      5    ARG     CD     70        0.2     12.011   ; qtot -0.8
+    71         HA      5    ARG    HD1     71       0.09      1.008   ; qtot -0.71
+    72         HA      5    ARG    HD2     72       0.09      1.008   ; qtot -0.62
+    73        NC2      5    ARG     NE     73      -0.61     14.007   ; qtot -1.23
+    74         HC      5    ARG     HE     74       0.38      1.008   ; qtot -0.85
+    75          C      5    ARG     CZ     75       0.49     12.011   ; qtot -0.36
+    76        NC2      5    ARG    NH1     76      -0.62     14.007   ; qtot -0.98
+    77         HC      5    ARG   HH11     77        0.4      1.008   ; qtot -0.58
+    78         HC      5    ARG   HH12     78        0.4      1.008   ; qtot -0.18
+    79        NC2      5    ARG    NH2     79      -0.62     14.007   ; qtot -0.8
+    80         HC      5    ARG   HH21     80        0.4      1.008   ; qtot -0.4
+    81         HC      5    ARG   HH22     81        0.4      1.008   ; qtot 0
+    82          C      5    ARG      C     82       0.51     12.011   ; qtot 0.51
     83          O      5    ARG      O     83      -0.51     15.999   ; qtot 0
 ; residue   6 HIS rtp HSE  q  0.0
-    84        NH1      6    HIS      N     84      -0.47     14.007
-    85          H      6    HIS     HN     85       0.31      1.008
-    86        CT1      6    HIS     CA     86       0.07     12.011
-    87         HB      6    HIS     HA     87       0.09      1.008
-    88        CT2      6    HIS     CB     88      -0.08     12.011
-    89         HA      6    HIS    HB1     89       0.09      1.008
-    90         HA      6    HIS    HB2     90       0.09      1.008
-    91        NR2      6    HIS    ND1     91       -0.7     14.007
-    92       CPH1      6    HIS     CG     92       0.22     12.011
-    93       CPH2      6    HIS    CE1     93       0.25     12.011
-    94        HR1      6    HIS    HE1     94       0.13      1.008
-    95        NR1      6    HIS    NE2     95      -0.36     14.007
-    96          H      6    HIS    HE2     96       0.32      1.008
-    97       CPH1      6    HIS    CD2     97      -0.05     12.011
-    98        HR3      6    HIS    HD2     98       0.09      1.008
-    99          C      6    HIS      C     99       0.51     12.011
+    84        NH1      6    HIS      N     84      -0.47     14.007   ; qtot -0.47
+    85          H      6    HIS     HN     85       0.31      1.008   ; qtot -0.16
+    86        CT1      6    HIS     CA     86       0.07     12.011   ; qtot -0.09
+    87         HB      6    HIS     HA     87       0.09      1.008   ; qtot 0
+    88        CT2      6    HIS     CB     88      -0.08     12.011   ; qtot -0.08
+    89         HA      6    HIS    HB1     89       0.09      1.008   ; qtot 0.01
+    90         HA      6    HIS    HB2     90       0.09      1.008   ; qtot 0.1
+    91        NR2      6    HIS    ND1     91       -0.7     14.007   ; qtot -0.6
+    92       CPH1      6    HIS     CG     92       0.22     12.011   ; qtot -0.38
+    93       CPH2      6    HIS    CE1     93       0.25     12.011   ; qtot -0.13
+    94        HR1      6    HIS    HE1     94       0.13      1.008   ; qtot 0
+    95        NR1      6    HIS    NE2     95      -0.36     14.007   ; qtot -0.36
+    96          H      6    HIS    HE2     96       0.32      1.008   ; qtot -0.04
+    97       CPH1      6    HIS    CD2     97      -0.05     12.011   ; qtot -0.09
+    98        HR3      6    HIS    HD2     98       0.09      1.008   ; qtot 0
+    99          C      6    HIS      C     99       0.51     12.011   ; qtot 0.51
    100          O      6    HIS      O    100      -0.51     15.999   ; qtot 0
 ; residue   7 ASP rtp ASP  q -1.0
-   101        NH1      7    ASP      N    101      -0.47     14.007
-   102          H      7    ASP     HN    102       0.31      1.008
-   103        CT1      7    ASP     CA    103       0.07     12.011
-   104         HB      7    ASP     HA    104       0.09      1.008
-   105        CT2      7    ASP     CB    105      -0.28     12.011
-   106         HA      7    ASP    HB1    106       0.05      1.008
-   107         HA      7    ASP    HB2    107       0.05      1.008
-   108         CC      7    ASP     CG    108       0.56     12.011
-   109         OC      7    ASP    OD1    109      -0.69     15.999
-   110         OC      7    ASP    OD2    110      -0.69     15.999
-   111          C      7    ASP      C    111       0.51     12.011
+   101        NH1      7    ASP      N    101      -0.47     14.007   ; qtot -0.47
+   102          H      7    ASP     HN    102       0.31      1.008   ; qtot -0.16
+   103        CT1      7    ASP     CA    103       0.07     12.011   ; qtot -0.09
+   104         HB      7    ASP     HA    104       0.09      1.008   ; qtot 0
+   105        CT2      7    ASP     CB    105      -0.28     12.011   ; qtot -0.28
+   106         HA      7    ASP    HB1    106       0.05      1.008   ; qtot -0.23
+   107         HA      7    ASP    HB2    107       0.05      1.008   ; qtot -0.18
+   108         CC      7    ASP     CG    108       0.56     12.011   ; qtot 0.38
+   109         OC      7    ASP    OD1    109      -0.69     15.999   ; qtot -0.31
+   110         OC      7    ASP    OD2    110      -0.69     15.999   ; qtot -1
+   111          C      7    ASP      C    111       0.51     12.011   ; qtot -0.49
    112          O      7    ASP      O    112      -0.51     15.999   ; qtot -1
 ; residue   8 SER rtp SER  q  0.0
-   113        NH1      8    SER      N    113      -0.47     14.007
-   114          H      8    SER     HN    114       0.31      1.008
-   115        CT1      8    SER     CA    115       0.07     12.011
-   116         HB      8    SER     HA    116       0.09      1.008
-   117        CT2      8    SER     CB    117       0.05     12.011
-   118         HA      8    SER    HB1    118       0.09      1.008
-   119         HA      8    SER    HB2    119       0.09      1.008
-   120        OH1      8    SER     OG    120      -0.66     15.999
-   121          H      8    SER    HG1    121       0.43      1.008
-   122          C      8    SER      C    122       0.51     12.011
+   113        NH1      8    SER      N    113      -0.47     14.007   ; qtot -1.47
+   114          H      8    SER     HN    114       0.31      1.008   ; qtot -1.16
+   115        CT1      8    SER     CA    115       0.07     12.011   ; qtot -1.09
+   116         HB      8    SER     HA    116       0.09      1.008   ; qtot -1
+   117        CT2      8    SER     CB    117       0.05     12.011   ; qtot -0.95
+   118         HA      8    SER    HB1    118       0.09      1.008   ; qtot -0.86
+   119         HA      8    SER    HB2    119       0.09      1.008   ; qtot -0.77
+   120        OH1      8    SER     OG    120      -0.66     15.999   ; qtot -1.43
+   121          H      8    SER    HG1    121       0.43      1.008   ; qtot -1
+   122          C      8    SER      C    122       0.51     12.011   ; qtot -0.49
    123          O      8    SER      O    123      -0.51     15.999   ; qtot -1
 ; residue   9 GLY rtp GLY  q  0.0
-   124        NH1      9    GLY      N    124      -0.47     14.007
-   125          H      9    GLY     HN    125       0.31      1.008
-   126        CT2      9    GLY     CA    126      -0.02     12.011
-   127         HB      9    GLY    HA1    127       0.09      1.008
-   128         HB      9    GLY    HA2    128       0.09      1.008
-   129          C      9    GLY      C    129       0.51     12.011
+   124        NH1      9    GLY      N    124      -0.47     14.007   ; qtot -1.47
+   125          H      9    GLY     HN    125       0.31      1.008   ; qtot -1.16
+   126        CT2      9    GLY     CA    126      -0.02     12.011   ; qtot -1.18
+   127         HB      9    GLY    HA1    127       0.09      1.008   ; qtot -1.09
+   128         HB      9    GLY    HA2    128       0.09      1.008   ; qtot -1
+   129          C      9    GLY      C    129       0.51     12.011   ; qtot -0.49
    130          O      9    GLY      O    130      -0.51     15.999   ; qtot -1
 ; residue  10 TYR rtp TYR  q  0.0
-   131        NH1     10    TYR      N    131      -0.47     14.007
-   132          H     10    TYR     HN    132       0.31      1.008
-   133        CT1     10    TYR     CA    133       0.07     12.011
-   134         HB     10    TYR     HA    134       0.09      1.008
-   135        CT2     10    TYR     CB    135      -0.18     12.011
-   136         HA     10    TYR    HB1    136       0.09      1.008
-   137         HA     10    TYR    HB2    137       0.09      1.008
-   138         CA     10    TYR     CG    138          0     12.011
-   139         CA     10    TYR    CD1    139     -0.115     12.011
-   140         HP     10    TYR    HD1    140      0.115      1.008
-   141         CA     10    TYR    CE1    141     -0.115     12.011
-   142         HP     10    TYR    HE1    142      0.115      1.008
-   143         CA     10    TYR     CZ    143       0.11     12.011
-   144        OH1     10    TYR     OH    144      -0.54     15.999
-   145          H     10    TYR     HH    145       0.43      1.008
-   146         CA     10    TYR    CD2    146     -0.115     12.011
-   147         HP     10    TYR    HD2    147      0.115      1.008
-   148         CA     10    TYR    CE2    148     -0.115     12.011
-   149         HP     10    TYR    HE2    149      0.115      1.008
-   150          C     10    TYR      C    150       0.51     12.011
+   131        NH1     10    TYR      N    131      -0.47     14.007   ; qtot -1.47
+   132          H     10    TYR     HN    132       0.31      1.008   ; qtot -1.16
+   133        CT1     10    TYR     CA    133       0.07     12.011   ; qtot -1.09
+   134         HB     10    TYR     HA    134       0.09      1.008   ; qtot -1
+   135        CT2     10    TYR     CB    135      -0.18     12.011   ; qtot -1.18
+   136         HA     10    TYR    HB1    136       0.09      1.008   ; qtot -1.09
+   137         HA     10    TYR    HB2    137       0.09      1.008   ; qtot -1
+   138         CA     10    TYR     CG    138          0     12.011   ; qtot -1
+   139         CA     10    TYR    CD1    139     -0.115     12.011   ; qtot -1.115
+   140         HP     10    TYR    HD1    140      0.115      1.008   ; qtot -1
+   141         CA     10    TYR    CE1    141     -0.115     12.011   ; qtot -1.115
+   142         HP     10    TYR    HE1    142      0.115      1.008   ; qtot -1
+   143         CA     10    TYR     CZ    143       0.11     12.011   ; qtot -0.89
+   144        OH1     10    TYR     OH    144      -0.54     15.999   ; qtot -1.43
+   145          H     10    TYR     HH    145       0.43      1.008   ; qtot -1
+   146         CA     10    TYR    CD2    146     -0.115     12.011   ; qtot -1.115
+   147         HP     10    TYR    HD2    147      0.115      1.008   ; qtot -1
+   148         CA     10    TYR    CE2    148     -0.115     12.011   ; qtot -1.115
+   149         HP     10    TYR    HE2    149      0.115      1.008   ; qtot -1
+   150          C     10    TYR      C    150       0.51     12.011   ; qtot -0.49
    151          O     10    TYR      O    151      -0.51     15.999   ; qtot -1
 ; residue  11 GLU rtp GLU  q -1.0
-   152        NH1     11    GLU      N    152      -0.47     14.007
-   153          H     11    GLU     HN    153       0.31      1.008
-   154        CT1     11    GLU     CA    154       0.07     12.011
-   155         HB     11    GLU     HA    155       0.09      1.008
-   156        CT2     11    GLU     CB    156      -0.18     12.011
-   157         HA     11    GLU    HB1    157       0.09      1.008
-   158         HA     11    GLU    HB2    158       0.09      1.008
-   159        CT2     11    GLU     CG    159      -0.28     12.011
-   160         HA     11    GLU    HG1    160       0.05      1.008
-   161         HA     11    GLU    HG2    161       0.05      1.008
-   162         CC     11    GLU     CD    162       0.56     12.011
-   163         OC     11    GLU    OE1    163      -0.69     15.999
-   164         OC     11    GLU    OE2    164      -0.69     15.999
-   165          C     11    GLU      C    165       0.51     12.011
+   152        NH1     11    GLU      N    152      -0.47     14.007   ; qtot -1.47
+   153          H     11    GLU     HN    153       0.31      1.008   ; qtot -1.16
+   154        CT1     11    GLU     CA    154       0.07     12.011   ; qtot -1.09
+   155         HB     11    GLU     HA    155       0.09      1.008   ; qtot -1
+   156        CT2     11    GLU     CB    156      -0.18     12.011   ; qtot -1.18
+   157         HA     11    GLU    HB1    157       0.09      1.008   ; qtot -1.09
+   158         HA     11    GLU    HB2    158       0.09      1.008   ; qtot -1
+   159        CT2     11    GLU     CG    159      -0.28     12.011   ; qtot -1.28
+   160         HA     11    GLU    HG1    160       0.05      1.008   ; qtot -1.23
+   161         HA     11    GLU    HG2    161       0.05      1.008   ; qtot -1.18
+   162         CC     11    GLU     CD    162       0.56     12.011   ; qtot -0.62
+   163         OC     11    GLU    OE1    163      -0.69     15.999   ; qtot -1.31
+   164         OC     11    GLU    OE2    164      -0.69     15.999   ; qtot -2
+   165          C     11    GLU      C    165       0.51     12.011   ; qtot -1.49
    166          O     11    GLU      O    166      -0.51     15.999   ; qtot -2
 ; residue  12 VAL rtp VAL  q  0.0
-   167        NH1     12    VAL      N    167      -0.47     14.007
-   168          H     12    VAL     HN    168       0.31      1.008
-   169        CT1     12    VAL     CA    169       0.07     12.011
-   170         HB     12    VAL     HA    170       0.09      1.008
-   171        CT1     12    VAL     CB    171      -0.09     12.011
-   172         HA     12    VAL     HB    172       0.09      1.008
-   173        CT3     12    VAL    CG1    173      -0.27     12.011
-   174         HA     12    VAL   HG11    174       0.09      1.008
-   175         HA     12    VAL   HG12    175       0.09      1.008
-   176         HA     12    VAL   HG13    176       0.09      1.008
-   177        CT3     12    VAL    CG2    177      -0.27     12.011
-   178         HA     12    VAL   HG21    178       0.09      1.008
-   179         HA     12    VAL   HG22    179       0.09      1.008
-   180         HA     12    VAL   HG23    180       0.09      1.008
-   181          C     12    VAL      C    181       0.51     12.011
+   167        NH1     12    VAL      N    167      -0.47     14.007   ; qtot -2.47
+   168          H     12    VAL     HN    168       0.31      1.008   ; qtot -2.16
+   169        CT1     12    VAL     CA    169       0.07     12.011   ; qtot -2.09
+   170         HB     12    VAL     HA    170       0.09      1.008   ; qtot -2
+   171        CT1     12    VAL     CB    171      -0.09     12.011   ; qtot -2.09
+   172         HA     12    VAL     HB    172       0.09      1.008   ; qtot -2
+   173        CT3     12    VAL    CG1    173      -0.27     12.011   ; qtot -2.27
+   174         HA     12    VAL   HG11    174       0.09      1.008   ; qtot -2.18
+   175         HA     12    VAL   HG12    175       0.09      1.008   ; qtot -2.09
+   176         HA     12    VAL   HG13    176       0.09      1.008   ; qtot -2
+   177        CT3     12    VAL    CG2    177      -0.27     12.011   ; qtot -2.27
+   178         HA     12    VAL   HG21    178       0.09      1.008   ; qtot -2.18
+   179         HA     12    VAL   HG22    179       0.09      1.008   ; qtot -2.09
+   180         HA     12    VAL   HG23    180       0.09      1.008   ; qtot -2
+   181          C     12    VAL      C    181       0.51     12.011   ; qtot -1.49
    182          O     12    VAL      O    182      -0.51     15.999   ; qtot -2
 ; residue  13 HIS rtp HSE  q  0.0
-   183        NH1     13    HIS      N    183      -0.47     14.007
-   184          H     13    HIS     HN    184       0.31      1.008
-   185        CT1     13    HIS     CA    185       0.07     12.011
-   186         HB     13    HIS     HA    186       0.09      1.008
-   187        CT2     13    HIS     CB    187      -0.08     12.011
-   188         HA     13    HIS    HB1    188       0.09      1.008
-   189         HA     13    HIS    HB2    189       0.09      1.008
-   190        NR2     13    HIS    ND1    190       -0.7     14.007
-   191       CPH1     13    HIS     CG    191       0.22     12.011
-   192       CPH2     13    HIS    CE1    192       0.25     12.011
-   193        HR1     13    HIS    HE1    193       0.13      1.008
-   194        NR1     13    HIS    NE2    194      -0.36     14.007
-   195          H     13    HIS    HE2    195       0.32      1.008
-   196       CPH1     13    HIS    CD2    196      -0.05     12.011
-   197        HR3     13    HIS    HD2    197       0.09      1.008
-   198          C     13    HIS      C    198       0.51     12.011
+   183        NH1     13    HIS      N    183      -0.47     14.007   ; qtot -2.47
+   184          H     13    HIS     HN    184       0.31      1.008   ; qtot -2.16
+   185        CT1     13    HIS     CA    185       0.07     12.011   ; qtot -2.09
+   186         HB     13    HIS     HA    186       0.09      1.008   ; qtot -2
+   187        CT2     13    HIS     CB    187      -0.08     12.011   ; qtot -2.08
+   188         HA     13    HIS    HB1    188       0.09      1.008   ; qtot -1.99
+   189         HA     13    HIS    HB2    189       0.09      1.008   ; qtot -1.9
+   190        NR2     13    HIS    ND1    190       -0.7     14.007   ; qtot -2.6
+   191       CPH1     13    HIS     CG    191       0.22     12.011   ; qtot -2.38
+   192       CPH2     13    HIS    CE1    192       0.25     12.011   ; qtot -2.13
+   193        HR1     13    HIS    HE1    193       0.13      1.008   ; qtot -2
+   194        NR1     13    HIS    NE2    194      -0.36     14.007   ; qtot -2.36
+   195          H     13    HIS    HE2    195       0.32      1.008   ; qtot -2.04
+   196       CPH1     13    HIS    CD2    196      -0.05     12.011   ; qtot -2.09
+   197        HR3     13    HIS    HD2    197       0.09      1.008   ; qtot -2
+   198          C     13    HIS      C    198       0.51     12.011   ; qtot -1.49
    199          O     13    HIS      O    199      -0.51     15.999   ; qtot -2
 ; residue  14 HIS rtp HSE  q  0.0
-   200        NH1     14    HIS      N    200      -0.47     14.007
-   201          H     14    HIS     HN    201       0.31      1.008
-   202        CT1     14    HIS     CA    202       0.07     12.011
-   203         HB     14    HIS     HA    203       0.09      1.008
-   204        CT2     14    HIS     CB    204      -0.08     12.011
-   205         HA     14    HIS    HB1    205       0.09      1.008
-   206         HA     14    HIS    HB2    206       0.09      1.008
-   207        NR2     14    HIS    ND1    207       -0.7     14.007
-   208       CPH1     14    HIS     CG    208       0.22     12.011
-   209       CPH2     14    HIS    CE1    209       0.25     12.011
-   210        HR1     14    HIS    HE1    210       0.13      1.008
-   211        NR1     14    HIS    NE2    211      -0.36     14.007
-   212          H     14    HIS    HE2    212       0.32      1.008
-   213       CPH1     14    HIS    CD2    213      -0.05     12.011
-   214        HR3     14    HIS    HD2    214       0.09      1.008
-   215          C     14    HIS      C    215       0.51     12.011
+   200        NH1     14    HIS      N    200      -0.47     14.007   ; qtot -2.47
+   201          H     14    HIS     HN    201       0.31      1.008   ; qtot -2.16
+   202        CT1     14    HIS     CA    202       0.07     12.011   ; qtot -2.09
+   203         HB     14    HIS     HA    203       0.09      1.008   ; qtot -2
+   204        CT2     14    HIS     CB    204      -0.08     12.011   ; qtot -2.08
+   205         HA     14    HIS    HB1    205       0.09      1.008   ; qtot -1.99
+   206         HA     14    HIS    HB2    206       0.09      1.008   ; qtot -1.9
+   207        NR2     14    HIS    ND1    207       -0.7     14.007   ; qtot -2.6
+   208       CPH1     14    HIS     CG    208       0.22     12.011   ; qtot -2.38
+   209       CPH2     14    HIS    CE1    209       0.25     12.011   ; qtot -2.13
+   210        HR1     14    HIS    HE1    210       0.13      1.008   ; qtot -2
+   211        NR1     14    HIS    NE2    211      -0.36     14.007   ; qtot -2.36
+   212          H     14    HIS    HE2    212       0.32      1.008   ; qtot -2.04
+   213       CPH1     14    HIS    CD2    213      -0.05     12.011   ; qtot -2.09
+   214        HR3     14    HIS    HD2    214       0.09      1.008   ; qtot -2
+   215          C     14    HIS      C    215       0.51     12.011   ; qtot -1.49
    216          O     14    HIS      O    216      -0.51     15.999   ; qtot -2
 ; residue  15 GLN rtp GLN  q  0.0
-   217        NH1     15    GLN      N    217      -0.47     14.007
-   218          H     15    GLN     HN    218       0.31      1.008
-   219        CT1     15    GLN     CA    219       0.07     12.011
-   220         HB     15    GLN     HA    220       0.09      1.008
-   221        CT2     15    GLN     CB    221      -0.18     12.011
-   222         HA     15    GLN    HB1    222       0.09      1.008
-   223         HA     15    GLN    HB2    223       0.09      1.008
-   224        CT2     15    GLN     CG    224      -0.18     12.011
-   225         HA     15    GLN    HG1    225       0.09      1.008
-   226         HA     15    GLN    HG2    226       0.09      1.008
-   227         CC     15    GLN     CD    227       0.55     12.011
-   228          O     15    GLN    OE1    228      -0.55     15.999
-   229        NH2     15    GLN    NE2    229      -0.62     14.007
-   230          H     15    GLN   HE21    230       0.32      1.008
-   231          H     15    GLN   HE22    231        0.3      1.008
-   232          C     15    GLN      C    232       0.51     12.011
+   217        NH1     15    GLN      N    217      -0.47     14.007   ; qtot -2.47
+   218          H     15    GLN     HN    218       0.31      1.008   ; qtot -2.16
+   219        CT1     15    GLN     CA    219       0.07     12.011   ; qtot -2.09
+   220         HB     15    GLN     HA    220       0.09      1.008   ; qtot -2
+   221        CT2     15    GLN     CB    221      -0.18     12.011   ; qtot -2.18
+   222         HA     15    GLN    HB1    222       0.09      1.008   ; qtot -2.09
+   223         HA     15    GLN    HB2    223       0.09      1.008   ; qtot -2
+   224        CT2     15    GLN     CG    224      -0.18     12.011   ; qtot -2.18
+   225         HA     15    GLN    HG1    225       0.09      1.008   ; qtot -2.09
+   226         HA     15    GLN    HG2    226       0.09      1.008   ; qtot -2
+   227         CC     15    GLN     CD    227       0.55     12.011   ; qtot -1.45
+   228          O     15    GLN    OE1    228      -0.55     15.999   ; qtot -2
+   229        NH2     15    GLN    NE2    229      -0.62     14.007   ; qtot -2.62
+   230          H     15    GLN   HE21    230       0.32      1.008   ; qtot -2.3
+   231          H     15    GLN   HE22    231        0.3      1.008   ; qtot -2
+   232          C     15    GLN      C    232       0.51     12.011   ; qtot -1.49
    233          O     15    GLN      O    233      -0.51     15.999   ; qtot -2
 ; residue  16 LYS rtp LYS  q +1.0
-   234        NH1     16    LYS      N    234      -0.47     14.007
-   235          H     16    LYS     HN    235       0.31      1.008
-   236        CT1     16    LYS     CA    236       0.07     12.011
-   237         HB     16    LYS     HA    237       0.09      1.008
-   238        CT2     16    LYS     CB    238      -0.18     12.011
-   239         HA     16    LYS    HB1    239       0.09      1.008
-   240         HA     16    LYS    HB2    240       0.09      1.008
-   241        CT2     16    LYS     CG    241      -0.18     12.011
-   242         HA     16    LYS    HG1    242       0.09      1.008
-   243         HA     16    LYS    HG2    243       0.09      1.008
-   244        CT2     16    LYS     CD    244      -0.18     12.011
-   245         HA     16    LYS    HD1    245       0.09      1.008
-   246         HA     16    LYS    HD2    246       0.09      1.008
-   247        CT2     16    LYS     CE    247       0.21     12.011
-   248         HA     16    LYS    HE1    248       0.05      1.008
-   249         HA     16    LYS    HE2    249       0.05      1.008
-   250        NH3     16    LYS     NZ    250       -0.3     14.007
-   251         HC     16    LYS    HZ1    251       0.33      1.008
-   252         HC     16    LYS    HZ2    252       0.33      1.008
-   253         HC     16    LYS    HZ3    253       0.33      1.008
-   254          C     16    LYS      C    254       0.51     12.011
+   234        NH1     16    LYS      N    234      -0.47     14.007   ; qtot -2.47
+   235          H     16    LYS     HN    235       0.31      1.008   ; qtot -2.16
+   236        CT1     16    LYS     CA    236       0.07     12.011   ; qtot -2.09
+   237         HB     16    LYS     HA    237       0.09      1.008   ; qtot -2
+   238        CT2     16    LYS     CB    238      -0.18     12.011   ; qtot -2.18
+   239         HA     16    LYS    HB1    239       0.09      1.008   ; qtot -2.09
+   240         HA     16    LYS    HB2    240       0.09      1.008   ; qtot -2
+   241        CT2     16    LYS     CG    241      -0.18     12.011   ; qtot -2.18
+   242         HA     16    LYS    HG1    242       0.09      1.008   ; qtot -2.09
+   243         HA     16    LYS    HG2    243       0.09      1.008   ; qtot -2
+   244        CT2     16    LYS     CD    244      -0.18     12.011   ; qtot -2.18
+   245         HA     16    LYS    HD1    245       0.09      1.008   ; qtot -2.09
+   246         HA     16    LYS    HD2    246       0.09      1.008   ; qtot -2
+   247        CT2     16    LYS     CE    247       0.21     12.011   ; qtot -1.79
+   248         HA     16    LYS    HE1    248       0.05      1.008   ; qtot -1.74
+   249         HA     16    LYS    HE2    249       0.05      1.008   ; qtot -1.69
+   250        NH3     16    LYS     NZ    250       -0.3     14.007   ; qtot -1.99
+   251         HC     16    LYS    HZ1    251       0.33      1.008   ; qtot -1.66
+   252         HC     16    LYS    HZ2    252       0.33      1.008   ; qtot -1.33
+   253         HC     16    LYS    HZ3    253       0.33      1.008   ; qtot -1
+   254          C     16    LYS      C    254       0.51     12.011   ; qtot -0.49
    255          O     16    LYS      O    255      -0.51     15.999   ; qtot -1
 ; residue  17 LEU rtp LEU  q  0.0
-   256        NH1     17    LEU      N    256      -0.47     14.007
-   257          H     17    LEU     HN    257       0.31      1.008
-   258        CT1     17    LEU     CA    258       0.07     12.011
-   259         HB     17    LEU     HA    259       0.09      1.008
-   260        CT2     17    LEU     CB    260      -0.18     12.011
-   261         HA     17    LEU    HB1    261       0.09      1.008
-   262         HA     17    LEU    HB2    262       0.09      1.008
-   263        CT1     17    LEU     CG    263      -0.09     12.011
-   264         HA     17    LEU     HG    264       0.09      1.008
-   265        CT3     17    LEU    CD1    265      -0.27     12.011
-   266         HA     17    LEU   HD11    266       0.09      1.008
-   267         HA     17    LEU   HD12    267       0.09      1.008
-   268         HA     17    LEU   HD13    268       0.09      1.008
-   269        CT3     17    LEU    CD2    269      -0.27     12.011
-   270         HA     17    LEU   HD21    270       0.09      1.008
-   271         HA     17    LEU   HD22    271       0.09      1.008
-   272         HA     17    LEU   HD23    272       0.09      1.008
-   273          C     17    LEU      C    273       0.51     12.011
+   256        NH1     17    LEU      N    256      -0.47     14.007   ; qtot -1.47
+   257          H     17    LEU     HN    257       0.31      1.008   ; qtot -1.16
+   258        CT1     17    LEU     CA    258       0.07     12.011   ; qtot -1.09
+   259         HB     17    LEU     HA    259       0.09      1.008   ; qtot -1
+   260        CT2     17    LEU     CB    260      -0.18     12.011   ; qtot -1.18
+   261         HA     17    LEU    HB1    261       0.09      1.008   ; qtot -1.09
+   262         HA     17    LEU    HB2    262       0.09      1.008   ; qtot -1
+   263        CT1     17    LEU     CG    263      -0.09     12.011   ; qtot -1.09
+   264         HA     17    LEU     HG    264       0.09      1.008   ; qtot -1
+   265        CT3     17    LEU    CD1    265      -0.27     12.011   ; qtot -1.27
+   266         HA     17    LEU   HD11    266       0.09      1.008   ; qtot -1.18
+   267         HA     17    LEU   HD12    267       0.09      1.008   ; qtot -1.09
+   268         HA     17    LEU   HD13    268       0.09      1.008   ; qtot -1
+   269        CT3     17    LEU    CD2    269      -0.27     12.011   ; qtot -1.27
+   270         HA     17    LEU   HD21    270       0.09      1.008   ; qtot -1.18
+   271         HA     17    LEU   HD22    271       0.09      1.008   ; qtot -1.09
+   272         HA     17    LEU   HD23    272       0.09      1.008   ; qtot -1
+   273          C     17    LEU      C    273       0.51     12.011   ; qtot -0.49
    274          O     17    LEU      O    274      -0.51     15.999   ; qtot -1
 ; residue  18 VAL rtp VAL  q  0.0
-   275        NH1     18    VAL      N    275      -0.47     14.007
-   276          H     18    VAL     HN    276       0.31      1.008
-   277        CT1     18    VAL     CA    277       0.07     12.011
-   278         HB     18    VAL     HA    278       0.09      1.008
-   279        CT1     18    VAL     CB    279      -0.09     12.011
-   280         HA     18    VAL     HB    280       0.09      1.008
-   281        CT3     18    VAL    CG1    281      -0.27     12.011
-   282         HA     18    VAL   HG11    282       0.09      1.008
-   283         HA     18    VAL   HG12    283       0.09      1.008
-   284         HA     18    VAL   HG13    284       0.09      1.008
-   285        CT3     18    VAL    CG2    285      -0.27     12.011
-   286         HA     18    VAL   HG21    286       0.09      1.008
-   287         HA     18    VAL   HG22    287       0.09      1.008
-   288         HA     18    VAL   HG23    288       0.09      1.008
-   289          C     18    VAL      C    289       0.51     12.011
+   275        NH1     18    VAL      N    275      -0.47     14.007   ; qtot -1.47
+   276          H     18    VAL     HN    276       0.31      1.008   ; qtot -1.16
+   277        CT1     18    VAL     CA    277       0.07     12.011   ; qtot -1.09
+   278         HB     18    VAL     HA    278       0.09      1.008   ; qtot -1
+   279        CT1     18    VAL     CB    279      -0.09     12.011   ; qtot -1.09
+   280         HA     18    VAL     HB    280       0.09      1.008   ; qtot -1
+   281        CT3     18    VAL    CG1    281      -0.27     12.011   ; qtot -1.27
+   282         HA     18    VAL   HG11    282       0.09      1.008   ; qtot -1.18
+   283         HA     18    VAL   HG12    283       0.09      1.008   ; qtot -1.09
+   284         HA     18    VAL   HG13    284       0.09      1.008   ; qtot -1
+   285        CT3     18    VAL    CG2    285      -0.27     12.011   ; qtot -1.27
+   286         HA     18    VAL   HG21    286       0.09      1.008   ; qtot -1.18
+   287         HA     18    VAL   HG22    287       0.09      1.008   ; qtot -1.09
+   288         HA     18    VAL   HG23    288       0.09      1.008   ; qtot -1
+   289          C     18    VAL      C    289       0.51     12.011   ; qtot -0.49
    290          O     18    VAL      O    290      -0.51     15.999   ; qtot -1
 ; residue  19 PHE rtp PHE  q  0.0
-   291        NH1     19    PHE      N    291      -0.47     14.007
-   292          H     19    PHE     HN    292       0.31      1.008
-   293        CT1     19    PHE     CA    293       0.07     12.011
-   294         HB     19    PHE     HA    294       0.09      1.008
-   295        CT2     19    PHE     CB    295      -0.18     12.011
-   296         HA     19    PHE    HB1    296       0.09      1.008
-   297         HA     19    PHE    HB2    297       0.09      1.008
-   298         CA     19    PHE     CG    298          0     12.011
-   299         CA     19    PHE    CD1    299     -0.115     12.011
-   300         HP     19    PHE    HD1    300      0.115      1.008
-   301         CA     19    PHE    CE1    301     -0.115     12.011
-   302         HP     19    PHE    HE1    302      0.115      1.008
-   303         CA     19    PHE     CZ    303     -0.115     12.011
-   304         HP     19    PHE     HZ    304      0.115      1.008
-   305         CA     19    PHE    CD2    305     -0.115     12.011
-   306         HP     19    PHE    HD2    306      0.115      1.008
-   307         CA     19    PHE    CE2    307     -0.115     12.011
-   308         HP     19    PHE    HE2    308      0.115      1.008
-   309          C     19    PHE      C    309       0.51     12.011
+   291        NH1     19    PHE      N    291      -0.47     14.007   ; qtot -1.47
+   292          H     19    PHE     HN    292       0.31      1.008   ; qtot -1.16
+   293        CT1     19    PHE     CA    293       0.07     12.011   ; qtot -1.09
+   294         HB     19    PHE     HA    294       0.09      1.008   ; qtot -1
+   295        CT2     19    PHE     CB    295      -0.18     12.011   ; qtot -1.18
+   296         HA     19    PHE    HB1    296       0.09      1.008   ; qtot -1.09
+   297         HA     19    PHE    HB2    297       0.09      1.008   ; qtot -1
+   298         CA     19    PHE     CG    298          0     12.011   ; qtot -1
+   299         CA     19    PHE    CD1    299     -0.115     12.011   ; qtot -1.115
+   300         HP     19    PHE    HD1    300      0.115      1.008   ; qtot -1
+   301         CA     19    PHE    CE1    301     -0.115     12.011   ; qtot -1.115
+   302         HP     19    PHE    HE1    302      0.115      1.008   ; qtot -1
+   303         CA     19    PHE     CZ    303     -0.115     12.011   ; qtot -1.115
+   304         HP     19    PHE     HZ    304      0.115      1.008   ; qtot -1
+   305         CA     19    PHE    CD2    305     -0.115     12.011   ; qtot -1.115
+   306         HP     19    PHE    HD2    306      0.115      1.008   ; qtot -1
+   307         CA     19    PHE    CE2    307     -0.115     12.011   ; qtot -1.115
+   308         HP     19    PHE    HE2    308      0.115      1.008   ; qtot -1
+   309          C     19    PHE      C    309       0.51     12.011   ; qtot -0.49
    310          O     19    PHE      O    310      -0.51     15.999   ; qtot -1
 ; residue  20 PHE rtp PHE  q  0.0
-   311        NH1     20    PHE      N    311      -0.47     14.007
-   312          H     20    PHE     HN    312       0.31      1.008
-   313        CT1     20    PHE     CA    313       0.07     12.011
-   314         HB     20    PHE     HA    314       0.09      1.008
-   315        CT2     20    PHE     CB    315      -0.18     12.011
-   316         HA     20    PHE    HB1    316       0.09      1.008
-   317         HA     20    PHE    HB2    317       0.09      1.008
-   318         CA     20    PHE     CG    318          0     12.011
-   319         CA     20    PHE    CD1    319     -0.115     12.011
-   320         HP     20    PHE    HD1    320      0.115      1.008
-   321         CA     20    PHE    CE1    321     -0.115     12.011
-   322         HP     20    PHE    HE1    322      0.115      1.008
-   323         CA     20    PHE     CZ    323     -0.115     12.011
-   324         HP     20    PHE     HZ    324      0.115      1.008
-   325         CA     20    PHE    CD2    325     -0.115     12.011
-   326         HP     20    PHE    HD2    326      0.115      1.008
-   327         CA     20    PHE    CE2    327     -0.115     12.011
-   328         HP     20    PHE    HE2    328      0.115      1.008
-   329          C     20    PHE      C    329       0.51     12.011
+   311        NH1     20    PHE      N    311      -0.47     14.007   ; qtot -1.47
+   312          H     20    PHE     HN    312       0.31      1.008   ; qtot -1.16
+   313        CT1     20    PHE     CA    313       0.07     12.011   ; qtot -1.09
+   314         HB     20    PHE     HA    314       0.09      1.008   ; qtot -1
+   315        CT2     20    PHE     CB    315      -0.18     12.011   ; qtot -1.18
+   316         HA     20    PHE    HB1    316       0.09      1.008   ; qtot -1.09
+   317         HA     20    PHE    HB2    317       0.09      1.008   ; qtot -1
+   318         CA     20    PHE     CG    318          0     12.011   ; qtot -1
+   319         CA     20    PHE    CD1    319     -0.115     12.011   ; qtot -1.115
+   320         HP     20    PHE    HD1    320      0.115      1.008   ; qtot -1
+   321         CA     20    PHE    CE1    321     -0.115     12.011   ; qtot -1.115
+   322         HP     20    PHE    HE1    322      0.115      1.008   ; qtot -1
+   323         CA     20    PHE     CZ    323     -0.115     12.011   ; qtot -1.115
+   324         HP     20    PHE     HZ    324      0.115      1.008   ; qtot -1
+   325         CA     20    PHE    CD2    325     -0.115     12.011   ; qtot -1.115
+   326         HP     20    PHE    HD2    326      0.115      1.008   ; qtot -1
+   327         CA     20    PHE    CE2    327     -0.115     12.011   ; qtot -1.115
+   328         HP     20    PHE    HE2    328      0.115      1.008   ; qtot -1
+   329          C     20    PHE      C    329       0.51     12.011   ; qtot -0.49
    330          O     20    PHE      O    330      -0.51     15.999   ; qtot -1
 ; residue  21 ALA rtp ALA  q  0.0
-   331        NH1     21    ALA      N    331      -0.47     14.007
-   332          H     21    ALA     HN    332       0.31      1.008
-   333        CT1     21    ALA     CA    333       0.07     12.011
-   334         HB     21    ALA     HA    334       0.09      1.008
-   335        CT3     21    ALA     CB    335      -0.27     12.011
-   336         HA     21    ALA    HB1    336       0.09      1.008
-   337         HA     21    ALA    HB2    337       0.09      1.008
-   338         HA     21    ALA    HB3    338       0.09      1.008
-   339          C     21    ALA      C    339       0.51     12.011
+   331        NH1     21    ALA      N    331      -0.47     14.007   ; qtot -1.47
+   332          H     21    ALA     HN    332       0.31      1.008   ; qtot -1.16
+   333        CT1     21    ALA     CA    333       0.07     12.011   ; qtot -1.09
+   334         HB     21    ALA     HA    334       0.09      1.008   ; qtot -1
+   335        CT3     21    ALA     CB    335      -0.27     12.011   ; qtot -1.27
+   336         HA     21    ALA    HB1    336       0.09      1.008   ; qtot -1.18
+   337         HA     21    ALA    HB2    337       0.09      1.008   ; qtot -1.09
+   338         HA     21    ALA    HB3    338       0.09      1.008   ; qtot -1
+   339          C     21    ALA      C    339       0.51     12.011   ; qtot -0.49
    340          O     21    ALA      O    340      -0.51     15.999   ; qtot -1
 ; residue  22 GLU rtp GLU  q -1.0
-   341        NH1     22    GLU      N    341      -0.47     14.007
-   342          H     22    GLU     HN    342       0.31      1.008
-   343        CT1     22    GLU     CA    343       0.07     12.011
-   344         HB     22    GLU     HA    344       0.09      1.008
-   345        CT2     22    GLU     CB    345      -0.18     12.011
-   346         HA     22    GLU    HB1    346       0.09      1.008
-   347         HA     22    GLU    HB2    347       0.09      1.008
-   348        CT2     22    GLU     CG    348      -0.28     12.011
-   349         HA     22    GLU    HG1    349       0.05      1.008
-   350         HA     22    GLU    HG2    350       0.05      1.008
-   351         CC     22    GLU     CD    351       0.56     12.011
-   352         OC     22    GLU    OE1    352      -0.69     15.999
-   353         OC     22    GLU    OE2    353      -0.69     15.999
-   354          C     22    GLU      C    354       0.51     12.011
+   341        NH1     22    GLU      N    341      -0.47     14.007   ; qtot -1.47
+   342          H     22    GLU     HN    342       0.31      1.008   ; qtot -1.16
+   343        CT1     22    GLU     CA    343       0.07     12.011   ; qtot -1.09
+   344         HB     22    GLU     HA    344       0.09      1.008   ; qtot -1
+   345        CT2     22    GLU     CB    345      -0.18     12.011   ; qtot -1.18
+   346         HA     22    GLU    HB1    346       0.09      1.008   ; qtot -1.09
+   347         HA     22    GLU    HB2    347       0.09      1.008   ; qtot -1
+   348        CT2     22    GLU     CG    348      -0.28     12.011   ; qtot -1.28
+   349         HA     22    GLU    HG1    349       0.05      1.008   ; qtot -1.23
+   350         HA     22    GLU    HG2    350       0.05      1.008   ; qtot -1.18
+   351         CC     22    GLU     CD    351       0.56     12.011   ; qtot -0.62
+   352         OC     22    GLU    OE1    352      -0.69     15.999   ; qtot -1.31
+   353         OC     22    GLU    OE2    353      -0.69     15.999   ; qtot -2
+   354          C     22    GLU      C    354       0.51     12.011   ; qtot -1.49
    355          O     22    GLU      O    355      -0.51     15.999   ; qtot -2
 ; residue  23 ASP rtp ASP  q -1.0
-   356        NH1     23    ASP      N    356      -0.47     14.007
-   357          H     23    ASP     HN    357       0.31      1.008
-   358        CT1     23    ASP     CA    358       0.07     12.011
-   359         HB     23    ASP     HA    359       0.09      1.008
-   360        CT2     23    ASP     CB    360      -0.28     12.011
-   361         HA     23    ASP    HB1    361       0.05      1.008
-   362         HA     23    ASP    HB2    362       0.05      1.008
-   363         CC     23    ASP     CG    363       0.56     12.011
-   364         OC     23    ASP    OD1    364      -0.69     15.999
-   365         OC     23    ASP    OD2    365      -0.69     15.999
-   366          C     23    ASP      C    366       0.51     12.011
+   356        NH1     23    ASP      N    356      -0.47     14.007   ; qtot -2.47
+   357          H     23    ASP     HN    357       0.31      1.008   ; qtot -2.16
+   358        CT1     23    ASP     CA    358       0.07     12.011   ; qtot -2.09
+   359         HB     23    ASP     HA    359       0.09      1.008   ; qtot -2
+   360        CT2     23    ASP     CB    360      -0.28     12.011   ; qtot -2.28
+   361         HA     23    ASP    HB1    361       0.05      1.008   ; qtot -2.23
+   362         HA     23    ASP    HB2    362       0.05      1.008   ; qtot -2.18
+   363         CC     23    ASP     CG    363       0.56     12.011   ; qtot -1.62
+   364         OC     23    ASP    OD1    364      -0.69     15.999   ; qtot -2.31
+   365         OC     23    ASP    OD2    365      -0.69     15.999   ; qtot -3
+   366          C     23    ASP      C    366       0.51     12.011   ; qtot -2.49
    367          O     23    ASP      O    367      -0.51     15.999   ; qtot -3
 ; residue  24 VAL rtp VAL  q  0.0
-   368        NH1     24    VAL      N    368      -0.47     14.007
-   369          H     24    VAL     HN    369       0.31      1.008
-   370        CT1     24    VAL     CA    370       0.07     12.011
-   371         HB     24    VAL     HA    371       0.09      1.008
-   372        CT1     24    VAL     CB    372      -0.09     12.011
-   373         HA     24    VAL     HB    373       0.09      1.008
-   374        CT3     24    VAL    CG1    374      -0.27     12.011
-   375         HA     24    VAL   HG11    375       0.09      1.008
-   376         HA     24    VAL   HG12    376       0.09      1.008
-   377         HA     24    VAL   HG13    377       0.09      1.008
-   378        CT3     24    VAL    CG2    378      -0.27     12.011
-   379         HA     24    VAL   HG21    379       0.09      1.008
-   380         HA     24    VAL   HG22    380       0.09      1.008
-   381         HA     24    VAL   HG23    381       0.09      1.008
-   382          C     24    VAL      C    382       0.51     12.011
+   368        NH1     24    VAL      N    368      -0.47     14.007   ; qtot -3.47
+   369          H     24    VAL     HN    369       0.31      1.008   ; qtot -3.16
+   370        CT1     24    VAL     CA    370       0.07     12.011   ; qtot -3.09
+   371         HB     24    VAL     HA    371       0.09      1.008   ; qtot -3
+   372        CT1     24    VAL     CB    372      -0.09     12.011   ; qtot -3.09
+   373         HA     24    VAL     HB    373       0.09      1.008   ; qtot -3
+   374        CT3     24    VAL    CG1    374      -0.27     12.011   ; qtot -3.27
+   375         HA     24    VAL   HG11    375       0.09      1.008   ; qtot -3.18
+   376         HA     24    VAL   HG12    376       0.09      1.008   ; qtot -3.09
+   377         HA     24    VAL   HG13    377       0.09      1.008   ; qtot -3
+   378        CT3     24    VAL    CG2    378      -0.27     12.011   ; qtot -3.27
+   379         HA     24    VAL   HG21    379       0.09      1.008   ; qtot -3.18
+   380         HA     24    VAL   HG22    380       0.09      1.008   ; qtot -3.09
+   381         HA     24    VAL   HG23    381       0.09      1.008   ; qtot -3
+   382          C     24    VAL      C    382       0.51     12.011   ; qtot -2.49
    383          O     24    VAL      O    383      -0.51     15.999   ; qtot -3
 ; residue  25 GLY rtp GLY  q  0.0
-   384        NH1     25    GLY      N    384      -0.47     14.007
-   385          H     25    GLY     HN    385       0.31      1.008
-   386        CT2     25    GLY     CA    386      -0.02     12.011
-   387         HB     25    GLY    HA1    387       0.09      1.008
-   388         HB     25    GLY    HA2    388       0.09      1.008
-   389          C     25    GLY      C    389       0.51     12.011
+   384        NH1     25    GLY      N    384      -0.47     14.007   ; qtot -3.47
+   385          H     25    GLY     HN    385       0.31      1.008   ; qtot -3.16
+   386        CT2     25    GLY     CA    386      -0.02     12.011   ; qtot -3.18
+   387         HB     25    GLY    HA1    387       0.09      1.008   ; qtot -3.09
+   388         HB     25    GLY    HA2    388       0.09      1.008   ; qtot -3
+   389          C     25    GLY      C    389       0.51     12.011   ; qtot -2.49
    390          O     25    GLY      O    390      -0.51     15.999   ; qtot -3
 ; residue  26 SER rtp SER  q  0.0
-   391        NH1     26    SER      N    391      -0.47     14.007
-   392          H     26    SER     HN    392       0.31      1.008
-   393        CT1     26    SER     CA    393       0.07     12.011
-   394         HB     26    SER     HA    394       0.09      1.008
-   395        CT2     26    SER     CB    395       0.05     12.011
-   396         HA     26    SER    HB1    396       0.09      1.008
-   397         HA     26    SER    HB2    397       0.09      1.008
-   398        OH1     26    SER     OG    398      -0.66     15.999
-   399          H     26    SER    HG1    399       0.43      1.008
-   400          C     26    SER      C    400       0.51     12.011
+   391        NH1     26    SER      N    391      -0.47     14.007   ; qtot -3.47
+   392          H     26    SER     HN    392       0.31      1.008   ; qtot -3.16
+   393        CT1     26    SER     CA    393       0.07     12.011   ; qtot -3.09
+   394         HB     26    SER     HA    394       0.09      1.008   ; qtot -3
+   395        CT2     26    SER     CB    395       0.05     12.011   ; qtot -2.95
+   396         HA     26    SER    HB1    396       0.09      1.008   ; qtot -2.86
+   397         HA     26    SER    HB2    397       0.09      1.008   ; qtot -2.77
+   398        OH1     26    SER     OG    398      -0.66     15.999   ; qtot -3.43
+   399          H     26    SER    HG1    399       0.43      1.008   ; qtot -3
+   400          C     26    SER      C    400       0.51     12.011   ; qtot -2.49
    401          O     26    SER      O    401      -0.51     15.999   ; qtot -3
 ; residue  27 ASN rtp ASN  q  0.0
-   402        NH1     27    ASN      N    402      -0.47     14.007
-   403          H     27    ASN     HN    403       0.31      1.008
-   404        CT1     27    ASN     CA    404       0.07     12.011
-   405         HB     27    ASN     HA    405       0.09      1.008
-   406        CT2     27    ASN     CB    406      -0.18     12.011
-   407         HA     27    ASN    HB1    407       0.09      1.008
-   408         HA     27    ASN    HB2    408       0.09      1.008
-   409         CC     27    ASN     CG    409       0.55     12.011
-   410          O     27    ASN    OD1    410      -0.55     15.999
-   411        NH2     27    ASN    ND2    411      -0.62     14.007
-   412          H     27    ASN   HD21    412       0.32      1.008
-   413          H     27    ASN   HD22    413        0.3      1.008
-   414          C     27    ASN      C    414       0.51     12.011
+   402        NH1     27    ASN      N    402      -0.47     14.007   ; qtot -3.47
+   403          H     27    ASN     HN    403       0.31      1.008   ; qtot -3.16
+   404        CT1     27    ASN     CA    404       0.07     12.011   ; qtot -3.09
+   405         HB     27    ASN     HA    405       0.09      1.008   ; qtot -3
+   406        CT2     27    ASN     CB    406      -0.18     12.011   ; qtot -3.18
+   407         HA     27    ASN    HB1    407       0.09      1.008   ; qtot -3.09
+   408         HA     27    ASN    HB2    408       0.09      1.008   ; qtot -3
+   409         CC     27    ASN     CG    409       0.55     12.011   ; qtot -2.45
+   410          O     27    ASN    OD1    410      -0.55     15.999   ; qtot -3
+   411        NH2     27    ASN    ND2    411      -0.62     14.007   ; qtot -3.62
+   412          H     27    ASN   HD21    412       0.32      1.008   ; qtot -3.3
+   413          H     27    ASN   HD22    413        0.3      1.008   ; qtot -3
+   414          C     27    ASN      C    414       0.51     12.011   ; qtot -2.49
    415          O     27    ASN      O    415      -0.51     15.999   ; qtot -3
 ; residue  28 LYS rtp LYS  q +1.0
-   416        NH1     28    LYS      N    416      -0.47     14.007
-   417          H     28    LYS     HN    417       0.31      1.008
-   418        CT1     28    LYS     CA    418       0.07     12.011
-   419         HB     28    LYS     HA    419       0.09      1.008
-   420        CT2     28    LYS     CB    420      -0.18     12.011
-   421         HA     28    LYS    HB1    421       0.09      1.008
-   422         HA     28    LYS    HB2    422       0.09      1.008
-   423        CT2     28    LYS     CG    423      -0.18     12.011
-   424         HA     28    LYS    HG1    424       0.09      1.008
-   425         HA     28    LYS    HG2    425       0.09      1.008
-   426        CT2     28    LYS     CD    426      -0.18     12.011
-   427         HA     28    LYS    HD1    427       0.09      1.008
-   428         HA     28    LYS    HD2    428       0.09      1.008
-   429        CT2     28    LYS     CE    429       0.21     12.011
-   430         HA     28    LYS    HE1    430       0.05      1.008
-   431         HA     28    LYS    HE2    431       0.05      1.008
-   432        NH3     28    LYS     NZ    432       -0.3     14.007
-   433         HC     28    LYS    HZ1    433       0.33      1.008
-   434         HC     28    LYS    HZ2    434       0.33      1.008
-   435         HC     28    LYS    HZ3    435       0.33      1.008
-   436          C     28    LYS      C    436       0.51     12.011
+   416        NH1     28    LYS      N    416      -0.47     14.007   ; qtot -3.47
+   417          H     28    LYS     HN    417       0.31      1.008   ; qtot -3.16
+   418        CT1     28    LYS     CA    418       0.07     12.011   ; qtot -3.09
+   419         HB     28    LYS     HA    419       0.09      1.008   ; qtot -3
+   420        CT2     28    LYS     CB    420      -0.18     12.011   ; qtot -3.18
+   421         HA     28    LYS    HB1    421       0.09      1.008   ; qtot -3.09
+   422         HA     28    LYS    HB2    422       0.09      1.008   ; qtot -3
+   423        CT2     28    LYS     CG    423      -0.18     12.011   ; qtot -3.18
+   424         HA     28    LYS    HG1    424       0.09      1.008   ; qtot -3.09
+   425         HA     28    LYS    HG2    425       0.09      1.008   ; qtot -3
+   426        CT2     28    LYS     CD    426      -0.18     12.011   ; qtot -3.18
+   427         HA     28    LYS    HD1    427       0.09      1.008   ; qtot -3.09
+   428         HA     28    LYS    HD2    428       0.09      1.008   ; qtot -3
+   429        CT2     28    LYS     CE    429       0.21     12.011   ; qtot -2.79
+   430         HA     28    LYS    HE1    430       0.05      1.008   ; qtot -2.74
+   431         HA     28    LYS    HE2    431       0.05      1.008   ; qtot -2.69
+   432        NH3     28    LYS     NZ    432       -0.3     14.007   ; qtot -2.99
+   433         HC     28    LYS    HZ1    433       0.33      1.008   ; qtot -2.66
+   434         HC     28    LYS    HZ2    434       0.33      1.008   ; qtot -2.33
+   435         HC     28    LYS    HZ3    435       0.33      1.008   ; qtot -2
+   436          C     28    LYS      C    436       0.51     12.011   ; qtot -1.49
    437          O     28    LYS      O    437      -0.51     15.999   ; qtot -2
 ; residue  29 GLY rtp GLY  q  0.0
-   438        NH1     29    GLY      N    438      -0.47     14.007
-   439          H     29    GLY     HN    439       0.31      1.008
-   440        CT2     29    GLY     CA    440      -0.02     12.011
-   441         HB     29    GLY    HA1    441       0.09      1.008
-   442         HB     29    GLY    HA2    442       0.09      1.008
-   443          C     29    GLY      C    443       0.51     12.011
+   438        NH1     29    GLY      N    438      -0.47     14.007   ; qtot -2.47
+   439          H     29    GLY     HN    439       0.31      1.008   ; qtot -2.16
+   440        CT2     29    GLY     CA    440      -0.02     12.011   ; qtot -2.18
+   441         HB     29    GLY    HA1    441       0.09      1.008   ; qtot -2.09
+   442         HB     29    GLY    HA2    442       0.09      1.008   ; qtot -2
+   443          C     29    GLY      C    443       0.51     12.011   ; qtot -1.49
    444          O     29    GLY      O    444      -0.51     15.999   ; qtot -2
 ; residue  30 ALA rtp ALA  q  0.0
-   445        NH1     30    ALA      N    445      -0.47     14.007
-   446          H     30    ALA     HN    446       0.31      1.008
-   447        CT1     30    ALA     CA    447       0.07     12.011
-   448         HB     30    ALA     HA    448       0.09      1.008
-   449        CT3     30    ALA     CB    449      -0.27     12.011
-   450         HA     30    ALA    HB1    450       0.09      1.008
-   451         HA     30    ALA    HB2    451       0.09      1.008
-   452         HA     30    ALA    HB3    452       0.09      1.008
-   453          C     30    ALA      C    453       0.51     12.011
+   445        NH1     30    ALA      N    445      -0.47     14.007   ; qtot -2.47
+   446          H     30    ALA     HN    446       0.31      1.008   ; qtot -2.16
+   447        CT1     30    ALA     CA    447       0.07     12.011   ; qtot -2.09
+   448         HB     30    ALA     HA    448       0.09      1.008   ; qtot -2
+   449        CT3     30    ALA     CB    449      -0.27     12.011   ; qtot -2.27
+   450         HA     30    ALA    HB1    450       0.09      1.008   ; qtot -2.18
+   451         HA     30    ALA    HB2    451       0.09      1.008   ; qtot -2.09
+   452         HA     30    ALA    HB3    452       0.09      1.008   ; qtot -2
+   453          C     30    ALA      C    453       0.51     12.011   ; qtot -1.49
    454          O     30    ALA      O    454      -0.51     15.999   ; qtot -2
 ; residue  31 ILE rtp ILE  q  0.0
-   455        NH1     31    ILE      N    455      -0.47     14.007
-   456          H     31    ILE     HN    456       0.31      1.008
-   457        CT1     31    ILE     CA    457       0.07     12.011
-   458         HB     31    ILE     HA    458       0.09      1.008
-   459        CT1     31    ILE     CB    459      -0.09     12.011
-   460         HA     31    ILE     HB    460       0.09      1.008
-   461        CT3     31    ILE    CG2    461      -0.27     12.011
-   462         HA     31    ILE   HG21    462       0.09      1.008
-   463         HA     31    ILE   HG22    463       0.09      1.008
-   464         HA     31    ILE   HG23    464       0.09      1.008
-   465        CT2     31    ILE    CG1    465      -0.18     12.011
-   466         HA     31    ILE   HG11    466       0.09      1.008
-   467         HA     31    ILE   HG12    467       0.09      1.008
-   468        CT3     31    ILE     CD    468      -0.27     12.011
-   469         HA     31    ILE    HD1    469       0.09      1.008
-   470         HA     31    ILE    HD2    470       0.09      1.008
-   471         HA     31    ILE    HD3    471       0.09      1.008
-   472          C     31    ILE      C    472       0.51     12.011
+   455        NH1     31    ILE      N    455      -0.47     14.007   ; qtot -2.47
+   456          H     31    ILE     HN    456       0.31      1.008   ; qtot -2.16
+   457        CT1     31    ILE     CA    457       0.07     12.011   ; qtot -2.09
+   458         HB     31    ILE     HA    458       0.09      1.008   ; qtot -2
+   459        CT1     31    ILE     CB    459      -0.09     12.011   ; qtot -2.09
+   460         HA     31    ILE     HB    460       0.09      1.008   ; qtot -2
+   461        CT3     31    ILE    CG2    461      -0.27     12.011   ; qtot -2.27
+   462         HA     31    ILE   HG21    462       0.09      1.008   ; qtot -2.18
+   463         HA     31    ILE   HG22    463       0.09      1.008   ; qtot -2.09
+   464         HA     31    ILE   HG23    464       0.09      1.008   ; qtot -2
+   465        CT2     31    ILE    CG1    465      -0.18     12.011   ; qtot -2.18
+   466         HA     31    ILE   HG11    466       0.09      1.008   ; qtot -2.09
+   467         HA     31    ILE   HG12    467       0.09      1.008   ; qtot -2
+   468        CT3     31    ILE     CD    468      -0.27     12.011   ; qtot -2.27
+   469         HA     31    ILE    HD1    469       0.09      1.008   ; qtot -2.18
+   470         HA     31    ILE    HD2    470       0.09      1.008   ; qtot -2.09
+   471         HA     31    ILE    HD3    471       0.09      1.008   ; qtot -2
+   472          C     31    ILE      C    472       0.51     12.011   ; qtot -1.49
    473          O     31    ILE      O    473      -0.51     15.999   ; qtot -2
 ; residue  32 ILE rtp ILE  q  0.0
-   474        NH1     32    ILE      N    474      -0.47     14.007
-   475          H     32    ILE     HN    475       0.31      1.008
-   476        CT1     32    ILE     CA    476       0.07     12.011
-   477         HB     32    ILE     HA    477       0.09      1.008
-   478        CT1     32    ILE     CB    478      -0.09     12.011
-   479         HA     32    ILE     HB    479       0.09      1.008
-   480        CT3     32    ILE    CG2    480      -0.27     12.011
-   481         HA     32    ILE   HG21    481       0.09      1.008
-   482         HA     32    ILE   HG22    482       0.09      1.008
-   483         HA     32    ILE   HG23    483       0.09      1.008
-   484        CT2     32    ILE    CG1    484      -0.18     12.011
-   485         HA     32    ILE   HG11    485       0.09      1.008
-   486         HA     32    ILE   HG12    486       0.09      1.008
-   487        CT3     32    ILE     CD    487      -0.27     12.011
-   488         HA     32    ILE    HD1    488       0.09      1.008
-   489         HA     32    ILE    HD2    489       0.09      1.008
-   490         HA     32    ILE    HD3    490       0.09      1.008
-   491          C     32    ILE      C    491       0.51     12.011
+   474        NH1     32    ILE      N    474      -0.47     14.007   ; qtot -2.47
+   475          H     32    ILE     HN    475       0.31      1.008   ; qtot -2.16
+   476        CT1     32    ILE     CA    476       0.07     12.011   ; qtot -2.09
+   477         HB     32    ILE     HA    477       0.09      1.008   ; qtot -2
+   478        CT1     32    ILE     CB    478      -0.09     12.011   ; qtot -2.09
+   479         HA     32    ILE     HB    479       0.09      1.008   ; qtot -2
+   480        CT3     32    ILE    CG2    480      -0.27     12.011   ; qtot -2.27
+   481         HA     32    ILE   HG21    481       0.09      1.008   ; qtot -2.18
+   482         HA     32    ILE   HG22    482       0.09      1.008   ; qtot -2.09
+   483         HA     32    ILE   HG23    483       0.09      1.008   ; qtot -2
+   484        CT2     32    ILE    CG1    484      -0.18     12.011   ; qtot -2.18
+   485         HA     32    ILE   HG11    485       0.09      1.008   ; qtot -2.09
+   486         HA     32    ILE   HG12    486       0.09      1.008   ; qtot -2
+   487        CT3     32    ILE     CD    487      -0.27     12.011   ; qtot -2.27
+   488         HA     32    ILE    HD1    488       0.09      1.008   ; qtot -2.18
+   489         HA     32    ILE    HD2    489       0.09      1.008   ; qtot -2.09
+   490         HA     32    ILE    HD3    490       0.09      1.008   ; qtot -2
+   491          C     32    ILE      C    491       0.51     12.011   ; qtot -1.49
    492          O     32    ILE      O    492      -0.51     15.999   ; qtot -2
 ; residue  33 GLY rtp GLY  q  0.0
-   493        NH1     33    GLY      N    493      -0.47     14.007
-   494          H     33    GLY     HN    494       0.31      1.008
-   495        CT2     33    GLY     CA    495      -0.02     12.011
-   496         HB     33    GLY    HA1    496       0.09      1.008
-   497         HB     33    GLY    HA2    497       0.09      1.008
-   498          C     33    GLY      C    498       0.51     12.011
+   493        NH1     33    GLY      N    493      -0.47     14.007   ; qtot -2.47
+   494          H     33    GLY     HN    494       0.31      1.008   ; qtot -2.16
+   495        CT2     33    GLY     CA    495      -0.02     12.011   ; qtot -2.18
+   496         HB     33    GLY    HA1    496       0.09      1.008   ; qtot -2.09
+   497         HB     33    GLY    HA2    497       0.09      1.008   ; qtot -2
+   498          C     33    GLY      C    498       0.51     12.011   ; qtot -1.49
    499          O     33    GLY      O    499      -0.51     15.999   ; qtot -2
 ; residue  34 LEU rtp LEU  q  0.0
-   500        NH1     34    LEU      N    500      -0.47     14.007
-   501          H     34    LEU     HN    501       0.31      1.008
-   502        CT1     34    LEU     CA    502       0.07     12.011
-   503         HB     34    LEU     HA    503       0.09      1.008
-   504        CT2     34    LEU     CB    504      -0.18     12.011
-   505         HA     34    LEU    HB1    505       0.09      1.008
-   506         HA     34    LEU    HB2    506       0.09      1.008
-   507        CT1     34    LEU     CG    507      -0.09     12.011
-   508         HA     34    LEU     HG    508       0.09      1.008
-   509        CT3     34    LEU    CD1    509      -0.27     12.011
-   510         HA     34    LEU   HD11    510       0.09      1.008
-   511         HA     34    LEU   HD12    511       0.09      1.008
-   512         HA     34    LEU   HD13    512       0.09      1.008
-   513        CT3     34    LEU    CD2    513      -0.27     12.011
-   514         HA     34    LEU   HD21    514       0.09      1.008
-   515         HA     34    LEU   HD22    515       0.09      1.008
-   516         HA     34    LEU   HD23    516       0.09      1.008
-   517          C     34    LEU      C    517       0.51     12.011
+   500        NH1     34    LEU      N    500      -0.47     14.007   ; qtot -2.47
+   501          H     34    LEU     HN    501       0.31      1.008   ; qtot -2.16
+   502        CT1     34    LEU     CA    502       0.07     12.011   ; qtot -2.09
+   503         HB     34    LEU     HA    503       0.09      1.008   ; qtot -2
+   504        CT2     34    LEU     CB    504      -0.18     12.011   ; qtot -2.18
+   505         HA     34    LEU    HB1    505       0.09      1.008   ; qtot -2.09
+   506         HA     34    LEU    HB2    506       0.09      1.008   ; qtot -2
+   507        CT1     34    LEU     CG    507      -0.09     12.011   ; qtot -2.09
+   508         HA     34    LEU     HG    508       0.09      1.008   ; qtot -2
+   509        CT3     34    LEU    CD1    509      -0.27     12.011   ; qtot -2.27
+   510         HA     34    LEU   HD11    510       0.09      1.008   ; qtot -2.18
+   511         HA     34    LEU   HD12    511       0.09      1.008   ; qtot -2.09
+   512         HA     34    LEU   HD13    512       0.09      1.008   ; qtot -2
+   513        CT3     34    LEU    CD2    513      -0.27     12.011   ; qtot -2.27
+   514         HA     34    LEU   HD21    514       0.09      1.008   ; qtot -2.18
+   515         HA     34    LEU   HD22    515       0.09      1.008   ; qtot -2.09
+   516         HA     34    LEU   HD23    516       0.09      1.008   ; qtot -2
+   517          C     34    LEU      C    517       0.51     12.011   ; qtot -1.49
    518          O     34    LEU      O    518      -0.51     15.999   ; qtot -2
 ; residue  35 MET rtp MET  q  0.0
-   519        NH1     35    MET      N    519      -0.47     14.007
-   520          H     35    MET     HN    520       0.31      1.008
-   521        CT1     35    MET     CA    521       0.07     12.011
-   522         HB     35    MET     HA    522       0.09      1.008
-   523        CT2     35    MET     CB    523      -0.18     12.011
-   524         HA     35    MET    HB1    524       0.09      1.008
-   525         HA     35    MET    HB2    525       0.09      1.008
-   526        CT2     35    MET     CG    526      -0.14     12.011
-   527         HA     35    MET    HG1    527       0.09      1.008
-   528         HA     35    MET    HG2    528       0.09      1.008
-   529          S     35    MET     SD    529      -0.09      32.06
-   530        CT3     35    MET     CE    530      -0.22     12.011
-   531         HA     35    MET    HE1    531       0.09      1.008
-   532         HA     35    MET    HE2    532       0.09      1.008
-   533         HA     35    MET    HE3    533       0.09      1.008
-   534          C     35    MET      C    534       0.51     12.011
+   519        NH1     35    MET      N    519      -0.47     14.007   ; qtot -2.47
+   520          H     35    MET     HN    520       0.31      1.008   ; qtot -2.16
+   521        CT1     35    MET     CA    521       0.07     12.011   ; qtot -2.09
+   522         HB     35    MET     HA    522       0.09      1.008   ; qtot -2
+   523        CT2     35    MET     CB    523      -0.18     12.011   ; qtot -2.18
+   524         HA     35    MET    HB1    524       0.09      1.008   ; qtot -2.09
+   525         HA     35    MET    HB2    525       0.09      1.008   ; qtot -2
+   526        CT2     35    MET     CG    526      -0.14     12.011   ; qtot -2.14
+   527         HA     35    MET    HG1    527       0.09      1.008   ; qtot -2.05
+   528         HA     35    MET    HG2    528       0.09      1.008   ; qtot -1.96
+   529          S     35    MET     SD    529      -0.09      32.06   ; qtot -2.05
+   530        CT3     35    MET     CE    530      -0.22     12.011   ; qtot -2.27
+   531         HA     35    MET    HE1    531       0.09      1.008   ; qtot -2.18
+   532         HA     35    MET    HE2    532       0.09      1.008   ; qtot -2.09
+   533         HA     35    MET    HE3    533       0.09      1.008   ; qtot -2
+   534          C     35    MET      C    534       0.51     12.011   ; qtot -1.49
    535          O     35    MET      O    535      -0.51     15.999   ; qtot -2
 ; residue  36 VAL rtp VAL  q  0.0
-   536        NH1     36    VAL      N    536      -0.47     14.007
-   537          H     36    VAL     HN    537       0.31      1.008
-   538        CT1     36    VAL     CA    538       0.07     12.011
-   539         HB     36    VAL     HA    539       0.09      1.008
-   540        CT1     36    VAL     CB    540      -0.09     12.011
-   541         HA     36    VAL     HB    541       0.09      1.008
-   542        CT3     36    VAL    CG1    542      -0.27     12.011
-   543         HA     36    VAL   HG11    543       0.09      1.008
-   544         HA     36    VAL   HG12    544       0.09      1.008
-   545         HA     36    VAL   HG13    545       0.09      1.008
-   546        CT3     36    VAL    CG2    546      -0.27     12.011
-   547         HA     36    VAL   HG21    547       0.09      1.008
-   548         HA     36    VAL   HG22    548       0.09      1.008
-   549         HA     36    VAL   HG23    549       0.09      1.008
-   550          C     36    VAL      C    550       0.51     12.011
+   536        NH1     36    VAL      N    536      -0.47     14.007   ; qtot -2.47
+   537          H     36    VAL     HN    537       0.31      1.008   ; qtot -2.16
+   538        CT1     36    VAL     CA    538       0.07     12.011   ; qtot -2.09
+   539         HB     36    VAL     HA    539       0.09      1.008   ; qtot -2
+   540        CT1     36    VAL     CB    540      -0.09     12.011   ; qtot -2.09
+   541         HA     36    VAL     HB    541       0.09      1.008   ; qtot -2
+   542        CT3     36    VAL    CG1    542      -0.27     12.011   ; qtot -2.27
+   543         HA     36    VAL   HG11    543       0.09      1.008   ; qtot -2.18
+   544         HA     36    VAL   HG12    544       0.09      1.008   ; qtot -2.09
+   545         HA     36    VAL   HG13    545       0.09      1.008   ; qtot -2
+   546        CT3     36    VAL    CG2    546      -0.27     12.011   ; qtot -2.27
+   547         HA     36    VAL   HG21    547       0.09      1.008   ; qtot -2.18
+   548         HA     36    VAL   HG22    548       0.09      1.008   ; qtot -2.09
+   549         HA     36    VAL   HG23    549       0.09      1.008   ; qtot -2
+   550          C     36    VAL      C    550       0.51     12.011   ; qtot -1.49
    551          O     36    VAL      O    551      -0.51     15.999   ; qtot -2
 ; residue  37 GLY rtp GLY  q  0.0
-   552        NH1     37    GLY      N    552      -0.47     14.007
-   553          H     37    GLY     HN    553       0.31      1.008
-   554        CT2     37    GLY     CA    554      -0.02     12.011
-   555         HB     37    GLY    HA1    555       0.09      1.008
-   556         HB     37    GLY    HA2    556       0.09      1.008
-   557          C     37    GLY      C    557       0.51     12.011
+   552        NH1     37    GLY      N    552      -0.47     14.007   ; qtot -2.47
+   553          H     37    GLY     HN    553       0.31      1.008   ; qtot -2.16
+   554        CT2     37    GLY     CA    554      -0.02     12.011   ; qtot -2.18
+   555         HB     37    GLY    HA1    555       0.09      1.008   ; qtot -2.09
+   556         HB     37    GLY    HA2    556       0.09      1.008   ; qtot -2
+   557          C     37    GLY      C    557       0.51     12.011   ; qtot -1.49
    558          O     37    GLY      O    558      -0.51     15.999   ; qtot -2
 ; residue  38 GLY rtp GLY  q  0.0
-   559        NH1     38    GLY      N    559      -0.47     14.007
-   560          H     38    GLY     HN    560       0.31      1.008
-   561        CT2     38    GLY     CA    561      -0.02     12.011
-   562         HB     38    GLY    HA1    562       0.09      1.008
-   563         HB     38    GLY    HA2    563       0.09      1.008
-   564          C     38    GLY      C    564       0.51     12.011
+   559        NH1     38    GLY      N    559      -0.47     14.007   ; qtot -2.47
+   560          H     38    GLY     HN    560       0.31      1.008   ; qtot -2.16
+   561        CT2     38    GLY     CA    561      -0.02     12.011   ; qtot -2.18
+   562         HB     38    GLY    HA1    562       0.09      1.008   ; qtot -2.09
+   563         HB     38    GLY    HA2    563       0.09      1.008   ; qtot -2
+   564          C     38    GLY      C    564       0.51     12.011   ; qtot -1.49
    565          O     38    GLY      O    565      -0.51     15.999   ; qtot -2
 ; residue  39 VAL rtp VAL  q  0.0
-   566        NH1     39    VAL      N    566      -0.47     14.007
-   567          H     39    VAL     HN    567       0.31      1.008
-   568        CT1     39    VAL     CA    568       0.07     12.011
-   569         HB     39    VAL     HA    569       0.09      1.008
-   570        CT1     39    VAL     CB    570      -0.09     12.011
-   571         HA     39    VAL     HB    571       0.09      1.008
-   572        CT3     39    VAL    CG1    572      -0.27     12.011
-   573         HA     39    VAL   HG11    573       0.09      1.008
-   574         HA     39    VAL   HG12    574       0.09      1.008
-   575         HA     39    VAL   HG13    575       0.09      1.008
-   576        CT3     39    VAL    CG2    576      -0.27     12.011
-   577         HA     39    VAL   HG21    577       0.09      1.008
-   578         HA     39    VAL   HG22    578       0.09      1.008
-   579         HA     39    VAL   HG23    579       0.09      1.008
-   580          C     39    VAL      C    580       0.51     12.011
+   566        NH1     39    VAL      N    566      -0.47     14.007   ; qtot -2.47
+   567          H     39    VAL     HN    567       0.31      1.008   ; qtot -2.16
+   568        CT1     39    VAL     CA    568       0.07     12.011   ; qtot -2.09
+   569         HB     39    VAL     HA    569       0.09      1.008   ; qtot -2
+   570        CT1     39    VAL     CB    570      -0.09     12.011   ; qtot -2.09
+   571         HA     39    VAL     HB    571       0.09      1.008   ; qtot -2
+   572        CT3     39    VAL    CG1    572      -0.27     12.011   ; qtot -2.27
+   573         HA     39    VAL   HG11    573       0.09      1.008   ; qtot -2.18
+   574         HA     39    VAL   HG12    574       0.09      1.008   ; qtot -2.09
+   575         HA     39    VAL   HG13    575       0.09      1.008   ; qtot -2
+   576        CT3     39    VAL    CG2    576      -0.27     12.011   ; qtot -2.27
+   577         HA     39    VAL   HG21    577       0.09      1.008   ; qtot -2.18
+   578         HA     39    VAL   HG22    578       0.09      1.008   ; qtot -2.09
+   579         HA     39    VAL   HG23    579       0.09      1.008   ; qtot -2
+   580          C     39    VAL      C    580       0.51     12.011   ; qtot -1.49
    581          O     39    VAL      O    581      -0.51     15.999   ; qtot -2
 ; residue  40 VAL rtp VAL  q  0.0
-   582        NH1     40    VAL      N    582      -0.47     14.007
-   583          H     40    VAL     HN    583       0.31      1.008
-   584        CT1     40    VAL     CA    584       0.07     12.011
-   585         HB     40    VAL     HA    585       0.09      1.008
-   586        CT1     40    VAL     CB    586      -0.09     12.011
-   587         HA     40    VAL     HB    587       0.09      1.008
-   588        CT3     40    VAL    CG1    588      -0.27     12.011
-   589         HA     40    VAL   HG11    589       0.09      1.008
-   590         HA     40    VAL   HG12    590       0.09      1.008
-   591         HA     40    VAL   HG13    591       0.09      1.008
-   592        CT3     40    VAL    CG2    592      -0.27     12.011
-   593         HA     40    VAL   HG21    593       0.09      1.008
-   594         HA     40    VAL   HG22    594       0.09      1.008
-   595         HA     40    VAL   HG23    595       0.09      1.008
-   596          C     40    VAL      C    596       0.51     12.011
+   582        NH1     40    VAL      N    582      -0.47     14.007   ; qtot -2.47
+   583          H     40    VAL     HN    583       0.31      1.008   ; qtot -2.16
+   584        CT1     40    VAL     CA    584       0.07     12.011   ; qtot -2.09
+   585         HB     40    VAL     HA    585       0.09      1.008   ; qtot -2
+   586        CT1     40    VAL     CB    586      -0.09     12.011   ; qtot -2.09
+   587         HA     40    VAL     HB    587       0.09      1.008   ; qtot -2
+   588        CT3     40    VAL    CG1    588      -0.27     12.011   ; qtot -2.27
+   589         HA     40    VAL   HG11    589       0.09      1.008   ; qtot -2.18
+   590         HA     40    VAL   HG12    590       0.09      1.008   ; qtot -2.09
+   591         HA     40    VAL   HG13    591       0.09      1.008   ; qtot -2
+   592        CT3     40    VAL    CG2    592      -0.27     12.011   ; qtot -2.27
+   593         HA     40    VAL   HG21    593       0.09      1.008   ; qtot -2.18
+   594         HA     40    VAL   HG22    594       0.09      1.008   ; qtot -2.09
+   595         HA     40    VAL   HG23    595       0.09      1.008   ; qtot -2
+   596          C     40    VAL      C    596       0.51     12.011   ; qtot -1.49
    597          O     40    VAL      O    597      -0.51     15.999   ; qtot -2
 ; residue  41 ILE rtp ILE  q  0.0
-   598        NH1     41    ILE      N    598      -0.47     14.007
-   599          H     41    ILE     HN    599       0.31      1.008
-   600        CT1     41    ILE     CA    600       0.07     12.011
-   601         HB     41    ILE     HA    601       0.09      1.008
-   602        CT1     41    ILE     CB    602      -0.09     12.011
-   603         HA     41    ILE     HB    603       0.09      1.008
-   604        CT3     41    ILE    CG2    604      -0.27     12.011
-   605         HA     41    ILE   HG21    605       0.09      1.008
-   606         HA     41    ILE   HG22    606       0.09      1.008
-   607         HA     41    ILE   HG23    607       0.09      1.008
-   608        CT2     41    ILE    CG1    608      -0.18     12.011
-   609         HA     41    ILE   HG11    609       0.09      1.008
-   610         HA     41    ILE   HG12    610       0.09      1.008
-   611        CT3     41    ILE     CD    611      -0.27     12.011
-   612         HA     41    ILE    HD1    612       0.09      1.008
-   613         HA     41    ILE    HD2    613       0.09      1.008
-   614         HA     41    ILE    HD3    614       0.09      1.008
-   615          C     41    ILE      C    615       0.51     12.011
+   598        NH1     41    ILE      N    598      -0.47     14.007   ; qtot -2.47
+   599          H     41    ILE     HN    599       0.31      1.008   ; qtot -2.16
+   600        CT1     41    ILE     CA    600       0.07     12.011   ; qtot -2.09
+   601         HB     41    ILE     HA    601       0.09      1.008   ; qtot -2
+   602        CT1     41    ILE     CB    602      -0.09     12.011   ; qtot -2.09
+   603         HA     41    ILE     HB    603       0.09      1.008   ; qtot -2
+   604        CT3     41    ILE    CG2    604      -0.27     12.011   ; qtot -2.27
+   605         HA     41    ILE   HG21    605       0.09      1.008   ; qtot -2.18
+   606         HA     41    ILE   HG22    606       0.09      1.008   ; qtot -2.09
+   607         HA     41    ILE   HG23    607       0.09      1.008   ; qtot -2
+   608        CT2     41    ILE    CG1    608      -0.18     12.011   ; qtot -2.18
+   609         HA     41    ILE   HG11    609       0.09      1.008   ; qtot -2.09
+   610         HA     41    ILE   HG12    610       0.09      1.008   ; qtot -2
+   611        CT3     41    ILE     CD    611      -0.27     12.011   ; qtot -2.27
+   612         HA     41    ILE    HD1    612       0.09      1.008   ; qtot -2.18
+   613         HA     41    ILE    HD2    613       0.09      1.008   ; qtot -2.09
+   614         HA     41    ILE    HD3    614       0.09      1.008   ; qtot -2
+   615          C     41    ILE      C    615       0.51     12.011   ; qtot -1.49
    616          O     41    ILE      O    616      -0.51     15.999   ; qtot -2
 ; residue  42 ALA rtp ALA  q -1.0
-   617        NH1     42    ALA      N    617      -0.47     14.007
-   618          H     42    ALA     HN    618       0.31      1.008
-   619        CT1     42    ALA     CA    619       0.07     12.011
-   620         HB     42    ALA     HA    620       0.09      1.008
-   621        CT3     42    ALA     CB    621      -0.27     12.011
-   622         HA     42    ALA    HB1    622       0.09      1.008
-   623         HA     42    ALA    HB2    623       0.09      1.008
-   624         HA     42    ALA    HB3    624       0.09      1.008
-   625         CC     42    ALA      C    625       0.34     12.011
-   626         OC     42    ALA    OT1    626      -0.67    15.9994
+   617        NH1     42    ALA      N    617      -0.47     14.007   ; qtot -2.47
+   618          H     42    ALA     HN    618       0.31      1.008   ; qtot -2.16
+   619        CT1     42    ALA     CA    619       0.07     12.011   ; qtot -2.09
+   620         HB     42    ALA     HA    620       0.09      1.008   ; qtot -2
+   621        CT3     42    ALA     CB    621      -0.27     12.011   ; qtot -2.27
+   622         HA     42    ALA    HB1    622       0.09      1.008   ; qtot -2.18
+   623         HA     42    ALA    HB2    623       0.09      1.008   ; qtot -2.09
+   624         HA     42    ALA    HB3    624       0.09      1.008   ; qtot -2
+   625         CC     42    ALA      C    625       0.34     12.011   ; qtot -1.66
+   626         OC     42    ALA    OT1    626      -0.67    15.9994   ; qtot -2.33
    627         OC     42    ALA    OT2    627      -0.67    15.9994   ; qtot -3
 
 [ bonds ]
@@ -5880,7 +5861,7 @@ Protein_chain_A     3
 #endif
 
 ; Include water topology
-#include "./charmm22star.ff/tip3p.itp"
+#include "charmm22star.ff/tip3p.itp"
 
 #ifdef POSRES_WATER
 ; Position restraint for each water oxygen
@@ -5890,7 +5871,7 @@ Protein_chain_A     3
 #endif
 
 ; Include topology for ions
-#include "./charmm22star.ff/ions.itp"
+#include "charmm22star.ff/ions.itp"
 
 [ system ]
 ; Name
@@ -5898,4 +5879,6 @@ Generated with MDTraj, t= 32250.00000 step= 16125000 in water
 
 [ molecules ]
 ; Compound        #mols
-Protein_chain_A     1
+Protein             1
+SOL                10
+SOL             11694

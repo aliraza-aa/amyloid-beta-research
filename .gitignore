@@ -1,5 +1,7 @@
 .vscode
 __MACOSX
 PLUMED_input_files
-AB42_alone.tar.gz
+*.tar.gz
+*.trr
+*.xtc
 PLUMED_input_files.zip
