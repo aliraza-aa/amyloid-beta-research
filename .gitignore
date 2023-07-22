@@ -7,3 +7,6 @@ PLUMED_input_files
 PLUMED_input_files.zip
 note.txt
 .ipynb_checkpoints
+*.zip
+*.gro
+*.cpt
