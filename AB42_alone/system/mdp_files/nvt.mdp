@@ -22,15 +22,15 @@ nstcomm                   = 100
 comm-grps                 = 
 ; OUTPUT CONTROL OPTIONS
 ; Output frequency for coords (x), velocities (v) and forces (f)
-nstxout                   = 500
-nstvout                   = 500
+nstxout                   = 5000
+nstvout                   = 5000
 nstfout                   = 0
 ; Output frequency for energies to log file and energy file
-nstlog                    = 500
+nstlog                    = 5000
 nstcalcenergy             = 100
 nstenergy                 = 2500
 ; Output frequency and precision for .xtc file
-nstxout-compressed        = 2500
+nstxout-compressed        = 5000
 compressed-x-precision    = 1000
 ; This selects the subset of atoms for the compressed
 ; trajectory file. You can select multiple groups. By
