@@ -1,8 +1,8 @@
 ;
 ;	File 'mdout.mdp' was generated
 ;	By user: zcbtar9 (433465)
-;	On host: login02
-;	At date: Sat Jul 22 12:47:15 2023
+;	On host: login01
+;	At date: Sat Jul 22 20:11:53 2023
 ;
 ;	Created by:
 ;	     :-) GROMACS - gmx grompp, 2022.5-plumed_2.9.0 (double precision) (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0
 ;	Working dir:  /lustre/home/zcbtar9/projects/amyloid-beta-research/AB42_alone/python_scripts
 ;	Command line:
-;	  gmx_mpi_d grompp -f ../system/mdp_files/nvt.mdp -c ../system/simulations/confirmation47/confout.part0001.gro -r ../system/simulations/confirmation47/confout.part0001.gro -p ../system/topol.top -o ../system/simulations/confirmation47/nvt_input.tpr -maxwarn 1
+;	  gmx_mpi_d grompp -f ../system/mdp_files/npt.mdp -c ../system/simulations/confirmation47/nvt_output.gro -r ../system/simulations/confirmation47/nvt_output.gro -p ../system/topol.top -o ../system/simulations/confirmation47/npt_input.tpr -maxwarn 1
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -141,15 +141,15 @@ tc-grps                  = system
 tau_t                    = 1.0
 ref_t                    = 278
 ; pressure coupling     
-Pcoupl                   = No
+Pcoupl                   = C-rescale
 Pcoupltype               = isotropic
 nstpcouple               = -1
 ; Time constant (ps), compressibility (1/bar) and reference P (bar)
-tau_p                    = 1.0
+tau_p                    = 5.0
 compressibility          = 4.5e-5
 ref_p                    = 1.0
 ; Scaling of reference coordinates, No, All or COM
-refcoord_scaling         = No
+refcoord_scaling         = com
 
 ; OPTIONS FOR QMMM calculations
 QMMM                     = no
@@ -169,7 +169,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen_seed                 = 1592786734
+gen_seed                 = -17760985
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
