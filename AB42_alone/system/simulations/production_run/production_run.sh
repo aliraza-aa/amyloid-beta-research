@@ -8,9 +8,9 @@
 
 #$ -l mem=1G
 
-#$ -N AB42-npt-1
+#$ -N AB42-prduction-md-1
 
-#$ -pe mpi 48
+#$ -pe mpi 240
 
 #$ -cwd
 
