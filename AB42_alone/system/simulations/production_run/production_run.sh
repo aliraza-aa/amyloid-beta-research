@@ -50,5 +50,3 @@ cd $WORKDIR
 #RESTART
 
 gerun gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../confirmation{0..47} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -npme 1 -noappend -cpt 60 -cpnum -maxh 22 -ntomp $OMP_NUM_THREADS &> production_run.log
-
-mpirun -n 10 gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../confirmation{0..1} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -npme 1 -noappend -cpt 60 -cpnum -maxh 22 -ntomp 1

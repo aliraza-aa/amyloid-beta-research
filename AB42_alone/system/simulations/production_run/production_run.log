@@ -1,0 +1,3831 @@
+GERun: 
+GERun: Note: Lines like this one prefixed with "GERun:" are for debugging
+GERun:       purposes only and you do not need to report them to rc-support
+GERun:       unless your job fails for other reasons.
+GERun: 
+GERun: 
+GERun: Grid Engine parallel launcher abstraction layer version iv (public)
+GERun: Dr Owain Kenway, RCAS, RITS, ISD, UCL, 7th of February, 2018
+GERun: 
+GERun: For licensing terms, see LICENSE.txt
+GERun: 
+GERun: Using environment: openmpi-sge
+GERun: Running on 240 slots:
+GERun:   240 MPI tasks
+GERun:     1 threads per task
+GERun: TMPDIR=/tmpdir/job/400445.undefined
+GERun: 
+GERun: Contents of machinefile:
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-061
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-048
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-002
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-123
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-119
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: node-c11a-038
+GERun: 
+GERun: GErun command being run:
+GERun:  mpirun gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../confirmation0 ../confirmation1 ../confirmation2 ../confirmation3 ../confirmation4 ../confirmation5 ../confirmation6 ../confirmation7 ../confirmation8 ../confirmation9 ../confirmation10 ../confirmation11 ../confirmation12 ../confirmation13 ../confirmation14 ../confirmation15 ../confirmation16 ../confirmation17 ../confirmation18 ../confirmation19 ../confirmation20 ../confirmation21 ../confirmation22 ../confirmation23 ../confirmation24 ../confirmation25 ../confirmation26 ../confirmation27 ../confirmation28 ../confirmation29 ../confirmation30 ../confirmation31 ../confirmation32 ../confirmation33 ../confirmation34 ../confirmation35 ../confirmation36 ../confirmation37 ../confirmation38 ../confirmation39 ../confirmation40 ../confirmation41 ../confirmation42 ../confirmation43 ../confirmation44 ../confirmation45 ../confirmation46 ../confirmation47 -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -npme 1 -noappend -cpt 60 -cpnum -maxh 22 -ntomp 1
+      :-) GROMACS - gmx mdrun, 2022.5-plumed_2.9.0 (double precision) (-:
+
+Executable:   /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0/bin/gmx_mpi_d
+Data prefix:  /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0
+Working dir:  /lustre/home/zcbtar9/projects/amyloid-beta-research/AB42_alone/system/simulations/production_run
+Command line:
+  gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../confirmation0 ../confirmation1 ../confirmation2 ../confirmation3 ../confirmation4 ../confirmation5 ../confirmation6 ../confirmation7 ../confirmation8 ../confirmation9 ../confirmation10 ../confirmation11 ../confirmation12 ../confirmation13 ../confirmation14 ../confirmation15 ../confirmation16 ../confirmation17 ../confirmation18 ../confirmation19 ../confirmation20 ../confirmation21 ../confirmation22 ../confirmation23 ../confirmation24 ../confirmation25 ../confirmation26 ../confirmation27 ../confirmation28 ../confirmation29 ../confirmation30 ../confirmation31 ../confirmation32 ../confirmation33 ../confirmation34 ../confirmation35 ../confirmation36 ../confirmation37 ../confirmation38 ../confirmation39 ../confirmation40 ../confirmation41 ../confirmation42 ../confirmation43 ../confirmation44 ../confirmation45 ../confirmation46 ../confirmation47 -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -npme 1 -noappend -cpt 60 -cpnum -maxh 22 -ntomp 1
+
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+This is simulation 3 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 38 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 20 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 12 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 1 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 5 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 6 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 7 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 4 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 0 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 37 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 19 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 11 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 45 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 39 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 18 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 15 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 42 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 33 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 22 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 14 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 41 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 34 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 16 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 13 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 43 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 35 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 21 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 10 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 46 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 32 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 23 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 9 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 40 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 36 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 8 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 47 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 44 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 2 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 17 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+This is simulation 26 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 25 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 27 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 28 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 30 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+This is simulation 24 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+This is simulation 31 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+This is simulation 29 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 5 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+
+Using 1 OpenMP thread per MPI process
+
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    182 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    183 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    193 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    121 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    122 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    123 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    140 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    196 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    126 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    197 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    127 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    198 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    128 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    162 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    125 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    163 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    131 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    167 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    132 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    168 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    133 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    171 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    135 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    173 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    136 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    176 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    137 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    177 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    138 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    181 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    155 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    190 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    141 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    185 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    142 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    172 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    143 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    187 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    150 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    192 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    146 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    147 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    165 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    148 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    161 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    120 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    170 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    151 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    166 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    152 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    178 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    153 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    175 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    130 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    186 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    156 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    188 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    157 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    191 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    158 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    145 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    180 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    195 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    160 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    41 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    43 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    46 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    48 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    51 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    52 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    53 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    56 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    58 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    61 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    66 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    67 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    68 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    72 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    73 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    78 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    62 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    63 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    71 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    76 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    77 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    42 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    47 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    57 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    45 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    70 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    60 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    65 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    55 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    75 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    40 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    50 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    1 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    2 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    3 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    6 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    7 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    8 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    11 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    12 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    17 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    18 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    21 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    23 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    26 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    28 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    31 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    32 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    33 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    36 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    37 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    208 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    13 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    16 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    22 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    27 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    38 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    212 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    81 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    216 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    15 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    221 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    10 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    222 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    82 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    20 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    30 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    35 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    226 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    83 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    227 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    228 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    0 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    25 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    231 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    233 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    86 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    236 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    87 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    237 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    88 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    202 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    203 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    206 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    91 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    207 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    92 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    213 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    93 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    218 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    96 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    220 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    97 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    235 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    98 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    201 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    102 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    225 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    106 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    211 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    107 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    217 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    108 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    223 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    111 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    232 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    117 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    238 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    118 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    205 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    105 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    200 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    95 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    215 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    80 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    230 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    85 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    210 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    101 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    103 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    90 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    112 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    113 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    100 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    110 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    115 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    116 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+MPI rank:    5 (out of 240)
+
+Unknown exception:
+(exception type: N4PLMD6Plumed14ExceptionErrorE)
+
+(core/GenericMolInfo.cpp:89) PLMD::GenericMolInfo::GenericMolInfo(const
+PLMD::ActionOptions&)
+missing input file ../system/template.pdb
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 16 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[node-c11a-061:02386] 191 more processes have sent help message help-mpi-api.txt / mpi-abort
+[node-c11a-061:02386] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
