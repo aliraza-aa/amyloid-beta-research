@@ -1,15 +1,15 @@
 #this is the master plumed.dat file for metadynamic metainference simulations
 
 # define groups
-MOLINFO STRUCTURE=../system/template.pdb
+MOLINFO STRUCTURE=../../../system/template.pdb
 WHOLEMOLECULES ENTITY0=1-627
 FLUSH STRIDE=1000
 
 #include file with definition of metadynamics CVs
-INCLUDE FILE=CVs.dat
+INCLUDE FILE=../../../plumed/CVs.dat
 
 # Chemical shifts at 278 K
-cs: CS2BACKBONE ATOMS=1-627 DATADIR=../data NOPBC TEMPLATE=../system/template.pdb
+cs: CS2BACKBONE ATOMS=1-627 DATADIR=../../../data NOPBC TEMPLATE=../system/template.pdb
 
 #activate parallel bias metadynamics 
 pbmetad: PBMETAD ...
