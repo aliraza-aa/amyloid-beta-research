@@ -11,3 +11,6 @@ note.txt
 *.gro
 *.cpt
 *.tpr
+*_fes_*.dat
+fes_*.dat
+general-commands.txt
