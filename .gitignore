@@ -7,6 +7,7 @@ PLUMED_input_files
 PLUMED_input_files.zip
 note.txt
 notes.docx
+~$notes.docx
 .ipynb_checkpoints
 *.zip
 *.gro
