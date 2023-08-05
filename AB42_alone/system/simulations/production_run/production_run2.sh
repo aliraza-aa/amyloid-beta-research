@@ -8,7 +8,7 @@
 
 #$ -l mem=1G
 
-#$ -N AB42-production_run-2
+#$ -N AB42-production_run-2.1
 
 #$ -pe mpi 240
 
@@ -49,4 +49,4 @@ cd $WORKDIR
 
 #RESTART
 
-gerun gmx_mpi_d mdrun -multidir ../confirmation{0..47} -cpi state -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -npme 1 -noappend -cpt 60 -cpnum -maxh 23 -ntomp $OMP_NUM_THREADS &> production_run2.log
+gerun gmx_mpi_d mdrun -cpi state_step1677640 -multidir ../confirmation{0..47} -s production_run_input.tpr -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -npme 1 -noappend -cpt 60 -cpnum -maxh 23 -ntomp $OMP_NUM_THREADS &> production_run2.log
