@@ -12,7 +12,7 @@ INCLUDE FILE=../../../plumed/CVs.dat
 cs: CS2BACKBONE ATOMS=1-627 DATADIR=../../../data NOPBC TEMPLATE=../system/template.pdb
 
 #activate parallel bias metadynamics 
-pbmetad: PBMETAD ...
+PBMETAD ...
     ARG=helix.lessthan,beta,rgyr,hydro,salt,dihcor
     HEIGHT=1.2
     BIASFACTOR=24 #10*SQRT(NUM_OF_CVS)
@@ -25,7 +25,8 @@ pbmetad: PBMETAD ...
 #    GRID_RFILES=GRID.helix.lessthan,GRID.beta,GRID.rgyr,GRID.hydro,GRID.salt,GRID.dihcor
     FILE=HILLS_helix,HILLS_beta,HILLS_rgyr,HILLS_hydro,HILLS_salt,HILLS_dihcor
     WALKERS_MPI
-#    LABEL=pbmetad
+#    WALKERS_DIR=../confirmation0
+    LABEL=pbmetad
 ...
 
 # Metainference - one sigma per nucleus
