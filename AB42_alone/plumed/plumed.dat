@@ -22,10 +22,10 @@ PBMETAD ...
     GRID_MAX=100,100,20,200,400,50
     GRID_SPACING=0.1,0.1,0.01,0.1,0.1,0.01    
     GRID_WSTRIDE=10000
-#    GRID_RFILES=GRID.helix.lessthan,GRID.beta,GRID.rgyr,GRID.hydro,GRID.salt,GRID.dihcor
+    GRID_RFILES=../plumed_data/GRID.helix.lessthan,../plumed_data/GRID.beta,../plumed_data/GRID.rgyr,../plumed_data/GRID.hydro,../plumed_data/GRID.salt,../plumed_data/GRID.dihcor
     FILE=HILLS_helix,HILLS_beta,HILLS_rgyr,HILLS_hydro,HILLS_salt,HILLS_dihcor
     WALKERS_MPI
-#    WALKERS_DIR=../confirmation0
+#    WALKERS_DIR=../production_run
     LABEL=pbmetad
 ...
 
