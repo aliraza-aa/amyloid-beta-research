@@ -16,3 +16,5 @@ notes.docx
 *_fes_*.dat
 fes_*.dat
 general-commands.txt
+core.*
+*.edr
