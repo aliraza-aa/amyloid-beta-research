@@ -18,3 +18,8 @@ tar --exclude "*.trr" -czvf
 tar -xzvf file.tar.gz
 
 find ~/ -iname "*evolution*" | xargs rm -R
+
+git show 88ae1c9:AB42_alone/system/simulations/confirmation0/GRID.helix.lessthan
+
+rsync -av --progress sourcefolder /destinationfolder --exclude thefoldertoexclude
+# for copying
