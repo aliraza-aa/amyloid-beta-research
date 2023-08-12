@@ -5881,5 +5881,4 @@ Generated with MDTraj, t= 32250.00000 step= 16125000 in water
 ; Compound        #mols
 Protein             1
 SOL                10
-SOL             11691
-NA 3
+SOL             11694
