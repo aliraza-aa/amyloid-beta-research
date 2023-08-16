@@ -1,6 +1,6 @@
 import subprocess
 
-for i in range(0, 1):
+for i in range(1, 48):
     print(f"working on replica{i}")
     subprocess.run(
         f"gmx_mpi_d grompp -f ../system/mdp_files/ions.mdp -c ../system/simulations/replica{i}/modified_topol{i}.gro -p ../system/simulations/replica{i}/topolm.top -o ../system/simulations/replica{i}/genion_input1.tpr", shell=True)
