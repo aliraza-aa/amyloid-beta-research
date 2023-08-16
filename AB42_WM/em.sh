@@ -8,7 +8,7 @@
 
 #$ -l mem=1G
 
-#$ -N AB42-em-2
+#$ -N AB42_WM-em-1
 
 #$ -pe mpi 48
 
@@ -49,4 +49,4 @@ cd $WORKDIR
 
 #RESTART
 
-gerun gmx_mpi_d mdrun -s em_input.tpr -multidir system/simulations/confirmation{0..47} -v -maxh 10 -cpi state -noappend -cpt 60 -cpnum -ntomp $OMP_NUM_THREADS &> log
+gerun gmx_mpi_d mdrun -s em_input.tpr -multidir system/simulations/replica{0..47} -o em.trr -x em.xtc -c em_output.gro -g em.log -e em.edr -v -maxh 10 -ntomp $OMP_NUM_THREADS &> em1_log
