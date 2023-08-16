@@ -6,7 +6,7 @@ for i in range(0, 1):
 
     p = subprocess.Popen(f"gmx_mpi_d pdb2gmx -f ../system/gro_files/topol{i}.gro -o ../system/simulations/replica{i}/modified_topol{i}.gro -his -ignh",
                          stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-    out, err = p.communicate(input="1\n 1\n 0\n 0\n 0\n".encode())
+    out, err = p.communicate(input="1\n1\n0\n0\n0\n".encode())
 
     if p.returncode != 0:
         print(out)
