@@ -1,9 +1,9 @@
 import subprocess
 
-for i in range(0, 1):
+for i in range(1, 48):
     # subprocess.run(
     #     f"gmx_mpi_d grompp -f ../system/ions.mdp -c ../system/gro_files/topol{i}.gro -p system/topol.top -o system/simulations/replica{i}/genion_input.tpr", shell=True)
-
+    print(f"working on replica{i}")
     p = subprocess.Popen(f"gmx_mpi_d pdb2gmx -f ../system/gro_files/topol{i}.gro -o ../system/simulations/replica{i}/modified_topol{i}.gro -his -ignh",
                          stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     out, err = p.communicate(input="1\n1\n0\n0\n0\n".encode())

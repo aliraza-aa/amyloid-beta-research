@@ -18,7 +18,7 @@
 ;
 
 ; Include forcefield parameters
-#include "./charmm22star.ff/forcefield.itp"
+#include "../../charmm22star.ff/forcefield.itp"
 
 [ moleculetype ]
 ; Name            nrexcl
@@ -5876,11 +5876,11 @@ Protein             3
 
 ; Include Position restraint file
 #ifdef POSRES
-#include "posre.itp"
+#include "../../posre.itp"
 #endif
 
 ; Include water topology
-#include "./charmm22star.ff/tip3p.itp"
+#include "../../charmm22star.ff/tip3p.itp"
 
 #ifdef POSRES_WATER
 ; Position restraint for each water oxygen
@@ -5890,7 +5890,7 @@ Protein             3
 #endif
 
 ; Include topology for ions
-#include "./charmm22star.ff/ions.itp"
+#include "../../charmm22star.ff/ions.itp"
 
 [ system ]
 ; Name
