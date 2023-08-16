@@ -1,2 +1,5 @@
 30 Na and 30 CL
 
+2 KCL
+
+2 Na2HPO4

@@ -1,12 +1,17 @@
 import subprocess
 
-for i in range(48):
-    subprocess.run(
-        f"gmx_mpi_d grompp -f ../system/ions.mdp -c ../system/gro_files/topol{i}.gro -p system/topol.top -o system/simulations/replica{i}/genion_input.tpr", shell=True)
+for i in range(0, 1):
+    # subprocess.run(
+    #     f"gmx_mpi_d grompp -f ../system/ions.mdp -c ../system/gro_files/topol{i}.gro -p system/topol.top -o system/simulations/replica{i}/genion_input.tpr", shell=True)
 
-    p = subprocess.Popen(f"gmx_mpi_d genion -s system/simulations/confirmation{i}/genion_input.tpr -o system/simulations/confirmation{i}/genion_output.gro -pname NA -nname CL -neutral",
+    p = subprocess.Popen(f"gmx_mpi_d pdb2gmx -f ../system/gro_files/topol{i}.gro -o ../system/simulations/replica{i}/modified_topol{i}.gro -his -ignh",
                          stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-    out, err = p.communicate(input="13\n".encode())
+    out, err = p.communicate(input="1\n".encode())
+    out, err = p.communicate(input="1\n".encode())
+    out, err = p.communicate(input="0\n".encode())
+    out, err = p.communicate(input="0\n".encode())
+    out, err = p.communicate(input="0\n".encode())
+
     if p.returncode != 0:
         print(out)
         print(err)
