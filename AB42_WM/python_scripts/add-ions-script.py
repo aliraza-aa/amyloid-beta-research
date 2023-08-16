@@ -1,10 +1,21 @@
 import subprocess
 
-for i in range(48):
+for i in range(0, 1):
+    print(f"working on replica{i}")
     subprocess.run(
-        f"gmx_mpi_d grompp -f ../system/ions.mdp -c ../system/gro_files/topol{i}.gro -p system/topol.top -o system/simulations/replica{i}/genion_input.tpr", shell=True)
+        f"gmx_mpi_d grompp -f ../system/mdp_files/ions.mdp -c ../system/simulations/replica{i}/modified_topol{i}.gro -p ../system/simulations/replica{i}/topolm.top -o ../system/simulations/replica{i}/genion_input1.tpr", shell=True)
 
-    p = subprocess.Popen(f"gmx_mpi_d genion -s system/simulations/confirmation{i}/genion_input.tpr -o system/simulations/confirmation{i}/genion_output.gro -pname NA -nname CL -neutral",
+    p = subprocess.Popen(f"gmx_mpi_d genion -s ../system/simulations/replica{i}/genion_input1.tpr -o ../system/simulations/replica{i}/genion_output1.gro -conc 0.137 -pname NA -nname CL -p ../system/simulations/replica{i}/topolm.top",
+                         stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    out, err = p.communicate(input="13\n".encode())
+    if p.returncode != 0:
+        print(out)
+        print(err)
+
+    subprocess.run(
+        f"gmx_mpi_d grompp -f ../system/mdp_files/ions.mdp -c ../system/simulations/replica{i}/genion_output1.gro -p ../system/simulations/replica{i}/topolm.top -o ../system/simulations/replica{i}/genion_input2.tpr", shell=True)
+
+    p = subprocess.Popen(f"gmx_mpi_d genion -s ../system/simulations/replica{i}/genion_input2.tpr -o ../system/simulations/replica{i}/genion_output2.gro -conc 0.00268 -pname K -nname CL -p ../system/simulations/replica{i}/topolm.top",
                          stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     out, err = p.communicate(input="13\n".encode())
     if p.returncode != 0:
