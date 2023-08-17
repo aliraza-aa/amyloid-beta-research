@@ -8,7 +8,7 @@
 
 #$ -l mem=1G
 
-#$ -N AB42-em-2
+#$ -N AB42_WM-nvt-1
 
 #$ -pe mpi 48
 
@@ -49,6 +49,6 @@ cd $WORKDIR
 
 #RESTART
 
-gerun gmx_mpi_d mdrun -s nvt_input.tpr -multidir system/simulations/confirmation{0..47} -o nvt.trr -x nvt.xtc -c nvt_output.gro -g nvt.log -e nvt.edr -v -maxh 10 -ntomp $OMP_NUM_THREADS &> nvt_run.log
+gerun gmx_mpi_d mdrun -s nvt_input.tpr -multidir system/simulations/replica{0..47} -o nvt.trr -x nvt.xtc -c nvt_output.gro -g nvt.log -e nvt.edr -v -maxh 10 -ntomp $OMP_NUM_THREADS &> nvt_run.log
 
 # gerun gmx_mpi_d mdrun -s em_input.tpr -o system/simulations/confirmation0/nvt.trr -x system/simulations/confirmation0/nvt.xtc -c system/simulations/confirmation0/nvt_output.gro -g system/simulations/confirmation0/nvt.log -e system/simulations/confirmation0/nvt.edr -v -maxh 10
