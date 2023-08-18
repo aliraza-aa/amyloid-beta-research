@@ -4,11 +4,11 @@
 
 #$ -S /bin/bash
 
-#$ -l h_rt=24:00:0
+#$ -l h_rt=48:00:0
 
 #$ -l mem=1G
 
-#$ -N AB42-production_run-2
+#$ -N AB42_WM-production-1.1
 
 #$ -pe mpi 240
 
@@ -49,4 +49,4 @@ cd $WORKDIR
 
 #RESTART
 
-gerun gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../confirmation{0..47} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -npme 1 -noappend -cpt 60 -cpnum -maxh 23 -ntomp $OMP_NUM_THREADS &> production_run.log
+gerun gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../replica{0..47} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -npme 1 -noappend -cpt 60 -cpnum -maxh 46 -ntomp $OMP_NUM_THREADS &> production_run1.log
