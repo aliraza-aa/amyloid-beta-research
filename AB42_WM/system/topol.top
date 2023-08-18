@@ -1,8 +1,8 @@
 ;
 ;	File 'topol.top' was generated
 ;	By user: zcbtar9 (433465)
-;	On host: login01
-;	At date: Wed Aug 16 12:53:07 2023
+;	On host: login02
+;	At date: Fri Aug 18 18:19:02 2023
 ;
 ;	This is a standalone topology file
 ;
@@ -13,7 +13,7 @@
 ;	Data prefix:  /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0
 ;	Working dir:  /lustre/home/zcbtar9/projects/amyloid-beta-research/AB42_WM/system
 ;	Command line:
-;	  gmx_mpi_d pdb2gmx -f ../system/gro_files/topol47.gro -o ../system/simulations/replica47/modified_topol47.gro -his -ignh
+;	  gmx_mpi_d pdb2gmx -f template.pdb -o modified_template.pdb -his -ignh
 ;	Force field was read from current directory or a relative path - path added.
 ;
 
@@ -22,7 +22,7 @@
 
 [ moleculetype ]
 ; Name            nrexcl
-Protein             3
+Protein_chain_A     3
 
 [ atoms ]
 ;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
@@ -5898,5 +5898,4 @@ Generated with MDTraj, t= 32250.00000 step= 16125000 in water
 
 [ molecules ]
 ; Compound        #mols
-Protein             1
-SOL             11704
+Protein_chain_A     1

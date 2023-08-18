@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: zcbtar9 (433465)
 ;	On host: login02
-;	At date: Wed Aug 16 13:54:59 2023
+;	At date: Fri Aug 18 08:59:21 2023
 ;
 ;	Created by:
 ;	     :-) GROMACS - gmx grompp, 2022.5-plumed_2.9.0 (double precision) (-:
@@ -11,21 +11,21 @@
 ;	Data prefix:  /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0
 ;	Working dir:  /lustre/home/zcbtar9/projects/amyloid-beta-research/AB42_WM/python_scripts
 ;	Command line:
-;	  gmx_mpi_d grompp -f ../system/mdp_files/em.mdp -c ../system/simulations/replica47/genion_output2.gro -p ../system/simulations/replica47/topolm.top -o ../system/simulations/replica47/em_input.tpr -maxwarn 1
+;	  gmx_mpi_d grompp -f ../system/mdp_files/npt.mdp -c ../system/simulations/replica47/nvt_output.gro -r ../system/simulations/replica47/nvt_output.gro -p ../system/simulations/replica47/topolm.top -o ../system/simulations/replica47/npt_input.tpr -maxwarn 1
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
 ; e.g.: -I/home/joe/doe -I/home/mary/roe
 include                  = 
 ; e.g.: -DPOSRES -DFLEXIBLE (note these variable names are case sensitive)
-define                   = 
+define                   = -DPOSRES
 
 ; RUN CONTROL PARAMETERS
-integrator               = steep
+integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
 dt                       = 0.002
-nsteps                   = -1
+nsteps                   = 250000
 ; For exact run continuation or redoing part of a run
 init_step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
@@ -35,7 +35,7 @@ mts                      = no
 ; mode for center of mass motion removal
 comm-mode                = Linear
 ; number of steps for center of mass motion removal
-nstcomm                  = 1
+nstcomm                  = 100
 ; group(s) for center of mass motion removal
 comm-grps                = 
 
@@ -46,7 +46,7 @@ ld-seed                  = -1
 
 ; ENERGY MINIMIZATION OPTIONS
 ; Force tolerance and initial step-size
-emtol                    = 1000
+emtol                    = 10
 emstep                   = 0.01
 ; Max number of iterations in relax-shells
 niter                    = 20
@@ -61,20 +61,20 @@ rtpi                     = 0.05
 
 ; OUTPUT CONTROL OPTIONS
 ; Output frequency for coords (x), velocities (v) and forces (f)
-nstxout                  = 10
-nstvout                  = 0
+nstxout                  = 5000
+nstvout                  = 5000
 nstfout                  = 0
 ; Output frequency for energies to log file and energy file
-nstlog                   = 1000
-nstcalcenergy            = -1
-nstenergy                = 1000
+nstlog                   = 5000
+nstcalcenergy            = 100
+nstenergy                = 2500
 ; Output frequency and precision for .xtc file
-nstxout-compressed       = 1
+nstxout-compressed       = 5000
 compressed-x-precision   = 1000
 ; This selects the subset of atoms for the compressed
 ; trajectory file. You can select multiple groups. By
 ; default, all atoms will be written.
-compressed-x-grps        = 
+compressed-x-grps        = protein
 ; Selection of energy groups
 energygrps               = 
 
@@ -82,13 +82,13 @@ energygrps               =
 ; cut-off scheme (Verlet: particle based cut-offs)
 cutoff-scheme            = Verlet
 ; nblist update frequency
-nstlist                  = 1
+nstlist                  = 20
 ; Periodic boundary conditions: xyz, no, xy
 pbc                      = xyz
 periodic_molecules       = no
 ; Allowed energy error due to the Verlet buffer in kJ/mol/ps per atom,
 ; a value of -1 means: use rlist
-verlet-buffer-tolerance  = 0.005
+verlet-buffer-tolerance  = 0.001
 ; nblist cut-off        
 rlist                    = 1.0
 ; long-range cut-off for switched potentials
@@ -131,25 +131,25 @@ implicit-solvent         = no
 
 ; OPTIONS FOR WEAK COUPLING ALGORITHMS
 ; Temperature coupling  
-tcoupl                   = No
+Tcoupl                   = v-rescale
 nsttcouple               = -1
 nh-chain-length          = 10
 print-nose-hoover-chain-variables = no
 ; Groups to couple separately
-tc-grps                  = 
+tc-grps                  = system
 ; Time constant (ps) and reference temperature (K)
-tau-t                    = 
-ref-t                    = 
+tau_t                    = 1.0
+ref_t                    = 278
 ; pressure coupling     
-pcoupl                   = No
-pcoupltype               = Isotropic
+Pcoupl                   = C-rescale
+Pcoupltype               = isotropic
 nstpcouple               = -1
 ; Time constant (ps), compressibility (1/bar) and reference P (bar)
-tau-p                    = 1
-compressibility          = 
-ref-p                    = 
+tau_p                    = 5.0
+compressibility          = 4.5e-5
+ref_p                    = 1.0
 ; Scaling of reference coordinates, No, All or COM
-refcoord-scaling         = No
+refcoord_scaling         = com
 
 ; OPTIONS FOR QMMM calculations
 QMMM                     = no
@@ -167,12 +167,12 @@ annealing-time           =
 annealing-temp           = 
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
-gen-vel                  = no
+gen_vel                  = no
 gen-temp                 = 300
-gen-seed                 = -310423555
+gen_seed                 = 1802370653
 
 ; OPTIONS FOR BONDS    
-constraints              = none
+constraints              = h-bonds
 ; Type of constraint algorithm
 constraint-algorithm     = Lincs
 ; Do not constrain the start configuration
@@ -182,11 +182,11 @@ Shake-SOR                = no
 ; Relative tolerance of shake
 shake-tol                = 0.0001
 ; Highest order in the expansion of the constraint coupling matrix
-lincs-order              = 6
+lincs-order              = 4
 ; Number of iterations in the final step of LINCS. 1 is fine for
 ; normal simulations, but use 2 to conserve energy in NVE runs.
 ; For energy minimization with constraints it should be 4 to 8.
-lincs-iter               = 8
+lincs-iter               = 1
 ; Lincs will write a warning to the stderr if in one step a bond
 ; rotates over more degrees than
 lincs-warnangle          = 30
