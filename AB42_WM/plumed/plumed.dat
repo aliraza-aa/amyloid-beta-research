@@ -9,7 +9,6 @@ FLUSH STRIDE=1000
 INCLUDE FILE=../../../plumed/CVs.dat
 
 # Chemical shifts at 278 K
-# cs: CS2BACKBONE ATOMS=1-627 DATADIR=../../../data NOPBC TEMPLATE=../system/template.pdb
 
 #activate parallel bias metadynamics 
 PBMETAD ...
