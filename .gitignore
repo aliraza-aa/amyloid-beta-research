@@ -10,7 +10,6 @@ notes.docx
 ~$notes.docx
 .ipynb_checkpoints
 *.zip
-*.gro
 *.cpt
 *.tpr
 *_fes_*.dat
@@ -19,3 +18,4 @@ general-commands.txt
 core.*
 *.edr
 *.csv
+state_backup_*

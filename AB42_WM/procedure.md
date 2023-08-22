@@ -1,0 +1,1 @@
+## had to change the number of an atom in residue number 42, changed OT1 to O because plumed gave the following error: residue 42 does not contain an atom named O, the error was given after a new pdb file was created to account for the change in histidine protonation state.
