@@ -8,7 +8,7 @@
 
 #$ -l mem=1G
 
-#$ -N AB42_WM-production-test1-1.1
+#$ -N AB42_WM-production-test3-1.1
 
 #$ -pe mpi 240
 
@@ -19,7 +19,9 @@
 
 WORKDIR=`pwd`
 
+ 
 
+export OMP_NUM_THREADS=1
 
  
 module load beta-modules
@@ -47,4 +49,4 @@ cd $WORKDIR
 
 #RESTART
 
-gerun gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../replica{0..47} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -noappend -cpt 60 -cpnum -maxh 4 &> production_run1.log
+gerun gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../replica{0..47} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -npme 1 -noappend -cpt 60 -cpnum -maxh 4 &> production_run1.log
