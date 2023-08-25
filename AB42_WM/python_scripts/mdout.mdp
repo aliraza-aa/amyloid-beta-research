@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: zcbtar9 (433465)
 ;	On host: login02
-;	At date: Fri Aug 18 18:53:30 2023
+;	At date: Thu Aug 24 16:53:58 2023
 ;
 ;	Created by:
 ;	     :-) GROMACS - gmx grompp, 2022.5-plumed_2.9.0 (double precision) (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0
 ;	Working dir:  /lustre/home/zcbtar9/projects/amyloid-beta-research/AB42_WM/python_scripts
 ;	Command line:
-;	  gmx_mpi_d grompp -f ../system/mdp_files/production_run.mdp -c ../system/simulations/replica47/npt_output.gro -p ../system/simulations/replica47/topolm.top -o ../system/simulations/replica47/production_run_input.tpr -maxwarn 1
+;	  gmx_mpi_d grompp -f ../system/mdp_files/run.mdp -c ../system/simulations_test4/replica47/npt_output.gro -p ../system/simulations/replica47/topolm.top -o ../system/simulations_test4/replica47/production_run_input.tpr -maxwarn 1
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -66,7 +66,7 @@ nstvout                  = 50000
 nstfout                  = 0
 ; Output frequency for energies to log file and energy file
 nstlog                   = 10000
-nstcalcenergy            = 25
+nstcalcenergy            = -1
 nstenergy                = 5000
 ; Output frequency and precision for .xtc file
 nstxout-compressed       = 5000
@@ -169,7 +169,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen_seed                 = 2046787524
+gen_seed                 = -207749429
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
