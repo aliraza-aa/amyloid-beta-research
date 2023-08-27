@@ -1,0 +1,848 @@
+GERun: 
+GERun: Note: Lines like this one prefixed with "GERun:" are for debugging
+GERun:       purposes only and you do not need to report them to rc-support
+GERun:       unless your job fails for other reasons.
+GERun: 
+GERun: 
+GERun: Grid Engine parallel launcher abstraction layer version iv (public)
+GERun: Dr Owain Kenway, RCAS, RITS, ISD, UCL, 7th of February, 2018
+GERun: 
+GERun: For licensing terms, see LICENSE.txt
+GERun: 
+GERun: Using environment: openmpi-sge
+GERun: Running on 48 slots:
+GERun:    48 MPI tasks
+GERun:     1 threads per task
+GERun: TMPDIR=/tmpdir/job/410937.undefined
+GERun: 
+GERun: Contents of machinefile:
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-064
+GERun: node-c11a-014
+GERun: node-c11a-014
+GERun: node-c11a-014
+GERun: node-c11a-014
+GERun: node-c11a-014
+GERun: node-c11a-014
+GERun: node-c11a-014
+GERun: node-c11a-014
+GERun: 
+GERun: GErun command being run:
+GERun:  mpirun gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../replica0 ../replica1 ../replica2 ../replica3 ../replica4 ../replica5 ../replica6 ../replica7 ../replica8 ../replica9 ../replica10 ../replica11 ../replica12 ../replica13 ../replica14 ../replica15 ../replica16 ../replica17 ../replica18 ../replica19 ../replica20 ../replica21 ../replica22 ../replica23 ../replica24 ../replica25 ../replica26 ../replica27 ../replica28 ../replica29 ../replica30 ../replica31 ../replica32 ../replica33 ../replica34 ../replica35 ../replica36 ../replica37 ../replica38 ../replica39 ../replica40 ../replica41 ../replica42 ../replica43 ../replica44 ../replica45 ../replica46 ../replica47 -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -noappend -cpt 60 -cpnum -maxh 4
+      :-) GROMACS - gmx mdrun, 2022.5-plumed_2.9.0 (double precision) (-:
+
+Executable:   /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0/bin/gmx_mpi_d
+Data prefix:  /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0
+Working dir:  /lustre/home/zcbtar9/projects/amyloid-beta-research/AB42_WM/system/simulations_test6/production_run
+Command line:
+  gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../replica0 ../replica1 ../replica2 ../replica3 ../replica4 ../replica5 ../replica6 ../replica7 ../replica8 ../replica9 ../replica10 ../replica11 ../replica12 ../replica13 ../replica14 ../replica15 ../replica16 ../replica17 ../replica18 ../replica19 ../replica20 ../replica21 ../replica22 ../replica23 ../replica24 ../replica25 ../replica26 ../replica27 ../replica28 ../replica29 ../replica30 ../replica31 ../replica32 ../replica33 ../replica34 ../replica35 ../replica36 ../replica37 ../replica38 ../replica39 ../replica40 ../replica41 ../replica42 ../replica43 ../replica44 ../replica45 ../replica46 ../replica47 -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -noappend -cpt 60 -cpnum -maxh 4
+
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Reading file production_run_input.tpr, VERSION 2022.5-plumed_2.9.0 (double precision)
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+Changing nstlist from 25 to 40, rlist from 1.293 to 1.354
+
+This is simulation 41 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 46 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 40 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 47 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 44 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 45 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 43 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 42 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 15 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 2 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 19 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 38 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 1 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 20 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 33 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 25 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 5 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 13 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 12 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 17 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 39 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 21 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 7 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 10 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 0 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 23 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 26 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 18 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 9 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 16 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 3 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 14 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 37 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 30 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 34 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 35 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 4 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 29 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 36 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 31 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 28 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 8 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 22 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 27 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 11 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 6 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 32 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 24 out of 48 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+starting mdrun 'Generated with MDTraj, t= 32250.00000 step= 16125000 in water'
+-1 steps, infinite ps.
+step 0step 100 performance: 1.5 ns/day    step 200 performance: 1.5 ns/day    step 300 performance: 1.5 ns/day    step 400 performance: 1.5 ns/day    step 500 performance: 1.5 ns/day    step 600 performance: 1.5 ns/day    step 700 performance: 1.5 ns/day    step 800 performance: 1.5 ns/day    step 900 performance: 1.5 ns/day    step 1000 performance: 1.5 ns/day    step 1100 performance: 1.5 ns/day    step 1200 performance: 1.5 ns/day    step 1300 performance: 1.5 ns/day    step 1400 performance: 1.5 ns/day    step 1500 performance: 1.5 ns/day    step 1600 performance: 1.5 ns/day    step 1700 performance: 1.5 ns/day    step 1800 performance: 1.5 ns/day    step 1900 performance: 1.5 ns/day    step 2000 performance: 1.5 ns/day    step 2100 performance: 1.5 ns/day    step 2200 performance: 1.5 ns/day    step 2300 performance: 1.5 ns/day    step 2400 performance: 1.5 ns/day    step 2500 performance: 1.5 ns/day    step 2600 performance: 1.5 ns/day    step 2700 performance: 1.5 ns/day    step 2800 performance: 1.5 ns/day    step 2900 performance: 1.5 ns/day    step 3000 performance: 1.5 ns/day    step 3100 performance: 1.5 ns/day    step 3200 performance: 1.5 ns/day    step 3300 performance: 1.5 ns/day    step 3400 performance: 1.5 ns/day    step 3500 performance: 1.5 ns/day    step 3600 performance: 1.5 ns/day    step 3700 performance: 1.5 ns/day    step 3800 performance: 1.5 ns/day    step 3900 performance: 1.5 ns/day    step 4000 performance: 1.5 ns/day    step 4100 performance: 1.5 ns/day    step 4200 performance: 1.5 ns/day    step 4300 performance: 1.5 ns/day    step 4400 performance: 1.5 ns/day    step 4500 performance: 1.5 ns/day    step 4600 performance: 1.5 ns/day    step 4700 performance: 1.5 ns/day    step 4800 performance: 1.5 ns/day    step 4900 performance: 1.5 ns/day    step 5000 performance: 1.5 ns/day    step 5100 performance: 1.5 ns/day    step 5200 performance: 1.5 ns/day    step 5300 performance: 1.5 ns/day    step 5400 performance: 1.5 ns/day    step 5500 performance: 1.5 ns/day    step 5600 performance: 1.5 ns/day    step 5700 performance: 1.5 ns/day    step 5800 performance: 1.5 ns/day    step 5900 performance: 1.5 ns/day    step 6000 performance: 1.5 ns/day    step 6100 performance: 1.5 ns/day    step 6200 performance: 1.5 ns/day    step 6300 performance: 1.5 ns/day    step 6400 performance: 1.5 ns/day    step 6500 performance: 1.5 ns/day    step 6600 performance: 1.5 ns/day    step 6700 performance: 1.5 ns/day    step 6800 performance: 1.5 ns/day    step 6900 performance: 1.5 ns/day    step 7000 performance: 1.5 ns/day    step 7100 performance: 1.5 ns/day    step 7200 performance: 1.5 ns/day    step 7300 performance: 1.5 ns/day    step 7400 performance: 1.5 ns/day    step 7500 performance: 1.5 ns/day    step 7600 performance: 1.5 ns/day    step 7700 performance: 1.5 ns/day    step 7800 performance: 1.5 ns/day    step 7900 performance: 1.5 ns/day    step 8000 performance: 1.5 ns/day    step 8100 performance: 1.5 ns/day    step 8200 performance: 1.5 ns/day    step 8300 performance: 1.5 ns/day    step 8400 performance: 1.5 ns/day    step 8500 performance: 1.5 ns/day    step 8600 performance: 1.5 ns/day    step 8700 performance: 1.5 ns/day    step 8800 performance: 1.5 ns/day    step 8900 performance: 1.5 ns/day    step 9000 performance: 1.5 ns/day    step 9100 performance: 1.5 ns/day    step 9200 performance: 1.5 ns/day    step 9300 performance: 1.5 ns/day    step 9400 performance: 1.5 ns/day    step 9500 performance: 1.5 ns/day    step 9600 performance: 1.5 ns/day    step 9700 performance: 1.5 ns/day    step 9800 performance: 1.5 ns/day    step 9900 performance: 1.5 ns/day    step 10000 performance: 1.5 ns/day    step 10100 performance: 1.5 ns/day    step 10200 performance: 1.5 ns/day    step 10300 performance: 1.5 ns/day    step 10400 performance: 1.5 ns/day    step 10500 performance: 1.5 ns/day    step 10600 performance: 1.5 ns/day    step 10700 performance: 1.5 ns/day    step 10800 performance: 1.5 ns/day    step 10900 performance: 1.5 ns/day    step 11000 performance: 1.5 ns/day    step 11100 performance: 1.5 ns/day    step 11200 performance: 1.5 ns/day    step 11300 performance: 1.5 ns/day    step 11400 performance: 1.5 ns/day    step 11500 performance: 1.5 ns/day    step 11600 performance: 1.5 ns/day    step 11700 performance: 1.5 ns/day    step 11800 performance: 1.5 ns/day    step 11900 performance: 1.5 ns/day    step 12000 performance: 1.5 ns/day    step 12100 performance: 1.5 ns/day    step 12200 performance: 1.5 ns/day    step 12300 performance: 1.5 ns/day    step 12400 performance: 1.5 ns/day    step 12500 performance: 1.5 ns/day    step 12600 performance: 1.5 ns/day    step 12700 performance: 1.5 ns/day    step 12800 performance: 1.5 ns/day    step 12900 performance: 1.5 ns/day    step 13000 performance: 1.5 ns/day    step 13100 performance: 1.5 ns/day    step 13200 performance: 1.5 ns/day    step 13300 performance: 1.5 ns/day    step 13400 performance: 1.5 ns/day    step 13500 performance: 1.5 ns/day    step 13600 performance: 1.5 ns/day    step 13700 performance: 1.5 ns/day    step 13800 performance: 1.5 ns/day    step 13900 performance: 1.5 ns/day    step 14000 performance: 1.5 ns/day    step 14100 performance: 1.5 ns/day    step 14200 performance: 1.5 ns/day    step 14300 performance: 1.5 ns/day    step 14400 performance: 1.5 ns/day    step 14500 performance: 1.5 ns/day    step 14600 performance: 1.5 ns/day    step 14700 performance: 1.5 ns/day    step 14800 performance: 1.5 ns/day    step 14900 performance: 1.5 ns/day    step 15000 performance: 1.5 ns/day    step 15100 performance: 1.5 ns/day    step 15200 performance: 1.5 ns/day    step 15300 performance: 1.5 ns/day    step 15400 performance: 1.5 ns/day    step 15500 performance: 1.5 ns/day    step 15600 performance: 1.5 ns/day    step 15700 performance: 1.5 ns/day    step 15800 performance: 1.5 ns/day    step 15900 performance: 1.5 ns/day    step 16000 performance: 1.5 ns/day    step 16100 performance: 1.5 ns/day    step 16200 performance: 1.5 ns/day    step 16300 performance: 1.5 ns/day    step 16400 performance: 1.5 ns/day    step 16500 performance: 1.5 ns/day    step 16600 performance: 1.5 ns/day    step 16700 performance: 1.5 ns/day    step 16800 performance: 1.5 ns/day    step 16900 performance: 1.5 ns/day    step 17000 performance: 1.5 ns/day    step 17100 performance: 1.5 ns/day    step 17200 performance: 1.5 ns/day    step 17300 performance: 1.5 ns/day    step 17400 performance: 1.5 ns/day    step 17500 performance: 1.5 ns/day    step 17600 performance: 1.5 ns/day    step 17700 performance: 1.5 ns/day    step 17800 performance: 1.5 ns/day    step 17900 performance: 1.5 ns/day    step 18000 performance: 1.5 ns/day    step 18100 performance: 1.5 ns/day    step 18200 performance: 1.5 ns/day    step 18300 performance: 1.5 ns/day    step 18400 performance: 1.5 ns/day    step 18500 performance: 1.5 ns/day    step 18600 performance: 1.5 ns/day    step 18700 performance: 1.5 ns/day    step 18800 performance: 1.5 ns/day    step 18900 performance: 1.5 ns/day    step 19000 performance: 1.5 ns/day    step 19100 performance: 1.5 ns/day    step 19200 performance: 1.5 ns/day    step 19300 performance: 1.5 ns/day    step 19400 performance: 1.5 ns/day    step 19500 performance: 1.5 ns/day    step 19600 performance: 1.5 ns/day    step 19700 performance: 1.5 ns/day    step 19800 performance: 1.5 ns/day    step 19900 performance: 1.5 ns/day    step 20000 performance: 1.5 ns/day    step 20100 performance: 1.5 ns/day    step 20200 performance: 1.5 ns/day    step 20300 performance: 1.5 ns/day    step 20400 performance: 1.5 ns/day    step 20500 performance: 1.5 ns/day    step 20600 performance: 1.5 ns/day    step 20700 performance: 1.5 ns/day    step 20800 performance: 1.5 ns/day    step 20900 performance: 1.5 ns/day    step 21000 performance: 1.5 ns/day    step 21100 performance: 1.5 ns/day    step 21200 performance: 1.5 ns/day    step 21300 performance: 1.5 ns/day    step 21400 performance: 1.5 ns/day    step 21500 performance: 1.5 ns/day    step 21600 performance: 1.5 ns/day    step 21700 performance: 1.5 ns/day    step 21800 performance: 1.5 ns/day    step 21900 performance: 1.5 ns/day    step 22000 performance: 1.5 ns/day    step 22100 performance: 1.5 ns/day    step 22200 performance: 1.5 ns/day    step 22300 performance: 1.5 ns/day    step 22400 performance: 1.5 ns/day    step 22500 performance: 1.5 ns/day    step 22600 performance: 1.5 ns/day    step 22700 performance: 1.5 ns/day    step 22800 performance: 1.5 ns/day    step 22900 performance: 1.5 ns/day    step 23000 performance: 1.5 ns/day    step 23100 performance: 1.5 ns/day    step 23200 performance: 1.5 ns/day    step 23300 performance: 1.5 ns/day    step 23400 performance: 1.5 ns/day    step 23500 performance: 1.5 ns/day    step 23600 performance: 1.5 ns/day    step 23700 performance: 1.5 ns/day    step 23800 performance: 1.5 ns/day    step 23900 performance: 1.5 ns/day    step 24000 performance: 1.5 ns/day    step 24100 performance: 1.5 ns/day    step 24200 performance: 1.5 ns/day    step 24300 performance: 1.5 ns/day    step 24400 performance: 1.5 ns/day    step 24500 performance: 1.5 ns/day    step 24600 performance: 1.5 ns/day    step 24700 performance: 1.5 ns/day    step 24800 performance: 1.5 ns/day    step 24900 performance: 1.5 ns/day    step 25000 performance: 1.5 ns/day    step 25100 performance: 1.5 ns/day    step 25200 performance: 1.5 ns/day    step 25300 performance: 1.5 ns/day    step 25400 performance: 1.5 ns/day    step 25500 performance: 1.5 ns/day    step 25600 performance: 1.5 ns/day    step 25700 performance: 1.5 ns/day    step 25800 performance: 1.5 ns/day    step 25900 performance: 1.5 ns/day    step 26000 performance: 1.5 ns/day    step 26100 performance: 1.5 ns/day    step 26200 performance: 1.5 ns/day    step 26300 performance: 1.5 ns/day    step 26400 performance: 1.5 ns/day    step 26500 performance: 1.5 ns/day    step 26600 performance: 1.5 ns/day    step 26700 performance: 1.5 ns/day    step 26800 performance: 1.5 ns/day    step 26900 performance: 1.5 ns/day    step 27000 performance: 1.5 ns/day    step 27100 performance: 1.5 ns/day    step 27200 performance: 1.5 ns/day    step 27300 performance: 1.5 ns/day    step 27400 performance: 1.5 ns/day    step 27500 performance: 1.5 ns/day    step 27600 performance: 1.5 ns/day    step 27700 performance: 1.5 ns/day    step 27800 performance: 1.5 ns/day    step 27900 performance: 1.5 ns/day    step 28000 performance: 1.5 ns/day    step 28100 performance: 1.5 ns/day    step 28200 performance: 1.5 ns/day    step 28300 performance: 1.5 ns/day    step 28400 performance: 1.5 ns/day    step 28500 performance: 1.5 ns/day    step 28600 performance: 1.5 ns/day    step 28700 performance: 1.5 ns/day    step 28800 performance: 1.5 ns/day    step 28900 performance: 1.5 ns/day    step 29000 performance: 1.5 ns/day    step 29100 performance: 1.5 ns/day    step 29200 performance: 1.5 ns/day    step 29300 performance: 1.5 ns/day    step 29400 performance: 1.5 ns/day    step 29500 performance: 1.5 ns/day    step 29600 performance: 1.5 ns/day    step 29700 performance: 1.5 ns/day    step 29800 performance: 1.5 ns/day    step 29900 performance: 1.5 ns/day    step 30000 performance: 1.5 ns/day    step 30100 performance: 1.5 ns/day    step 30200 performance: 1.5 ns/day    step 30300 performance: 1.5 ns/day    step 30400 performance: 1.5 ns/day    step 30500 performance: 1.5 ns/day    step 30600 performance: 1.5 ns/day    step 30700 performance: 1.5 ns/day    step 30800 performance: 1.5 ns/day    step 30900 performance: 1.5 ns/day    step 31000 performance: 1.5 ns/day    step 31100 performance: 1.5 ns/day    step 31200 performance: 1.5 ns/day    step 31300 performance: 1.5 ns/day    step 31400 performance: 1.5 ns/day    step 31500 performance: 1.5 ns/day    step 31600 performance: 1.5 ns/day    step 31700 performance: 1.5 ns/day    step 31800 performance: 1.5 ns/day    step 31900 performance: 1.5 ns/day    step 32000 performance: 1.5 ns/day    step 32100 performance: 1.5 ns/day    step 32200 performance: 1.5 ns/day    step 32300 performance: 1.5 ns/day    step 32400 performance: 1.5 ns/day    step 32500 performance: 1.5 ns/day    step 32600 performance: 1.5 ns/day    step 32700 performance: 1.5 ns/day    step 32800 performance: 1.5 ns/day    step 32900 performance: 1.5 ns/day    step 33000 performance: 1.5 ns/day    step 33100 performance: 1.5 ns/day    step 33200 performance: 1.5 ns/day    step 33300 performance: 1.5 ns/day    step 33400 performance: 1.5 ns/day    step 33500 performance: 1.5 ns/day    step 33600 performance: 1.5 ns/day    step 33700 performance: 1.5 ns/day    step 33800 performance: 1.5 ns/day    step 33900 performance: 1.5 ns/day    step 34000 performance: 1.5 ns/day    step 34100 performance: 1.5 ns/day    step 34200 performance: 1.5 ns/day    step 34300 performance: 1.5 ns/day    step 34400 performance: 1.5 ns/day    step 34500 performance: 1.5 ns/day    step 34600 performance: 1.5 ns/day    step 34700 performance: 1.5 ns/day    step 34800 performance: 1.5 ns/day    step 34900 performance: 1.5 ns/day    step 35000 performance: 1.5 ns/day    step 35100 performance: 1.5 ns/day    step 35200 performance: 1.5 ns/day    step 35300 performance: 1.5 ns/day    step 35400 performance: 1.5 ns/day    step 35500 performance: 1.5 ns/day    step 35600 performance: 1.5 ns/day    step 35700 performance: 1.5 ns/day    step 35800 performance: 1.5 ns/day    step 35900 performance: 1.5 ns/day    step 36000 performance: 1.5 ns/day    step 36100 performance: 1.5 ns/day    step 36200 performance: 1.5 ns/day    step 36300 performance: 1.5 ns/day    step 36400 performance: 1.5 ns/day    step 36500 performance: 1.5 ns/day    step 36600 performance: 1.5 ns/day    step 36700 performance: 1.5 ns/day    step 36800 performance: 1.5 ns/day    step 36900 performance: 1.5 ns/day    step 37000 performance: 1.5 ns/day    step 37100 performance: 1.5 ns/day    step 37200 performance: 1.5 ns/day    step 37300 performance: 1.5 ns/day    step 37400 performance: 1.5 ns/day    step 37500 performance: 1.5 ns/day    step 37600 performance: 1.5 ns/day    step 37700 performance: 1.5 ns/day    step 37800 performance: 1.5 ns/day    step 37900 performance: 1.5 ns/day    step 38000 performance: 1.5 ns/day    step 38100 performance: 1.5 ns/day    step 38200 performance: 1.5 ns/day    step 38300 performance: 1.5 ns/day    step 38400 performance: 1.5 ns/day    step 38500 performance: 1.5 ns/day    step 38600 performance: 1.5 ns/day    step 38700 performance: 1.5 ns/day    step 38800 performance: 1.5 ns/day    step 38900 performance: 1.5 ns/day    step 39000 performance: 1.5 ns/day    step 39100 performance: 1.5 ns/day    step 39200 performance: 1.5 ns/day    step 39300 performance: 1.5 ns/day    step 39400 performance: 1.5 ns/day    step 39500 performance: 1.5 ns/day    step 39600 performance: 1.5 ns/day    step 39700 performance: 1.5 ns/day    step 39800 performance: 1.5 ns/day    step 39900 performance: 1.5 ns/day    step 40000 performance: 1.5 ns/day    step 40100 performance: 1.5 ns/day    step 40200 performance: 1.5 ns/day    step 40300 performance: 1.5 ns/day    step 40400 performance: 1.5 ns/day    step 40500 performance: 1.5 ns/day    step 40600 performance: 1.5 ns/day    step 40700 performance: 1.5 ns/day    step 40800 performance: 1.5 ns/day    step 40900 performance: 1.5 ns/day    step 41000 performance: 1.5 ns/day    step 41100 performance: 1.5 ns/day    step 41200 performance: 1.5 ns/day    step 41300 performance: 1.5 ns/day    step 41400 performance: 1.5 ns/day    step 41500 performance: 1.5 ns/day    step 41600 performance: 1.5 ns/day    step 41700 performance: 1.5 ns/day    step 41800 performance: 1.5 ns/day    step 41900 performance: 1.5 ns/day    step 42000 performance: 1.5 ns/day    step 42100 performance: 1.5 ns/day    step 42200 performance: 1.5 ns/day    step 42300 performance: 1.5 ns/day    step 42400 performance: 1.5 ns/day    step 42500 performance: 1.5 ns/day    step 42600 performance: 1.5 ns/day    step 42700 performance: 1.5 ns/day    step 42800 performance: 1.5 ns/day    step 42900 performance: 1.5 ns/day    step 43000 performance: 1.5 ns/day    step 43100 performance: 1.5 ns/day    step 43200 performance: 1.5 ns/day    step 43300 performance: 1.5 ns/day    step 43400 performance: 1.5 ns/day    step 43500 performance: 1.5 ns/day    step 43600 performance: 1.5 ns/day    step 43700 performance: 1.5 ns/day    step 43800 performance: 1.5 ns/day    step 43900 performance: 1.5 ns/day    step 44000 performance: 1.5 ns/day    step 44100 performance: 1.5 ns/day    step 44200 performance: 1.5 ns/day    step 44300 performance: 1.5 ns/day    step 44400 performance: 1.5 ns/day    step 44500 performance: 1.5 ns/day    step 44600 performance: 1.5 ns/day    step 44700 performance: 1.5 ns/day    step 44800 performance: 1.5 ns/day    step 44900 performance: 1.5 ns/day    step 45000 performance: 1.5 ns/day    step 45100 performance: 1.5 ns/day    step 45200 performance: 1.5 ns/day    step 45300 performance: 1.5 ns/day    step 45400 performance: 1.5 ns/day    step 45500 performance: 1.5 ns/day    step 45600 performance: 1.5 ns/day    step 45700 performance: 1.5 ns/day    step 45800 performance: 1.5 ns/day    step 45900 performance: 1.5 ns/day    step 46000 performance: 1.5 ns/day    step 46100 performance: 1.5 ns/day    step 46200 performance: 1.5 ns/day    step 46300 performance: 1.5 ns/day    step 46400 performance: 1.5 ns/day    step 46500 performance: 1.5 ns/day    step 46600 performance: 1.5 ns/day    step 46700 performance: 1.5 ns/day    step 46800 performance: 1.5 ns/day    step 46900 performance: 1.5 ns/day    step 47000 performance: 1.5 ns/day    step 47100 performance: 1.5 ns/day    step 47200 performance: 1.5 ns/day    step 47300 performance: 1.5 ns/day    step 47400 performance: 1.5 ns/day    step 47500 performance: 1.5 ns/day    step 47600 performance: 1.5 ns/day    step 47700 performance: 1.5 ns/day    step 47800 performance: 1.5 ns/day    step 47900 performance: 1.5 ns/day    step 48000 performance: 1.5 ns/day    step 48100 performance: 1.5 ns/day    step 48200 performance: 1.5 ns/day    step 48300 performance: 1.5 ns/day    step 48400 performance: 1.5 ns/day    step 48500 performance: 1.5 ns/day    step 48600 performance: 1.5 ns/day    step 48700 performance: 1.5 ns/day    step 48800 performance: 1.5 ns/day    step 48900 performance: 1.5 ns/day    step 49000 performance: 1.5 ns/day    step 49100 performance: 1.5 ns/day    step 49200 performance: 1.5 ns/day    step 49300 performance: 1.5 ns/day    step 49400 performance: 1.5 ns/day    step 49500 performance: 1.5 ns/day    step 49600 performance: 1.5 ns/day    step 49700 performance: 1.5 ns/day    step 49800 performance: 1.5 ns/day    step 49900 performance: 1.5 ns/day    step 50000 performance: 1.5 ns/day    step 50100 performance: 1.5 ns/day    step 50200 performance: 1.5 ns/day    step 50300 performance: 1.5 ns/day    step 50400 performance: 1.5 ns/day    step 50500 performance: 1.5 ns/day    step 50600 performance: 1.5 ns/day    step 50700 performance: 1.5 ns/day    step 50800 performance: 1.5 ns/day    step 50900 performance: 1.5 ns/day    step 51000 performance: 1.5 ns/day    step 51100 performance: 1.5 ns/day    step 51200 performance: 1.5 ns/day    step 51300 performance: 1.5 ns/day    step 51400 performance: 1.5 ns/day    step 51500 performance: 1.5 ns/day    step 51600 performance: 1.5 ns/day    step 51700 performance: 1.5 ns/day    step 51800 performance: 1.5 ns/day    step 51900 performance: 1.5 ns/day    step 52000 performance: 1.5 ns/day    step 52100 performance: 1.5 ns/day    step 52200 performance: 1.5 ns/day    step 52300 performance: 1.5 ns/day    step 52400 performance: 1.5 ns/day    step 52500 performance: 1.5 ns/day    step 52600 performance: 1.5 ns/day    step 52700 performance: 1.5 ns/day    step 52800 performance: 1.5 ns/day    step 52900 performance: 1.5 ns/day    step 53000 performance: 1.5 ns/day    step 53100 performance: 1.5 ns/day    step 53200 performance: 1.5 ns/day    step 53300 performance: 1.5 ns/day    step 53400 performance: 1.5 ns/day    step 53500 performance: 1.5 ns/day    step 53600 performance: 1.5 ns/day    step 53700 performance: 1.5 ns/day    step 53800 performance: 1.5 ns/day    step 53900 performance: 1.5 ns/day    step 54000 performance: 1.5 ns/day    step 54100 performance: 1.5 ns/day    step 54200 performance: 1.5 ns/day    step 54300 performance: 1.5 ns/day    step 54400 performance: 1.5 ns/day    step 54500 performance: 1.5 ns/day    step 54600 performance: 1.5 ns/day    step 54700 performance: 1.5 ns/day    step 54800 performance: 1.5 ns/day    step 54900 performance: 1.5 ns/day    step 55000 performance: 1.5 ns/day    step 55100 performance: 1.5 ns/day    step 55200 performance: 1.5 ns/day    step 55300 performance: 1.5 ns/day    step 55400 performance: 1.5 ns/day    step 55500 performance: 1.5 ns/day    step 55600 performance: 1.5 ns/day    step 55700 performance: 1.5 ns/day    step 55800 performance: 1.5 ns/day    step 55900 performance: 1.5 ns/day    step 56000 performance: 1.5 ns/day    step 56100 performance: 1.5 ns/day    step 56200 performance: 1.5 ns/day    step 56300 performance: 1.5 ns/day    step 56400 performance: 1.5 ns/day    step 56500 performance: 1.5 ns/day    step 56600 performance: 1.5 ns/day    step 56700 performance: 1.5 ns/day    step 56800 performance: 1.5 ns/day    step 56900 performance: 1.5 ns/day    step 57000 performance: 1.5 ns/day    step 57100 performance: 1.5 ns/day    step 57200 performance: 1.5 ns/day    step 57300 performance: 1.5 ns/day    step 57400 performance: 1.5 ns/day    step 57500 performance: 1.5 ns/day    step 57600 performance: 1.5 ns/day    step 57700 performance: 1.5 ns/day    step 57800 performance: 1.5 ns/day    step 57900 performance: 1.5 ns/day    step 58000 performance: 1.5 ns/day    step 58100 performance: 1.5 ns/day    step 58200 performance: 1.5 ns/day    step 58300 performance: 1.5 ns/day    step 58400 performance: 1.5 ns/day    step 58500 performance: 1.5 ns/day    step 58600 performance: 1.5 ns/day    step 58700 performance: 1.5 ns/day    step 58800 performance: 1.5 ns/day    step 58900 performance: 1.5 ns/day    step 59000 performance: 1.5 ns/day    step 59100 performance: 1.5 ns/day    step 59200 performance: 1.5 ns/day    step 59300 performance: 1.5 ns/day    step 59400 performance: 1.5 ns/day    step 59500 performance: 1.5 ns/day    step 59600 performance: 1.5 ns/day    step 59700 performance: 1.5 ns/day    step 59800 performance: 1.5 ns/day    step 59900 performance: 1.5 ns/day    step 60000 performance: 1.5 ns/day    step 60100 performance: 1.5 ns/day    step 60200 performance: 1.5 ns/day    step 60300 performance: 1.5 ns/day    step 60400 performance: 1.5 ns/day    step 60500 performance: 1.5 ns/day    step 60600 performance: 1.5 ns/day    step 60700 performance: 1.5 ns/day    step 60800 performance: 1.5 ns/day    step 60900 performance: 1.5 ns/day    step 61000 performance: 1.5 ns/day    step 61100 performance: 1.5 ns/day    step 61200 performance: 1.5 ns/day    step 61300 performance: 1.5 ns/day    step 61400 performance: 1.5 ns/day    step 61500 performance: 1.5 ns/day    step 61600 performance: 1.5 ns/day    step 61700 performance: 1.5 ns/day    step 61800 performance: 1.5 ns/day    step 61900 performance: 1.5 ns/day    step 62000 performance: 1.5 ns/day    step 62100 performance: 1.5 ns/day    step 62200 performance: 1.5 ns/day    step 62300 performance: 1.5 ns/day    step 62400 performance: 1.5 ns/day    step 62500 performance: 1.5 ns/day    step 62600 performance: 1.5 ns/day    step 62700 performance: 1.5 ns/day    step 62800 performance: 1.5 ns/day    step 62900 performance: 1.5 ns/day    step 63000 performance: 1.5 ns/day    step 63100 performance: 1.5 ns/day    step 63200 performance: 1.5 ns/day    step 63300 performance: 1.5 ns/day    step 63400 performance: 1.5 ns/day    step 63500 performance: 1.5 ns/day    step 63600 performance: 1.5 ns/day    step 63700 performance: 1.5 ns/day    step 63800 performance: 1.5 ns/day    step 63900 performance: 1.5 ns/day    step 64000 performance: 1.5 ns/day    step 64100 performance: 1.5 ns/day    step 64200 performance: 1.5 ns/day    step 64300 performance: 1.5 ns/day    step 64400 performance: 1.5 ns/day    step 64500 performance: 1.5 ns/day    step 64600 performance: 1.5 ns/day    step 64700 performance: 1.5 ns/day    step 64800 performance: 1.5 ns/day    step 64900 performance: 1.5 ns/day    step 65000 performance: 1.5 ns/day    step 65100 performance: 1.5 ns/day    step 65200 performance: 1.5 ns/day    step 65300 performance: 1.5 ns/day    step 65400 performance: 1.5 ns/day    step 65500 performance: 1.5 ns/day    step 65600 performance: 1.5 ns/day    step 65700 performance: 1.5 ns/day    step 65800 performance: 1.5 ns/day    step 65900 performance: 1.5 ns/day    step 66000 performance: 1.5 ns/day    step 66100 performance: 1.5 ns/day    step 66200 performance: 1.5 ns/day    step 66300 performance: 1.5 ns/day    step 66400 performance: 1.5 ns/day    step 66500 performance: 1.5 ns/day    step 66600 performance: 1.5 ns/day    step 66700 performance: 1.5 ns/day    step 66800 performance: 1.5 ns/day    step 66900 performance: 1.5 ns/day    step 67000 performance: 1.5 ns/day    step 67100 performance: 1.5 ns/day    step 67200 performance: 1.5 ns/day    step 67300 performance: 1.5 ns/day    step 67400 performance: 1.5 ns/day    step 67500 performance: 1.5 ns/day    step 67600 performance: 1.5 ns/day    step 67700 performance: 1.5 ns/day    step 67800 performance: 1.5 ns/day    step 67900 performance: 1.5 ns/day    step 68000 performance: 1.5 ns/day    step 68100 performance: 1.5 ns/day    step 68200 performance: 1.5 ns/day    step 68300 performance: 1.5 ns/day    step 68400 performance: 1.5 ns/day    step 68500 performance: 1.5 ns/day    step 68600 performance: 1.5 ns/day    step 68700 performance: 1.5 ns/day    step 68800 performance: 1.5 ns/day    step 68900 performance: 1.5 ns/day    step 69000 performance: 1.5 ns/day    step 69100 performance: 1.5 ns/day    step 69200 performance: 1.5 ns/day    step 69300 performance: 1.5 ns/day    step 69400 performance: 1.5 ns/day    step 69500 performance: 1.5 ns/day    step 69600 performance: 1.5 ns/day    step 69700 performance: 1.5 ns/day    step 69800 performance: 1.5 ns/day    step 69900 performance: 1.5 ns/day    step 70000 performance: 1.5 ns/day    step 70100 performance: 1.5 ns/day    step 70200 performance: 1.5 ns/day    step 70300 performance: 1.5 ns/day    step 70400 performance: 1.5 ns/day    step 70500 performance: 1.5 ns/day    step 70600 performance: 1.5 ns/day    step 70700 performance: 1.5 ns/day    step 70800 performance: 1.5 ns/day    step 70900 performance: 1.5 ns/day    step 71000 performance: 1.5 ns/day    step 71100 performance: 1.5 ns/day    step 71200 performance: 1.5 ns/day    step 71300 performance: 1.5 ns/day    step 71400 performance: 1.5 ns/day    step 71500 performance: 1.5 ns/day    step 71600 performance: 1.5 ns/day    step 71700 performance: 1.5 ns/day    step 71800 performance: 1.5 ns/day    step 71900 performance: 1.5 ns/day    step 72000 performance: 1.5 ns/day    step 72100 performance: 1.5 ns/day    step 72200 performance: 1.5 ns/day    step 72300 performance: 1.5 ns/day    step 72400 performance: 1.5 ns/day    step 72500 performance: 1.5 ns/day    step 72600 performance: 1.5 ns/day    step 72700 performance: 1.5 ns/day    step 72800 performance: 1.5 ns/day    step 72900 performance: 1.5 ns/day    step 73000 performance: 1.5 ns/day    step 73100 performance: 1.5 ns/day    step 73200 performance: 1.5 ns/day    step 73300 performance: 1.5 ns/day    step 73400 performance: 1.5 ns/day    step 73500 performance: 1.5 ns/day    step 73600 performance: 1.5 ns/day    step 73700 performance: 1.5 ns/day    step 73800 performance: 1.5 ns/day    step 73900 performance: 1.5 ns/day    step 74000 performance: 1.5 ns/day    step 74100 performance: 1.5 ns/day    step 74200 performance: 1.5 ns/day    step 74300 performance: 1.5 ns/day    step 74400 performance: 1.5 ns/day    step 74500 performance: 1.5 ns/day    step 74600 performance: 1.5 ns/day    step 74700 performance: 1.5 ns/day    step 74800 performance: 1.5 ns/day    step 74900 performance: 1.5 ns/day    step 75000 performance: 1.5 ns/day    step 75100 performance: 1.5 ns/day    step 75200 performance: 1.5 ns/day    step 75300 performance: 1.5 ns/day    step 75400 performance: 1.5 ns/day    step 75500 performance: 1.5 ns/day    step 75600 performance: 1.5 ns/day    step 75700 performance: 1.5 ns/day    step 75800 performance: 1.5 ns/day    step 75900 performance: 1.5 ns/day    step 76000 performance: 1.5 ns/day    step 76100 performance: 1.5 ns/day    step 76200 performance: 1.5 ns/day    step 76300 performance: 1.5 ns/day    step 76400 performance: 1.5 ns/day    step 76500 performance: 1.5 ns/day    step 76600 performance: 1.5 ns/day    step 76700 performance: 1.5 ns/day    step 76800 performance: 1.5 ns/day    step 76900 performance: 1.5 ns/day    step 77000 performance: 1.5 ns/day    step 77100 performance: 1.5 ns/day    step 77200 performance: 1.5 ns/day    step 77300 performance: 1.5 ns/day    step 77400 performance: 1.5 ns/day    step 77500 performance: 1.5 ns/day    step 77600 performance: 1.5 ns/day    step 77700 performance: 1.5 ns/day    step 77800 performance: 1.5 ns/day    step 77900 performance: 1.5 ns/day    step 78000 performance: 1.5 ns/day    step 78100 performance: 1.5 ns/day    step 78200 performance: 1.5 ns/day    step 78300 performance: 1.5 ns/day    step 78400 performance: 1.5 ns/day    step 78500 performance: 1.5 ns/day    step 78600 performance: 1.5 ns/day    step 78700 performance: 1.5 ns/day    step 78800 performance: 1.5 ns/day    step 78900 performance: 1.5 ns/day    step 79000 performance: 1.5 ns/day    step 79100 performance: 1.5 ns/day    step 79200 performance: 1.5 ns/day    step 79300 performance: 1.5 ns/day    step 79400 performance: 1.5 ns/day    step 79500 performance: 1.5 ns/day    step 79600 performance: 1.5 ns/day    step 79700 performance: 1.5 ns/day    step 79800 performance: 1.5 ns/day    step 79900 performance: 1.5 ns/day    step 80000 performance: 1.5 ns/day    step 80100 performance: 1.5 ns/day    step 80200 performance: 1.5 ns/day    step 80300 performance: 1.5 ns/day    step 80400 performance: 1.5 ns/day    step 80500 performance: 1.5 ns/day    step 80600 performance: 1.5 ns/day    step 80700 performance: 1.5 ns/day    step 80800 performance: 1.5 ns/day    step 80900 performance: 1.5 ns/day    step 81000 performance: 1.5 ns/day    step 81100 performance: 1.5 ns/day    step 81200 performance: 1.5 ns/day    step 81300 performance: 1.5 ns/day    step 81400 performance: 1.5 ns/day    step 81500 performance: 1.5 ns/day    step 81600 performance: 1.5 ns/day    step 81700 performance: 1.5 ns/day    step 81800 performance: 1.5 ns/day    step 81900 performance: 1.5 ns/day    step 82000 performance: 1.5 ns/day    step 82100 performance: 1.5 ns/day    step 82200 performance: 1.5 ns/day    step 82300 performance: 1.5 ns/day    step 82400 performance: 1.5 ns/day    step 82500 performance: 1.5 ns/day    step 82600 performance: 1.5 ns/day    step 82700 performance: 1.5 ns/day    step 82800 performance: 1.5 ns/day    step 82900 performance: 1.5 ns/day    step 83000 performance: 1.5 ns/day    step 83100 performance: 1.5 ns/day    step 83200 performance: 1.5 ns/day    step 83300 performance: 1.5 ns/day    step 83400 performance: 1.5 ns/day    step 83500 performance: 1.5 ns/day    step 83600 performance: 1.5 ns/day    step 83700 performance: 1.5 ns/day    step 83800 performance: 1.5 ns/day    step 83900 performance: 1.5 ns/day    step 84000 performance: 1.5 ns/day    step 84100 performance: 1.5 ns/day    step 84200 performance: 1.5 ns/day    step 84300 performance: 1.5 ns/day    step 84400 performance: 1.5 ns/day    step 84500 performance: 1.5 ns/day    step 84600 performance: 1.5 ns/day    step 84700 performance: 1.5 ns/day    step 84800 performance: 1.5 ns/day    step 84900 performance: 1.5 ns/day    step 85000 performance: 1.5 ns/day    step 85100 performance: 1.5 ns/day    step 85200 performance: 1.5 ns/day    step 85300 performance: 1.5 ns/day    step 85400 performance: 1.5 ns/day    step 85500 performance: 1.5 ns/day    step 85600 performance: 1.5 ns/day    step 85700 performance: 1.5 ns/day    step 85800 performance: 1.5 ns/day    step 85900 performance: 1.5 ns/day    step 86000 performance: 1.5 ns/day    step 86100 performance: 1.5 ns/day    step 86200 performance: 1.5 ns/day    step 86300 performance: 1.5 ns/day    step 86400 performance: 1.5 ns/day    step 86500 performance: 1.5 ns/day    step 86600 performance: 1.5 ns/day    step 86700 performance: 1.5 ns/day    step 86800 performance: 1.5 ns/day    step 86900 performance: 1.5 ns/day    step 87000 performance: 1.5 ns/day    step 87100 performance: 1.5 ns/day    step 87200 performance: 1.5 ns/day    step 87300 performance: 1.5 ns/day    step 87400 performance: 1.5 ns/day    step 87500 performance: 1.5 ns/day    step 87600 performance: 1.5 ns/day    step 87700 performance: 1.5 ns/day    step 87800 performance: 1.5 ns/day    step 87900 performance: 1.5 ns/day    step 88000 performance: 1.5 ns/day    step 88100 performance: 1.5 ns/day    step 88200 performance: 1.5 ns/day    step 88300 performance: 1.5 ns/day    step 88400 performance: 1.5 ns/day    step 88500 performance: 1.5 ns/day    step 88600 performance: 1.5 ns/day    step 88700 performance: 1.5 ns/day    step 88800 performance: 1.5 ns/day    step 88900 performance: 1.5 ns/day    step 89000 performance: 1.5 ns/day    step 89100 performance: 1.5 ns/day    step 89200 performance: 1.5 ns/day    step 89300 performance: 1.5 ns/day    step 89400 performance: 1.5 ns/day    step 89500 performance: 1.5 ns/day    step 89600 performance: 1.5 ns/day    step 89700 performance: 1.5 ns/day    step 89800 performance: 1.5 ns/day    step 89900 performance: 1.5 ns/day    step 90000 performance: 1.5 ns/day    step 90100 performance: 1.5 ns/day    step 90200 performance: 1.5 ns/day    step 90300 performance: 1.5 ns/day    step 90400 performance: 1.5 ns/day    step 90500 performance: 1.5 ns/day    step 90600 performance: 1.5 ns/day    step 90700 performance: 1.5 ns/day    step 90800 performance: 1.5 ns/day    step 90900 performance: 1.5 ns/day    step 91000 performance: 1.5 ns/day    step 91100 performance: 1.5 ns/day    step 91200 performance: 1.5 ns/day    step 91300 performance: 1.5 ns/day    step 91400 performance: 1.5 ns/day    step 91500 performance: 1.5 ns/day    step 91600 performance: 1.5 ns/day    step 91700 performance: 1.5 ns/day    step 91800 performance: 1.5 ns/day    step 91900 performance: 1.5 ns/day    step 92000 performance: 1.5 ns/day    step 92100 performance: 1.5 ns/day    step 92200 performance: 1.5 ns/day    step 92300 performance: 1.5 ns/day    step 92400 performance: 1.5 ns/day    step 92500 performance: 1.5 ns/day    step 92600 performance: 1.5 ns/day    step 92700 performance: 1.5 ns/day    step 92800 performance: 1.5 ns/day    step 92900 performance: 1.5 ns/day    step 93000 performance: 1.5 ns/day    step 93100 performance: 1.5 ns/day    step 93200 performance: 1.5 ns/day    step 93300 performance: 1.5 ns/day    step 93400 performance: 1.5 ns/day    step 93500 performance: 1.5 ns/day    step 93600 performance: 1.5 ns/day    step 93700 performance: 1.5 ns/day    step 93800 performance: 1.5 ns/day    step 93900 performance: 1.5 ns/day    step 94000 performance: 1.5 ns/day    step 94100 performance: 1.5 ns/day    step 94200 performance: 1.5 ns/day    step 94300 performance: 1.5 ns/day    step 94400 performance: 1.5 ns/day    step 94500 performance: 1.5 ns/day    step 94600 performance: 1.5 ns/day    step 94700 performance: 1.5 ns/day    step 94800 performance: 1.5 ns/day    step 94900 performance: 1.5 ns/day    step 95000 performance: 1.5 ns/day    step 95100 performance: 1.5 ns/day    step 95200 performance: 1.5 ns/day    step 95300 performance: 1.5 ns/day    step 95400 performance: 1.5 ns/day    step 95500 performance: 1.5 ns/day    step 95600 performance: 1.5 ns/day    step 95700 performance: 1.5 ns/day    step 95800 performance: 1.5 ns/day    step 95900 performance: 1.5 ns/day    step 96000 performance: 1.5 ns/day    step 96100 performance: 1.5 ns/day    step 96200 performance: 1.5 ns/day    step 96300 performance: 1.5 ns/day    step 96400 performance: 1.5 ns/day    step 96500 performance: 1.5 ns/day    step 96600 performance: 1.5 ns/day    step 96700 performance: 1.5 ns/day    step 96800 performance: 1.5 ns/day    step 96900 performance: 1.5 ns/day    step 97000 performance: 1.5 ns/day    step 97100 performance: 1.5 ns/day    step 97200 performance: 1.5 ns/day    step 97300 performance: 1.5 ns/day    step 97400 performance: 1.5 ns/day    step 97500 performance: 1.5 ns/day    step 97600 performance: 1.5 ns/day    step 97700 performance: 1.5 ns/day    step 97800 performance: 1.5 ns/day    step 97900 performance: 1.5 ns/day    step 98000 performance: 1.5 ns/day    step 98100 performance: 1.5 ns/day    step 98200 performance: 1.5 ns/day    step 98300 performance: 1.5 ns/day    step 98400 performance: 1.5 ns/day    step 98500 performance: 1.5 ns/day    step 98600 performance: 1.5 ns/day    step 98700 performance: 1.5 ns/day    step 98800 performance: 1.5 ns/day    step 98900 performance: 1.5 ns/day    step 99000 performance: 1.5 ns/day    step 99100 performance: 1.5 ns/day    step 99200 performance: 1.5 ns/day    step 99300 performance: 1.5 ns/day    step 99400 performance: 1.5 ns/day    step 99500 performance: 1.5 ns/day    step 99600 performance: 1.5 ns/day    step 99700 performance: 1.5 ns/day    step 99800 performance: 1.5 ns/day    step 99900 performance: 1.5 ns/day    step 100000 performance: 1.5 ns/day    step 100100 performance: 1.5 ns/day    step 100200 performance: 1.5 ns/day    step 100300 performance: 1.5 ns/day    step 100400 performance: 1.5 ns/day    step 100500 performance: 1.5 ns/day    step 100600 performance: 1.5 ns/day    step 100700 performance: 1.5 ns/day    step 100800 performance: 1.5 ns/day    step 100900 performance: 1.5 ns/day    step 101000 performance: 1.5 ns/day    step 101100 performance: 1.5 ns/day    step 101200 performance: 1.5 ns/day    step 101300 performance: 1.5 ns/day    step 101400 performance: 1.5 ns/day    step 101500 performance: 1.5 ns/day    step 101600 performance: 1.5 ns/day    step 101700 performance: 1.5 ns/day    step 101800 performance: 1.5 ns/day    step 101900 performance: 1.5 ns/day    step 102000 performance: 1.5 ns/day    step 102100 performance: 1.5 ns/day    step 102200 performance: 1.5 ns/day    step 102300 performance: 1.5 ns/day    step 102400 performance: 1.5 ns/day    step 102500 performance: 1.5 ns/day    step 102600 performance: 1.5 ns/day    step 102700 performance: 1.5 ns/day    step 102800 performance: 1.5 ns/day    step 102900 performance: 1.5 ns/day    step 103000 performance: 1.5 ns/day    step 103100 performance: 1.5 ns/day    step 103200 performance: 1.5 ns/day    step 103300 performance: 1.5 ns/day    step 103400 performance: 1.5 ns/day    step 103500 performance: 1.5 ns/day    step 103600 performance: 1.5 ns/day    step 103700 performance: 1.5 ns/day    step 103800 performance: 1.5 ns/day    step 103900 performance: 1.5 ns/day    step 104000 performance: 1.5 ns/day    step 104100 performance: 1.5 ns/day    step 104200 performance: 1.5 ns/day    step 104300 performance: 1.5 ns/day    step 104400 performance: 1.5 ns/day    step 104500 performance: 1.5 ns/day    step 104600 performance: 1.5 ns/day    step 104700 performance: 1.5 ns/day    step 104800 performance: 1.5 ns/day    step 104900 performance: 1.5 ns/day    step 105000 performance: 1.5 ns/day    step 105100 performance: 1.5 ns/day    step 105200 performance: 1.5 ns/day    step 105300 performance: 1.5 ns/day    step 105400 performance: 1.5 ns/day    step 105500 performance: 1.5 ns/day    step 105600 performance: 1.5 ns/day    step 105700 performance: 1.5 ns/day    step 105800 performance: 1.5 ns/day    step 105900 performance: 1.5 ns/day    step 106000 performance: 1.5 ns/day    step 106100 performance: 1.5 ns/day    step 106200 performance: 1.5 ns/day    step 106300 performance: 1.5 ns/day    step 106400 performance: 1.5 ns/day    step 106500 performance: 1.5 ns/day    step 106600 performance: 1.5 ns/day    step 106700 performance: 1.5 ns/day    step 106800 performance: 1.5 ns/day    step 106900 performance: 1.5 ns/day    step 107000 performance: 1.5 ns/day    step 107100 performance: 1.5 ns/day    step 107200 performance: 1.5 ns/day    step 107300 performance: 1.5 ns/day    step 107400 performance: 1.5 ns/day    step 107500 performance: 1.5 ns/day    step 107600 performance: 1.5 ns/day    step 107700 performance: 1.5 ns/day    step 107800 performance: 1.5 ns/day    step 107900 performance: 1.5 ns/day    step 108000 performance: 1.5 ns/day    step 108100 performance: 1.5 ns/day    step 108200 performance: 1.5 ns/day    step 108300 performance: 1.5 ns/day    step 108400 performance: 1.5 ns/day    step 108500 performance: 1.5 ns/day    step 108600 performance: 1.5 ns/day    step 108700 performance: 1.5 ns/day    step 108800 performance: 1.5 ns/day    step 108900 performance: 1.5 ns/day    step 109000 performance: 1.5 ns/day    step 109100 performance: 1.5 ns/day    step 109200 performance: 1.5 ns/day    step 109300 performance: 1.5 ns/day    step 109400 performance: 1.5 ns/day    step 109500 performance: 1.5 ns/day    step 109600 performance: 1.5 ns/day    step 109700 performance: 1.5 ns/day    step 109800 performance: 1.5 ns/day    step 109900 performance: 1.5 ns/day    step 110000 performance: 1.5 ns/day    step 110100 performance: 1.5 ns/day    step 110200 performance: 1.5 ns/day    step 110300 performance: 1.5 ns/day    step 110400 performance: 1.5 ns/day    step 110500 performance: 1.5 ns/day    step 110600 performance: 1.5 ns/day    step 110700 performance: 1.5 ns/day    step 110800 performance: 1.5 ns/day    step 110900 performance: 1.5 ns/day    step 111000 performance: 1.5 ns/day    step 111100 performance: 1.5 ns/day    step 111200 performance: 1.5 ns/day    step 111300 performance: 1.5 ns/day    step 111400 performance: 1.5 ns/day    step 111500 performance: 1.5 ns/day    step 111600 performance: 1.5 ns/day    step 111700 performance: 1.5 ns/day    step 111800 performance: 1.5 ns/day    step 111900 performance: 1.5 ns/day    step 112000 performance: 1.5 ns/day    step 112100 performance: 1.5 ns/day    step 112200 performance: 1.5 ns/day    step 112300 performance: 1.5 ns/day    step 112400 performance: 1.5 ns/day    step 112500 performance: 1.5 ns/day    step 112600 performance: 1.5 ns/day    step 112700 performance: 1.5 ns/day    step 112800 performance: 1.5 ns/day    step 112900 performance: 1.5 ns/day    step 113000 performance: 1.5 ns/day    step 113100 performance: 1.5 ns/day    step 113200 performance: 1.5 ns/day    step 113300 performance: 1.5 ns/day    step 113400 performance: 1.5 ns/day    step 113500 performance: 1.5 ns/day    step 113600 performance: 1.5 ns/day    step 113700 performance: 1.5 ns/day    step 113800 performance: 1.5 ns/day    step 113900 performance: 1.5 ns/day    step 114000 performance: 1.5 ns/day    step 114100 performance: 1.5 ns/day    step 114200 performance: 1.5 ns/day    step 114300 performance: 1.5 ns/day    step 114400 performance: 1.5 ns/day    step 114500 performance: 1.5 ns/day    step 114600 performance: 1.5 ns/day    step 114700 performance: 1.5 ns/day    step 114800 performance: 1.5 ns/day    step 114900 performance: 1.5 ns/day    step 115000 performance: 1.5 ns/day    step 115100 performance: 1.5 ns/day    step 115200 performance: 1.5 ns/day    step 115300 performance: 1.5 ns/day    step 115400 performance: 1.5 ns/day    step 115500 performance: 1.5 ns/day    step 115600 performance: 1.5 ns/day    step 115700 performance: 1.5 ns/day    step 115800 performance: 1.5 ns/day    step 115900 performance: 1.5 ns/day    step 116000 performance: 1.5 ns/day    step 116100 performance: 1.5 ns/day    step 116200 performance: 1.5 ns/day    step 116300 performance: 1.5 ns/day    step 116400 performance: 1.5 ns/day    step 116500 performance: 1.5 ns/day    step 116600 performance: 1.5 ns/day    step 116700 performance: 1.5 ns/day    step 116800 performance: 1.5 ns/day    step 116900 performance: 1.5 ns/day    step 117000 performance: 1.5 ns/day    step 117100 performance: 1.5 ns/day    step 117200 performance: 1.5 ns/day    step 117300 performance: 1.5 ns/day    step 117400 performance: 1.5 ns/day    step 117500 performance: 1.5 ns/day    step 117600 performance: 1.5 ns/day    step 117700 performance: 1.5 ns/day    step 117800 performance: 1.5 ns/day    step 117900 performance: 1.5 ns/day    step 118000 performance: 1.5 ns/day    step 118100 performance: 1.5 ns/day    step 118200 performance: 1.5 ns/day    step 118300 performance: 1.5 ns/day    step 118400 performance: 1.5 ns/day    step 118500 performance: 1.5 ns/day    step 118600 performance: 1.5 ns/day    step 118700 performance: 1.5 ns/day    step 118800 performance: 1.5 ns/day    step 118900 performance: 1.5 ns/day    step 119000 performance: 1.5 ns/day    step 119100 performance: 1.5 ns/day    step 119200 performance: 1.5 ns/day    step 119300 performance: 1.5 ns/day    step 119400 performance: 1.5 ns/day    step 119500 performance: 1.5 ns/day    step 119600 performance: 1.5 ns/day    step 119700 performance: 1.5 ns/day    step 119800 performance: 1.5 ns/day    step 119900 performance: 1.5 ns/day    step 120000 performance: 1.5 ns/day    step 120100 performance: 1.5 ns/day    step 120200 performance: 1.5 ns/day    step 120300 performance: 1.5 ns/day    step 120400 performance: 1.5 ns/day    step 120500 performance: 1.5 ns/day    step 120600 performance: 1.5 ns/day    step 120700 performance: 1.5 ns/day    step 120800 performance: 1.5 ns/day    step 120900 performance: 1.5 ns/day    step 121000 performance: 1.5 ns/day    step 121100 performance: 1.5 ns/day    step 121200 performance: 1.5 ns/day    step 121300 performance: 1.5 ns/day    step 121400 performance: 1.5 ns/day    step 121500 performance: 1.5 ns/day    step 121600 performance: 1.5 ns/day    step 121700 performance: 1.5 ns/day    step 121800 performance: 1.5 ns/day    step 121900 performance: 1.5 ns/day    step 122000 performance: 1.5 ns/day    step 122100 performance: 1.5 ns/day    step 122200 performance: 1.5 ns/day    step 122300 performance: 1.5 ns/day    step 122400 performance: 1.5 ns/day    step 122500 performance: 1.5 ns/day    step 122600 performance: 1.5 ns/day    step 122700 performance: 1.5 ns/day    step 122800 performance: 1.5 ns/day    step 122900 performance: 1.5 ns/day    step 123000 performance: 1.5 ns/day    step 123100 performance: 1.5 ns/day    step 123200 performance: 1.5 ns/day    step 123300 performance: 1.5 ns/day    step 123400 performance: 1.5 ns/day    step 123500 performance: 1.5 ns/day    step 123600 performance: 1.5 ns/day    step 123700 performance: 1.5 ns/day    
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123760: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123800: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123800: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123800: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123800: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123800: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123800: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123800: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123800: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123800: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+step 123800 performance: 1.5 ns/day    
+Step 123840: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123840: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123840: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123840: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123840: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123840: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123840: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+
+Step 123840: Run time exceeded 3.960 hours, will terminate the run within 400 steps
+step 123840 performance: 1.5 ns/day    
+GROMACS reminds you: "Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live." (Martin Golding)
+

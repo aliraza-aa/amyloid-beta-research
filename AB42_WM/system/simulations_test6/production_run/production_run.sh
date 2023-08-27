@@ -1,5 +1,3 @@
-#RUNFILE FOR KATHLEEN
-
 #!/bin/bash --l
 
 #$ -S /bin/bash
@@ -8,8 +6,8 @@
 
 #$ -l mem=1G
 
-# Requesting 2 cores.
-#$ -pe smp 2
+# Requesting 48 cores.
+#$ -pe mpi 48
 
 #$ -N AB42_WM-production-test6-1.1
 
@@ -46,4 +44,4 @@ cd $WORKDIR
 
 #RESTART
 
-gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../replica{0..1} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -noappend -cpt 60 -cpnum -maxh 4 &> production_run1.log
+gerun gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../replica{0..47} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -noappend -cpt 60 -cpnum -maxh 4 &> production_run1.log

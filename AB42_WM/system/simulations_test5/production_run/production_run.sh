@@ -1,5 +1,3 @@
-#RUNFILE FOR KATHLEEN
-
 #!/bin/bash --l
 
 #$ -S /bin/bash
@@ -10,7 +8,7 @@
 
 #$ -N AB42_WM-production-test5-1.1
 
-#$ -pe mpi 40
+#$ -pe mpi 240
 
 #$ -cwd
 
@@ -45,4 +43,4 @@ cd $WORKDIR
 
 #RESTART
 
-gerun gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../replica{0..7} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -noappend -cpt 60 -cpnum -maxh 4 &> production_run1.log
+gerun gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../replica{0..19} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -noappend -cpt 60 -cpnum -maxh 4 &> production_run1.log
