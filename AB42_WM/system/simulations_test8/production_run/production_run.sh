@@ -8,7 +8,7 @@
 
 #$ -l mem=1G
 
-#$ -pe mpi 240
+#$ -pe mpi 40
 
 #$ -N AB42_WM-production-test8-1.1
 
@@ -32,9 +32,8 @@ module load mpi/openmpi/4.0.5/gnu-10.2.0
 module load python3/3.9-gnu-10.2.0
 module load libmatheval
 module load flex
-module use ~/modulefiles
-module load plumed-2.9.0-gnu-10.2.0
-module load gromacs-2022.5-plumed-2.9.0-fftw
+module load plumed/2.7.2/gnu-10.2.0
+module load gromacs/2021.3/plumed/gnu-10.2.0
 
 # export PLUMED_NUM_THREADS=$OMP_NUM_THREADS
 
@@ -45,4 +44,4 @@ cd $WORKDIR
 
 #RESTART
 
-gerun gmx_mpi_d mdrun -s production_run_input.tpr -multidir ../replica{0..47} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -noappend -cpt 60 -cpnum -maxh 4 &> production_run1.log
+gerun gmx_mpi mdrun -s production_run_input.tpr -multidir ../replica{0..1} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -noappend -cpt 60 -cpnum -maxh 4 -nt 2 &> production_run1.log
