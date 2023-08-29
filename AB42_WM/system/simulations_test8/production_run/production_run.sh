@@ -4,11 +4,11 @@
 
 #$ -S /bin/bash
 
-#$ -l h_rt=5:00:0
+#$ -l h_rt=1:00:0
 
 #$ -l mem=1G
 
-#$ -pe mpi 40
+#$ -pe mpi 2
 
 #$ -N AB42_WM-production-test8-1.1
 
@@ -44,4 +44,4 @@ cd $WORKDIR
 
 #RESTART
 
-gerun gmx_mpi mdrun -s production_run_input.tpr -multidir ../replica{0..39} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -noappend -cpt 60 -cpnum -maxh 4 -nt 2 &> production_run1.log
+mpirun -np 2 gmx_mpi mdrun -s production_run_input.tpr -multidir ../replica{0..1} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -noappend -cpt 60 -cpnum -maxh 0.9 -nt 2 &> production_run1.log
