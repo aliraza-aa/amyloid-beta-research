@@ -47,7 +47,7 @@ PBMETAD ...
 # ... STATS
 
 #print out relevant info
-PRINT ARG=helix.lessthan,beta,rgyr,hydro,salt,dihcor,pbmetad.bias FILE=COLVAR STRIDE=500
+PRINT ARG=helix.lessthan,beta,rgyr,hydro,salt,dihcor,pbmetad.bias FILE=COLVAR STRIDE=1000
 # PRINT ARG=(ens.*),(stat.*) FILE=STATS STRIDE=500 RESTART=YES
 # PRINT ARG=(cs_ha.*) FILE=BAYES.HA STRIDE=500 RESTART=YES
 # PRINT ARG=(cs_hn.*) FILE=BAYES.HN STRIDE=500 RESTART=YES
