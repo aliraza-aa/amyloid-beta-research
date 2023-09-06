@@ -1,6 +1,6 @@
 import subprocess
 
-for i in range(0, 1):
+for i in range(1, 48):
     # subprocess.run(f"mkdir simulations_test4/confirmation_{i}", shell=True)
     print(f"working on replica: {i}")
     subprocess.run(

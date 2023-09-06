@@ -14,6 +14,9 @@
 
 #$ -cwd
 
+#$ -m bes
+
+#$ -M zcbtar9@ucl.ac.uk
 
 WORKDIR=`pwd`
 

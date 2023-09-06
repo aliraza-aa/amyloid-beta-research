@@ -1,17 +1,17 @@
 ;
 ;	File 'mdout.mdp' was generated
 ;	By user: zcbtar9 (433465)
-;	On host: login01
-;	At date: Mon Aug 28 10:22:46 2023
+;	On host: login02
+;	At date: Mon Sep  4 16:27:48 2023
 ;
 ;	Created by:
-;	                :-) GROMACS - gmx grompp, 2021.3-MODIFIED (-:
+;	              :-) GROMACS - gmx grompp, 2022.5-plumed_2.9.0 (-:
 ;	
-;	Executable:   /shared/ucl/apps/gromacs/2021.3-plumed/gnu-10.2.0/bin/gmx_mpi
-;	Data prefix:  /shared/ucl/apps/gromacs/2021.3-plumed/gnu-10.2.0
+;	Executable:   /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0-sp/bin/gmx_mpi
+;	Data prefix:  /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0-sp
 ;	Working dir:  /lustre/home/zcbtar9/projects/amyloid-beta-research/AB42_WM/python_scripts
 ;	Command line:
-;	  gmx_mpi grompp -f ../system/mdp_files/run.mdp -c ../system/simulations_test4/replica47/npt_output.gro -p ../system/simulations/replica47/topolm.top -o ../system/simulations_test9/replica47/production_run_input.tpr -maxwarn 1
+;	  gmx_mpi grompp -f ../system/mdp_files/run-v2.mdp -c ../system/simulations_test4/replica47/npt_output.gro -p ../system/simulations/replica47/topolm.top -o ../system/simulations_test11/replica47/production_run_input.tpr -maxwarn 1
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -61,15 +61,15 @@ rtpi                     = 0.05
 
 ; OUTPUT CONTROL OPTIONS
 ; Output frequency for coords (x), velocities (v) and forces (f)
-nstxout                  = 50000
-nstvout                  = 50000
+nstxout                  = 100000
+nstvout                  = 100000
 nstfout                  = 0
 ; Output frequency for energies to log file and energy file
-nstlog                   = 10000
+nstlog                   = 20000
 nstcalcenergy            = -1
-nstenergy                = 5000
+nstenergy                = 10000
 ; Output frequency and precision for .xtc file
-nstxout-compressed       = 5000
+nstxout-compressed       = 10000
 compressed-x-precision   = 1000
 ; This selects the subset of atoms for the compressed
 ; trajectory file. You can select multiple groups. By
@@ -169,7 +169,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen_seed                 = -1
+gen_seed                 = -1140864577
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
@@ -259,11 +259,15 @@ temperature-lambdas      =
 calc-lambda-neighbors    = 1
 init-lambda-weights      = 
 dhdl-print-energy        = no
+sc-function              = beutler
 sc-alpha                 = 0
 sc-power                 = 1
 sc-r-power               = 6
 sc-sigma                 = 0.3
 sc-coul                  = no
+sc-gapsys-scale-linpoint-lj = 0.85
+sc-gapsys-scale-linpoint-q = 0.3
+sc-gapsys-sigma-lj       = 0.3
 separate-dhdl-file       = yes
 dhdl-derivatives         = yes
 dh_hist_size             = 0
@@ -310,3 +314,6 @@ electric-field-z         = 0 0 0 0
 
 ; Density guided simulation
 density-guided-simulation-active = false
+
+; QM/MM with CP2K
+qmmm-cp2k-active         = false
