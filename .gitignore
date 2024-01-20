@@ -19,3 +19,6 @@ core.*
 *.edr
 *.csv
 state_backup_*
+HILLS_*
+GRID.*
+*.GRID.*
