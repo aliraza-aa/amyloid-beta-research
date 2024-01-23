@@ -1,0 +1,13 @@
+Unloading compilers/intel/2018/update3
+  WARNING: Dependent default-modules/2018 is loaded
+
+Unloading mpi/intel/2018/update3/intel
+  WARNING: Dependent default-modules/2018 is loaded
+
+Unloading gcc-libs/4.9.2
+  WARNING: Dependent cmake/3.21.1 and flex/2.5.39 and git/2.32.0 and apr/1.7.0
+    and apr-util/1.6.1 and subversion/1.14.1 and screen/4.9.0 and nano/2.4.2 and
+    nedit/5.6-aug15 and dos2unix/7.3 and giflib/5.1.1 and tmux/3.3a and
+    mrxvt/0.5.4 and rcps-core/1.0.0 are loaded
+Loading python3/3.9-gnu-10.2.0
+  Loading requirement: python/3.9.6-gnu-10.2.0

@@ -10,7 +10,7 @@
 
 #$ -N AB42_WM-nvt-600
 
-#$ -pe mpi 40
+#$ -pe mpi 42
 
 #$ -cwd
 
