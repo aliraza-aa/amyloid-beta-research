@@ -8,7 +8,7 @@
 
 #$ -l mem=1G
 
-#$ -N AB42_WM-nvt-600
+#$ -N AB40-invacuo
 
 #$ -pe mpi 42
 
@@ -44,4 +44,4 @@ cd $WORKDIR
 
 #RESTART
 
-gerun gmx_mpi mdrun -s nvt_600_input.tpr -o nvt_600.trr -x nvt_600.xtc -c nvt_600_output.gro -g nvt_600.log -e nvt.edr -v &> nvt_600.log
+gerun gmx_mpi mdrun -s invacuo_input.tpr -o invacuo.trr -x invacuo.xtc -c collapsed.gro -g invacuo.log -e invacuo.edr -v &> invacuo.log
