@@ -8,9 +8,9 @@
 
 #$ -l mem=1G
 
-#$ -N AB40-3-berendsen
+#$ -N AB40-3-berendsen-r1
 
-#$ -pe mpi 42
+#$ -pe mpi 80
 
 #$ -cwd
 
@@ -42,4 +42,4 @@ module load gromacs-2022.5-plumed-2.9.0-sp
 cd $WORKDIR
 
 
-gerun gmx_mpi mdrun -s 3-berendsen_input.tpr -o 3b.trr -x 3b.xtc -c 3b_output.gro -g 3b.log -e nvt.edr -v &> 3b_terminal.log
+gerun gmx_mpi mdrun -deffnm 3-berendsen_r1 -v &> 3-berendsen_r1.log
