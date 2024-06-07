@@ -23,3 +23,7 @@ HILLS_*
 GRID.*
 *.GRID.*
 ab-research-notes.docx
+*.e*
+*.o*
+*.pe*
+*.po*

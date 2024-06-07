@@ -10,3 +10,4 @@ module load flex
 module use ~/modulefiles
 module load plumed-2.9.0-gnu-10.2.0
 module load gromacs-2022.5-plumed-2.9.0-sp
+module load nano
