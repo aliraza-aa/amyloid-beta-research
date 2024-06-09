@@ -1,0 +1,397 @@
+GERun: 
+GERun: Note: Lines like this one prefixed with "GERun:" are for debugging
+GERun:       purposes only and you do not need to report them to rc-support
+GERun:       unless your job fails for other reasons.
+GERun: 
+GERun: 
+GERun: Grid Engine parallel launcher abstraction layer version iv (public)
+GERun: Dr Owain Kenway, RCAS, RITS, ISD, UCL, 7th of February, 2018
+GERun: 
+GERun: For licensing terms, see LICENSE.txt
+GERun: 
+GERun: Using environment: openmpi-sge
+GERun: Running on 80 slots:
+GERun:    80 MPI tasks
+GERun:     1 threads per task
+GERun: TMPDIR=/tmpdir/job/487332.undefined
+GERun: 
+GERun: Contents of machinefile:
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-129
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: node-c11a-140
+GERun: 
+GERun: GErun command being run:
+GERun:  mpirun gmx_mpi mdrun -deffnm 2-pr -v
+                :-) GROMACS - gmx mdrun, 2022.5-plumed_2.9.0 (-:
+
+Executable:   /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0-sp/bin/gmx_mpi
+Data prefix:  /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0-sp
+Working dir:  /lustre/home/zcbtar9/projects/amyloid-beta-research/ab40/system/setup
+Command line:
+  gmx_mpi mdrun -deffnm 2-pr -v
+
+Reading file 2-pr.tpr, VERSION 2022.5-plumed_2.9.0 (single precision)
+Changing nstlist from 20 to 50, rlist from 1.225 to 1.303
+
+Using 80 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+starting mdrun 'Protein in water'
+25000 steps,     50.0 ps.
+step 0
+imb F  4% pme/F 1.50 step 100, will finish Tue Jun  4 18:04:40 2024
+imb F  5% pme/F 1.49 step 200, remaining wall clock time:   281 s          
+imb F  4% pme/F 1.51 step 300, remaining wall clock time:   273 s          
+imb F  5% pme/F 1.48 step 400, remaining wall clock time:   268 s          
+step  550: timed with pme grid 160 160 160, coulomb cutoff 1.200: 976.0 M-cycles
+step  650: timed with pme grid 128 128 128, coulomb cutoff 1.393: 1011.3 M-cycles
+step  750: timed with pme grid 112 112 112, coulomb cutoff 1.592: 1371.4 M-cycles
+step  850: timed with pme grid 120 120 120, coulomb cutoff 1.486: 1156.7 M-cycles
+step  950: timed with pme grid 128 128 128, coulomb cutoff 1.393: 1012.7 M-cycles
+step 1050: timed with pme grid 144 144 144, coulomb cutoff 1.238: 909.1 M-cycles
+step 1150: timed with pme grid 160 160 160, coulomb cutoff 1.200: 968.5 M-cycles
+              optimal pme grid 144 144 144, coulomb cutoff 1.238
+imb F  5% pme/F 1.22 step 1200, will finish Tue Jun  4 18:06:29 2024
+imb F  5% pme/F 1.23 step 1300, will finish Tue Jun  4 18:06:16 2024
+imb F  6% pme/F 1.22 step 1400, will finish Tue Jun  4 18:06:04 2024
+imb F  6% pme/F 1.22 step 1500, will finish Tue Jun  4 18:05:55 2024
+imb F 18% pme/F 1.18 step 1600, will finish Tue Jun  4 18:05:48 2024
+imb F  7% pme/F 1.11 step 1700, will finish Tue Jun  4 18:05:43 2024
+imb F  7% pme/F 1.20 step 1800, will finish Tue Jun  4 18:05:37 2024
+imb F  6% pme/F 1.23 step 1900, will finish Tue Jun  4 18:05:31 2024
+imb F  5% pme/F 1.23 step 2000, will finish Tue Jun  4 18:05:26 2024
+imb F  5% pme/F 1.24 step 2100, will finish Tue Jun  4 18:05:21 2024
+imb F  5% pme/F 1.27 step 2200, will finish Tue Jun  4 18:05:16 2024
+imb F  6% pme/F 1.22 step 2300, will finish Tue Jun  4 18:05:13 2024
+imb F  4% pme/F 1.20 step 2400, will finish Tue Jun  4 18:05:10 2024
+imb F  5% pme/F 1.27 step 2500, remaining wall clock time:   296 s          
+imb F  5% pme/F 1.27 step 2600, remaining wall clock time:   292 s          
+imb F  6% pme/F 1.24 step 2700, remaining wall clock time:   288 s          
+imb F  5% pme/F 1.26 step 2800, remaining wall clock time:   285 s          
+imb F  5% pme/F 1.23 step 2900, remaining wall clock time:   281 s          
+imb F  5% pme/F 1.21 step 3000, remaining wall clock time:   277 s          
+imb F  5% pme/F 1.24 step 3100, remaining wall clock time:   274 s          
+imb F  5% pme/F 1.24 step 3200, remaining wall clock time:   271 s          
+imb F  5% pme/F 1.24 step 3300, remaining wall clock time:   268 s          
+imb F  5% pme/F 1.25 step 3400, remaining wall clock time:   265 s          
+imb F  6% pme/F 1.25 step 3500, remaining wall clock time:   262 s          
+imb F  5% pme/F 1.24 step 3600, remaining wall clock time:   260 s          
+imb F  6% pme/F 1.24 step 3700, remaining wall clock time:   257 s          
+imb F  5% pme/F 1.25 step 3800, remaining wall clock time:   255 s          
+imb F  5% pme/F 1.26 step 3900, remaining wall clock time:   252 s          
+imb F  4% pme/F 1.26 step 4000, remaining wall clock time:   250 s          
+imb F  4% pme/F 1.29 step 4100, remaining wall clock time:   248 s          
+imb F  4% pme/F 1.27 step 4200, remaining wall clock time:   246 s          
+imb F  6% pme/F 1.26 step 4300, remaining wall clock time:   244 s          
+imb F  6% pme/F 1.25 step 4400, remaining wall clock time:   241 s          
+imb F  5% pme/F 1.31 step 4500, remaining wall clock time:   240 s          
+imb F  5% pme/F 1.26 step 4600, remaining wall clock time:   238 s          
+imb F  5% pme/F 1.24 step 4700, remaining wall clock time:   236 s          
+imb F  5% pme/F 1.24 step 4800, remaining wall clock time:   234 s          
+imb F  7% pme/F 1.23 step 4900, remaining wall clock time:   232 s          
+imb F  6% pme/F 1.24 step 5000, remaining wall clock time:   230 s          
+imb F  6% pme/F 1.23 step 5100, remaining wall clock time:   228 s          
+imb F  6% pme/F 1.23 step 5200, remaining wall clock time:   226 s          
+imb F  6% pme/F 1.25 step 5300, remaining wall clock time:   224 s          
+imb F  6% pme/F 1.25 step 5400, remaining wall clock time:   223 s          
+imb F  5% pme/F 1.24 step 5500, remaining wall clock time:   221 s          
+imb F  5% pme/F 1.24 step 5600, remaining wall clock time:   219 s          
+imb F 12% pme/F 1.18 step 5700, remaining wall clock time:   218 s          
+imb F  7% pme/F 1.19 step 5800, remaining wall clock time:   217 s          
+imb F  8% pme/F 1.15 step 5900, remaining wall clock time:   215 s          
+imb F  5% pme/F 1.25 step 6000, remaining wall clock time:   213 s          
+imb F  5% pme/F 1.25 step 6100, remaining wall clock time:   212 s          
+imb F  6% pme/F 1.20 step 6200, remaining wall clock time:   210 s          
+imb F  6% pme/F 1.24 step 6300, remaining wall clock time:   209 s          
+imb F  6% pme/F 1.18 step 6400, remaining wall clock time:   208 s          
+imb F  5% pme/F 1.20 step 6500, remaining wall clock time:   206 s          
+imb F  6% pme/F 1.25 step 6600, remaining wall clock time:   205 s          
+imb F  6% pme/F 1.25 step 6700, remaining wall clock time:   203 s          
+imb F  6% pme/F 1.25 step 6800, remaining wall clock time:   202 s          
+imb F  6% pme/F 1.27 step 6900, remaining wall clock time:   201 s          
+imb F  6% pme/F 1.26 step 7000, remaining wall clock time:   199 s          
+imb F  5% pme/F 1.27 step 7100, remaining wall clock time:   198 s          
+imb F  6% pme/F 1.25 step 7200, remaining wall clock time:   196 s          
+imb F  6% pme/F 1.26 step 7300, remaining wall clock time:   195 s          
+imb F  6% pme/F 1.28 step 7400, remaining wall clock time:   194 s          
+imb F  5% pme/F 1.27 step 7500, remaining wall clock time:   192 s          
+imb F  5% pme/F 1.25 step 7600, remaining wall clock time:   191 s          
+imb F 26% pme/F 0.97 step 7700, remaining wall clock time:   190 s          
+imb F  5% pme/F 1.26 step 7800, remaining wall clock time:   189 s          
+imb F  5% pme/F 1.26 step 7900, remaining wall clock time:   187 s          
+imb F  5% pme/F 1.24 step 8000, remaining wall clock time:   186 s          
+imb F  6% pme/F 1.23 step 8100, remaining wall clock time:   185 s          
+imb F  5% pme/F 1.25 step 8200, remaining wall clock time:   183 s          
+imb F  6% pme/F 1.24 step 8300, remaining wall clock time:   182 s          
+imb F  5% pme/F 1.26 step 8400, remaining wall clock time:   181 s          
+imb F  6% pme/F 1.27 step 8500, remaining wall clock time:   179 s          
+imb F  6% pme/F 1.24 step 8600, remaining wall clock time:   178 s          
+imb F  6% pme/F 1.24 step 8700, remaining wall clock time:   177 s          
+imb F  6% pme/F 1.24 step 8800, remaining wall clock time:   176 s          
+imb F  6% pme/F 1.24 step 8900, remaining wall clock time:   174 s          
+imb F  5% pme/F 1.28 step 9000, remaining wall clock time:   173 s          
+imb F  5% pme/F 1.25 step 9100, remaining wall clock time:   172 s          
+imb F  5% pme/F 1.28 step 9200, remaining wall clock time:   171 s          
+imb F  6% pme/F 1.26 step 9300, remaining wall clock time:   169 s          
+imb F  7% pme/F 1.26 step 9400, remaining wall clock time:   168 s          
+imb F  5% pme/F 1.28 step 9500, remaining wall clock time:   167 s          
+imb F  5% pme/F 1.28 step 9600, remaining wall clock time:   166 s          
+imb F 13% pme/F 1.12 step 9700, remaining wall clock time:   164 s          
+imb F  6% pme/F 1.19 step 9800, remaining wall clock time:   163 s          
+imb F 10% pme/F 1.17 step 9900, remaining wall clock time:   162 s          
+imb F  6% pme/F 1.24 step 10000, remaining wall clock time:   161 s          
+imb F  7% pme/F 1.23 step 10100, remaining wall clock time:   160 s          
+imb F  6% pme/F 1.16 step 10200, remaining wall clock time:   159 s          
+imb F  7% pme/F 1.23 step 10300, remaining wall clock time:   157 s          
+imb F  5% pme/F 1.20 step 10400, remaining wall clock time:   156 s          
+imb F  9% pme/F 1.19 step 10500, remaining wall clock time:   155 s          
+imb F  5% pme/F 1.25 step 10600, remaining wall clock time:   154 s          
+imb F  5% pme/F 1.19 step 10700, remaining wall clock time:   153 s          
+imb F  6% pme/F 1.26 step 10800, remaining wall clock time:   152 s          
+imb F  5% pme/F 1.26 step 10900, remaining wall clock time:   151 s          
+imb F  5% pme/F 1.26 step 11000, remaining wall clock time:   149 s          
+imb F  5% pme/F 1.26 step 11100, remaining wall clock time:   148 s          
+imb F  5% pme/F 1.26 step 11200, remaining wall clock time:   147 s          
+imb F  5% pme/F 1.26 step 11300, remaining wall clock time:   146 s          
+imb F  5% pme/F 1.26 step 11400, remaining wall clock time:   145 s          
+imb F  6% pme/F 1.26 step 11500, remaining wall clock time:   144 s          
+imb F  5% pme/F 1.26 step 11600, remaining wall clock time:   142 s          
+imb F  5% pme/F 1.26 step 11700, remaining wall clock time:   141 s          
+imb F  6% pme/F 1.25 step 11800, remaining wall clock time:   140 s          
+imb F  6% pme/F 1.25 step 11900, remaining wall clock time:   139 s          
+imb F  6% pme/F 1.25 step 12000, remaining wall clock time:   138 s          
+imb F  6% pme/F 1.25 step 12100, remaining wall clock time:   137 s          
+imb F  5% pme/F 1.28 step 12200, remaining wall clock time:   136 s          
+imb F  6% pme/F 1.26 step 12300, remaining wall clock time:   134 s          
+imb F  6% pme/F 1.26 step 12400, remaining wall clock time:   133 s          
+imb F  6% pme/F 1.23 step 12500, remaining wall clock time:   132 s          
+imb F  6% pme/F 1.25 step 12600, remaining wall clock time:   131 s          
+imb F  5% pme/F 1.27 step 12700, remaining wall clock time:   130 s          
+imb F  6% pme/F 1.26 step 12800, remaining wall clock time:   129 s          
+imb F  5% pme/F 1.27 step 12900, remaining wall clock time:   128 s          
+imb F  5% pme/F 1.27 step 13000, remaining wall clock time:   127 s          
+imb F  5% pme/F 1.27 step 13100, remaining wall clock time:   125 s          
+imb F  5% pme/F 1.27 step 13200, remaining wall clock time:   124 s          
+imb F  5% pme/F 1.26 step 13300, remaining wall clock time:   123 s          
+imb F  5% pme/F 1.26 step 13400, remaining wall clock time:   122 s          
+imb F  4% pme/F 1.27 step 13500, remaining wall clock time:   121 s          
+imb F  4% pme/F 1.28 step 13600, remaining wall clock time:   120 s          
+imb F  9% pme/F 1.18 step 13700, remaining wall clock time:   119 s          
+imb F  7% pme/F 1.19 step 13800, remaining wall clock time:   118 s          
+imb F  8% pme/F 1.15 step 13900, remaining wall clock time:   117 s          
+imb F  5% pme/F 1.26 step 14000, remaining wall clock time:   116 s          
+imb F  4% pme/F 1.31 step 14100, remaining wall clock time:   114 s          
+imb F  8% pme/F 1.20 step 14200, remaining wall clock time:   113 s          
+imb F  5% pme/F 1.29 step 14300, remaining wall clock time:   112 s          
+imb F  7% pme/F 1.17 step 14400, remaining wall clock time:   111 s          
+imb F  7% pme/F 1.19 step 14500, remaining wall clock time:   110 s          
+imb F  5% pme/F 1.26 step 14600, remaining wall clock time:   109 s          
+imb F  6% pme/F 1.27 step 14700, remaining wall clock time:   108 s          
+imb F  4% pme/F 1.30 step 14800, remaining wall clock time:   107 s          
+imb F  5% pme/F 1.27 step 14900, remaining wall clock time:   106 s          
+imb F  5% pme/F 1.27 step 15000, remaining wall clock time:   105 s          
+imb F  5% pme/F 1.28 step 15100, remaining wall clock time:   104 s          
+imb F  5% pme/F 1.27 step 15200, remaining wall clock time:   103 s          
+imb F  5% pme/F 1.27 step 15300, remaining wall clock time:   102 s          
+imb F  6% pme/F 1.27 step 15400, remaining wall clock time:   100 s          
+imb F  5% pme/F 1.31 step 15500, remaining wall clock time:    99 s          
+imb F  5% pme/F 1.28 step 15600, remaining wall clock time:    98 s          
+imb F  4% pme/F 1.25 step 15700, remaining wall clock time:    97 s          
+imb F  5% pme/F 1.25 step 15800, remaining wall clock time:    96 s          
+imb F  6% pme/F 1.27 step 15900, remaining wall clock time:    95 s          
+imb F  5% pme/F 1.30 step 16000, remaining wall clock time:    94 s          
+imb F  6% pme/F 1.26 step 16100, remaining wall clock time:    93 s          
+imb F  6% pme/F 1.27 step 16200, remaining wall clock time:    92 s          
+imb F  5% pme/F 1.26 step 16300, remaining wall clock time:    91 s          
+imb F  6% pme/F 1.24 step 16400, remaining wall clock time:    90 s          
+imb F  5% pme/F 1.26 step 16500, remaining wall clock time:    89 s          
+imb F  5% pme/F 1.25 step 16600, remaining wall clock time:    87 s          
+imb F  5% pme/F 1.22 step 16700, remaining wall clock time:    86 s          
+imb F  5% pme/F 1.26 step 16800, remaining wall clock time:    85 s          
+imb F  5% pme/F 1.26 step 16900, remaining wall clock time:    84 s          
+imb F  5% pme/F 1.25 step 17000, remaining wall clock time:    83 s          
+imb F  5% pme/F 1.27 step 17100, remaining wall clock time:    82 s          
+imb F  6% pme/F 1.25 step 17200, remaining wall clock time:    81 s          
+imb F  6% pme/F 1.25 step 17300, remaining wall clock time:    80 s          
+imb F  6% pme/F 1.26 step 17400, remaining wall clock time:    79 s          
+imb F  6% pme/F 1.25 step 17500, remaining wall clock time:    78 s          
+imb F 12% pme/F 1.17 step 17600, remaining wall clock time:    77 s          
+imb F  7% pme/F 1.21 step 17700, remaining wall clock time:    76 s          
+imb F  8% pme/F 1.18 step 17800, remaining wall clock time:    75 s          
+imb F  6% pme/F 1.26 step 17900, remaining wall clock time:    74 s          
+imb F  6% pme/F 1.25 step 18000, remaining wall clock time:    73 s          
+imb F  8% pme/F 1.22 step 18100, remaining wall clock time:    72 s          
+imb F  6% pme/F 1.26 step 18200, remaining wall clock time:    70 s          
+imb F  6% pme/F 1.27 step 18300, remaining wall clock time:    69 s          
+imb F  6% pme/F 1.27 step 18400, remaining wall clock time:    68 s          
+imb F  9% pme/F 1.15 step 18500, remaining wall clock time:    67 s          
+imb F  5% pme/F 1.30 step 18600, remaining wall clock time:    66 s          
+imb F  6% pme/F 1.26 step 18700, remaining wall clock time:    65 s          
+imb F  5% pme/F 1.25 step 18800, remaining wall clock time:    64 s          
+imb F  6% pme/F 1.26 step 18900, remaining wall clock time:    63 s          
+imb F  5% pme/F 1.27 step 19000, remaining wall clock time:    62 s          
+imb F  5% pme/F 1.28 step 19100, remaining wall clock time:    61 s          
+imb F  5% pme/F 1.27 step 19200, remaining wall clock time:    60 s          
+imb F  5% pme/F 1.28 step 19300, remaining wall clock time:    59 s          
+imb F  5% pme/F 1.25 step 19400, remaining wall clock time:    58 s          
+imb F  4% pme/F 1.26 step 19500, remaining wall clock time:    57 s          
+imb F  5% pme/F 1.27 step 19600, remaining wall clock time:    56 s          
+imb F  5% pme/F 1.25 step 19700, remaining wall clock time:    55 s          
+imb F  5% pme/F 1.25 step 19800, remaining wall clock time:    54 s          
+imb F  6% pme/F 1.27 step 19900, remaining wall clock time:    53 s          
+imb F  5% pme/F 1.27 step 20000, remaining wall clock time:    52 s          
+imb F  5% pme/F 1.27 step 20100, remaining wall clock time:    50 s          
+imb F  5% pme/F 1.26 step 20200, remaining wall clock time:    49 s          
+imb F  5% pme/F 1.25 step 20300, remaining wall clock time:    48 s          
+imb F  5% pme/F 1.26 step 20400, remaining wall clock time:    47 s          
+imb F  5% pme/F 1.26 step 20500, remaining wall clock time:    46 s          
+imb F  5% pme/F 1.22 step 20600, remaining wall clock time:    45 s          
+imb F  5% pme/F 1.23 step 20700, remaining wall clock time:    44 s          
+imb F  5% pme/F 1.27 step 20800, remaining wall clock time:    43 s          
+imb F  5% pme/F 1.27 step 20900, remaining wall clock time:    42 s          
+imb F  5% pme/F 1.28 step 21000, remaining wall clock time:    41 s          
+imb F  5% pme/F 1.27 step 21100, remaining wall clock time:    40 s          
+imb F  4% pme/F 1.27 step 21200, remaining wall clock time:    39 s          
+imb F  5% pme/F 1.30 step 21300, remaining wall clock time:    38 s          
+imb F  5% pme/F 1.27 step 21400, remaining wall clock time:    37 s          
+imb F  5% pme/F 1.30 step 21500, remaining wall clock time:    36 s          
+imb F 17% pme/F 1.17 step 21600, remaining wall clock time:    35 s          
+imb F 12% pme/F 1.14 step 21700, remaining wall clock time:    34 s          
+imb F  6% pme/F 1.18 step 21800, remaining wall clock time:    33 s          
+imb F  5% pme/F 1.24 step 21900, remaining wall clock time:    32 s          
+imb F  6% pme/F 1.24 step 22000, remaining wall clock time:    31 s          
+imb F  6% pme/F 1.27 step 22100, remaining wall clock time:    30 s          
+imb F  5% pme/F 1.25 step 22200, remaining wall clock time:    29 s          
+imb F  6% pme/F 1.20 step 22300, remaining wall clock time:    27 s          
+imb F  6% pme/F 1.28 step 22400, remaining wall clock time:    26 s          
+imb F  6% pme/F 1.24 step 22500, remaining wall clock time:    25 s          
+imb F  6% pme/F 1.25 step 22600, remaining wall clock time:    24 s          
+imb F  6% pme/F 1.24 step 22700, remaining wall clock time:    23 s          
+imb F  5% pme/F 1.26 step 22800, remaining wall clock time:    22 s          
+imb F  5% pme/F 1.28 step 22900, remaining wall clock time:    21 s          
+imb F  5% pme/F 1.25 step 23000, remaining wall clock time:    20 s          
+imb F  5% pme/F 1.26 step 23100, remaining wall clock time:    19 s          
+imb F  6% pme/F 1.26 step 23200, remaining wall clock time:    18 s          
+imb F  6% pme/F 1.26 step 23300, remaining wall clock time:    17 s          
+imb F  5% pme/F 1.27 step 23400, remaining wall clock time:    16 s          
+imb F  5% pme/F 1.29 step 23500, remaining wall clock time:    15 s          
+imb F  6% pme/F 1.25 step 23600, remaining wall clock time:    14 s          
+imb F  6% pme/F 1.26 step 23700, remaining wall clock time:    13 s          
+imb F  7% pme/F 1.24 step 23800, remaining wall clock time:    12 s          
+imb F  6% pme/F 1.25 step 23900, remaining wall clock time:    11 s          
+imb F  5% pme/F 1.26 step 24000, remaining wall clock time:    10 s          
+imb F  6% pme/F 1.30 step 24100, remaining wall clock time:     9 s          
+imb F  7% pme/F 1.25 step 24200, remaining wall clock time:     8 s          
+imb F  6% pme/F 1.25 step 24300, remaining wall clock time:     7 s          
+imb F  7% pme/F 1.25 step 24400, remaining wall clock time:     6 s          
+imb F  6% pme/F 1.31 step 24500, remaining wall clock time:     5 s          
+imb F  6% pme/F 1.26 step 24600, remaining wall clock time:     4 s          
+imb F  6% pme/F 1.26 step 24700, remaining wall clock time:     3 s          
+imb F  6% pme/F 1.29 step 24800, remaining wall clock time:     2 s          
+imb F  6% pme/F 1.26 step 24900, remaining wall clock time:     1 s          
+imb F  6% pme/F 1.26 
+Writing final coordinates.
+step 25000, remaining wall clock time:     0 s          
+
+
+Dynamic load balancing report:
+ DLB was off during the run due to low measured imbalance.
+ Average load imbalance: 5.8%.
+ The balanceable part of the MD step is 68%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 4.0%.
+ Average PME mesh/force load: 1.250
+ Part of the total run time spent waiting due to PP/PME imbalance: 13.5 %
+
+NOTE: 13.5 % performance was lost because the PME ranks
+      had more work to do than the PP ranks.
+      You might want to increase the number of PME ranks
+      or increase the cut-off and the grid spacing.
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    21976.343      274.705     8000.0
+                 (ns/day)    (hour/ns)
+Performance:       15.727        1.526
+
+GROMACS reminds you: "I had a polynomial once. My doctor removed it." (Michael Grant)
+
