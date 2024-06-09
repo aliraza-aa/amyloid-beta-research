@@ -23,8 +23,8 @@ nstcomm                   = 50
 comm-grps                 = 
 ; OUTPUT CONTROL OPTIONS
 ; Output frequency for coords (x), velocities (v) and forces (f)
-nstxout                   = 20000
-nstvout                   = 20000
+nstxout                   = 2000
+nstvout                   = 2000
 nstfout                   = 0
 ; Output frequency for energies to log file and energy file
 nstlog                    = 10000
