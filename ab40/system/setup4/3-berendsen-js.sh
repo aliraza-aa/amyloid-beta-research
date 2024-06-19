@@ -8,9 +8,9 @@
 
 #$ -l mem=1G
 
-#$ -N AB40-production-em
+#$ -N AB40-collapsed-3-berendsen
 
-#$ -pe mpi 80
+#$ -pe mpi 42
 
 #$ -cwd
 
@@ -42,4 +42,4 @@ module load gromacs-2022.5-plumed-2.9.0-sp
 cd $WORKDIR
 
 
-gerun gmx_mpi mdrun -multidir r{0..39} -deffnm em -v -maxh 11 &> em_terminal.log
+gerun gmx_mpi mdrun -deffnm 3-berendsen -v &> 3-berendsen-terminal.log
