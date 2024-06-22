@@ -4,7 +4,7 @@
 
 #$ -S /bin/bash
 
-#$ -l h_rt=12:00:0
+#$ -l h_rt=6:00:0
 
 #$ -l mem=1G
 
@@ -42,4 +42,4 @@ module load gromacs-2022.5-plumed-2.9.0-sp
 cd $WORKDIR
 
 
-gerun gmx_mpi mdrun -multidir r{0..39} -deffnm nvt -v -maxh 11 &> 6-nvt-278-terminal.log
+gerun gmx_mpi mdrun -multidir r{0..39} -deffnm nvt -v &> 6-nvt-278-terminal.log

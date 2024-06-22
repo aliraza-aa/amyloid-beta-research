@@ -9,7 +9,7 @@ integrator                = md
 ; Start time and timestep in ps
 tinit                     = 0
 dt                        = 0.002
-nsteps                    = 250000 ; 0.002 * 250000 is 500 ps 
+nsteps                    = 500000 ; 0.002 * 500000 is 1 ns 
 ; For exact run continuation or redoing part of a run
 init_step                 = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
@@ -22,11 +22,11 @@ nstcomm                   = 100
 comm-grps                 = 
 ; OUTPUT CONTROL OPTIONS
 ; Output frequency for coords (x), velocities (v) and forces (f)
-nstxout                   = 500000
-nstvout                   = 500000
+nstxout                   = 5000
+nstvout                   = 5000
 nstfout                   = 0
 ; Output frequency for energies to log file and energy file
-nstlog                    = 500000
+nstlog                    = 50000
 nstcalcenergy             = -1
 nstenergy                 = 25000
 ; Output frequency and precision for .xtc file

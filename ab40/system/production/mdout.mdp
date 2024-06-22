@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: zcbtar9 (433465)
 ;	On host: login01
-;	At date: Wed Jun 19 17:15:23 2024
+;	At date: Fri Jun 21 17:11:53 2024
 ;
 ;	Created by:
 ;	              :-) GROMACS - gmx grompp, 2022.5-plumed_2.9.0 (-:
@@ -25,7 +25,7 @@ integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
 dt                       = 0.002
-nsteps                   = 250000
+nsteps                   = 500000
 ; For exact run continuation or redoing part of a run
 init_step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
@@ -61,11 +61,11 @@ rtpi                     = 0.05
 
 ; OUTPUT CONTROL OPTIONS
 ; Output frequency for coords (x), velocities (v) and forces (f)
-nstxout                  = 500000
-nstvout                  = 500000
+nstxout                  = 5000
+nstvout                  = 5000
 nstfout                  = 0
 ; Output frequency for energies to log file and energy file
-nstlog                   = 500000
+nstlog                   = 50000
 nstcalcenergy            = -1
 nstenergy                = 25000
 ; Output frequency and precision for .xtc file
@@ -169,7 +169,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen_seed                 = -321032609
+gen_seed                 = -1075970057
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
