@@ -2,7 +2,7 @@
 
 # define groups
 MOLINFO STRUCTURE=../system/template.pdb
-WHOLEMOLECULES ENTITY0=1-627
+WHOLEMOLECULES ENTITY0=1-598
 FLUSH STRIDE=1000
 
 #include file with definition of metadynamics CVs

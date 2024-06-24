@@ -9,14 +9,14 @@ ANTIBETARMSD RESIDUES=all TYPE=DRMSD LESS_THAN={RATIONAL R_0=0.08 NN=8 MM=12} LA
 COMBINE ARG=par.lessthan,anti.lessthan PERIODIC=NO LABEL=beta
 
 #CV3 radius of gyration
-ca: GROUP ATOMS=5,17,27,42,62,86,103,115,126,133,154,169,185,202,219,236,258,277,293,313,333,343,358,370,386,393,404,418,440,447,457,476,495,502,521,538,554,561,568,584,600,619
+ca: GROUP ATOMS=5,17,27,42,62,86,103,115,126,133,154,169,185,202,219,236,258,277,293,313,333,343,358,370,386,393,404,418,440,447,457,476,495,502,521,538,554,561,568,584
 rgyr: GYRATION ATOMS=ca NOPBC
 
 #CV4 contacts between hydrophobic residues calculated as the number of Cbeta carbon couples closer than 0.6 nm 
-COORDINATION GROUPA=19,44,171,260,279,295,315,335,372,449,459,478,504,523,540,570,586,602,621 R_0=0.6 NOPBC NLIST NL_CUTOFF=1.0 NL_STRIDE=20 LABEL=hydro
+COORDINATION GROUPA=19,44,171,260,279,295,315,335,372,449,459,478,504,523,540,570,586 R_0=0.6 NOPBC NLIST NL_CUTOFF=1.0 NL_STRIDE=20 LABEL=hydro
 
 #CV5 the number of salt-bridges calculated as the number of couples of heavy atoms from the charged group closer than 0.6 nm 
-#GROUP A is all the heavy atoms from RCOO- group of aspartic acids and glutamic acids 
+#GROUP A is all the heavy atoms from RCOO- group of aspartic acids and glutamic acids
 #GROUP B is all the heavy atoms from RHN3+ from lysines or (RNHC(NH2)2+) of arginines
 COORDINATION GROUPA=10,11,12,35,36,37,108,109,110,162,163,164,351,352,353,363,364,365 GROUPB=75,76,77,78,79,80,81,250,251,252,253,432,433,434,435 R_0=0.6 NOPBC NLIST NL_CUTOFF=1.0 NL_STRIDE=20 LABEL=salt
 
@@ -60,8 +60,6 @@ ATOMS35=@psi-35,@psi-36
 ATOMS36=@psi-36,@psi-37
 ATOMS37=@psi-37,@psi-38
 ATOMS38=@psi-38,@psi-39
-ATOMS39=@psi-39,@psi-40
-ATOMS40=@psi-40,@psi-41
 LABEL=dihcor
 NOPBC
 ... DIHCOR
