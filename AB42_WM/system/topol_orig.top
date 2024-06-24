@@ -5899,4 +5899,6 @@ Generated with MDTraj, t= 32250.00000 step= 16125000 in water
 [ molecules ]
 ; Compound        #mols
 Protein_chain_A     1
-SOL             13709
+SOL         9305
+NA               24
+CL               24

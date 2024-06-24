@@ -1,8 +1,8 @@
 ;
 ;	File 'mdout.mdp' was generated
 ;	By user: zcbtar9 (433465)
-;	On host: login01
-;	At date: Sat Jun 22 06:45:17 2024
+;	On host: login02
+;	At date: Mon Jun 24 11:00:00 2024
 ;
 ;	Created by:
 ;	              :-) GROMACS - gmx grompp, 2022.5-plumed_2.9.0 (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0-sp
 ;	Working dir:  /lustre/home/zcbtar9/projects/amyloid-beta-research/ab40/system/production
 ;	Command line:
-;	  gmx_mpi grompp -f ../mdp_files/7-npt-278.mdp -c r39/npt.gro -p ../topol.top -o r39/npt2.tpr -maxwarn 2
+;	  gmx_mpi grompp -f ../mdp_files/6-nvt-278.mdp -c r119/replica.gro -p ../topol.top -o r119/nvt.tpr -maxwarn 3
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -98,7 +98,7 @@ rlist                    = 1.0
 coulombtype              = pme
 coulomb-modifier         = Potential-shift
 rcoulomb-switch          = 0
-rcoulomb                 = 1.2
+rcoulomb                 = 1.0
 ; Relative dielectric constant for the medium and the reaction field
 epsilon_r                = 1
 epsilon_rf               = 1
@@ -107,7 +107,7 @@ vdw-type                 = cut-off
 vdw-modifier             = Potential-shift
 ; cut-off lengths       
 rvdw-switch              = 0
-rvdw                     = 1.2
+rvdw                     = 1.0
 ; Apply long range dispersion corrections for Energy and Pressure
 DispCorr                 = no
 ; Extension of the potential lookup tables beyond the cut-off
@@ -141,11 +141,11 @@ tc-grps                  = system
 tau_t                    = 1.0
 ref_t                    = 278
 ; pressure coupling     
-Pcoupl                   = c-rescale
+Pcoupl                   = No
 Pcoupltype               = isotropic
 nstpcouple               = -1
 ; Time constant (ps), compressibility (1/bar) and reference P (bar)
-tau_p                    = 5.0
+tau_p                    = 1.0
 compressibility          = 4.5e-5
 ref_p                    = 1.0
 ; Scaling of reference coordinates, No, All or COM
@@ -169,7 +169,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen_seed                 = -1158949249
+gen_seed                 = 1445953527
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
