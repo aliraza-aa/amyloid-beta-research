@@ -1,8 +1,8 @@
 ;
 ;	File 'mdout.mdp' was generated
 ;	By user: zcbtar9 (433465)
-;	On host: login02
-;	At date: Mon Jun 24 11:00:00 2024
+;	On host: login01
+;	At date: Wed Jun 26 14:35:21 2024
 ;
 ;	Created by:
 ;	              :-) GROMACS - gmx grompp, 2022.5-plumed_2.9.0 (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  /home/zcbtar9/software/gromacs-2022.5-plumed-2.9.0-sp
 ;	Working dir:  /lustre/home/zcbtar9/projects/amyloid-beta-research/ab40/system/production
 ;	Command line:
-;	  gmx_mpi grompp -f ../mdp_files/6-nvt-278.mdp -c r119/replica.gro -p ../topol.top -o r119/nvt.tpr -maxwarn 3
+;	  gmx_mpi grompp -f ../mdp_files/9-npt-278-5fs.mdp -c r0/npt2.gro -p ../topol.top -o r0/npt-5fs.tpr -maxwarn 2
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -24,7 +24,7 @@ define                   =
 integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
-dt                       = 0.002
+dt                       = 0.004
 nsteps                   = 500000
 ; For exact run continuation or redoing part of a run
 init_step                = 0
@@ -98,7 +98,7 @@ rlist                    = 1.0
 coulombtype              = pme
 coulomb-modifier         = Potential-shift
 rcoulomb-switch          = 0
-rcoulomb                 = 1.0
+rcoulomb                 = 1.2
 ; Relative dielectric constant for the medium and the reaction field
 epsilon_r                = 1
 epsilon_rf               = 1
@@ -107,7 +107,7 @@ vdw-type                 = cut-off
 vdw-modifier             = Potential-shift
 ; cut-off lengths       
 rvdw-switch              = 0
-rvdw                     = 1.0
+rvdw                     = 1.2
 ; Apply long range dispersion corrections for Energy and Pressure
 DispCorr                 = no
 ; Extension of the potential lookup tables beyond the cut-off
@@ -141,11 +141,11 @@ tc-grps                  = system
 tau_t                    = 1.0
 ref_t                    = 278
 ; pressure coupling     
-Pcoupl                   = No
+Pcoupl                   = c-rescale
 Pcoupltype               = isotropic
 nstpcouple               = -1
 ; Time constant (ps), compressibility (1/bar) and reference P (bar)
-tau_p                    = 1.0
+tau_p                    = 5.0
 compressibility          = 4.5e-5
 ref_p                    = 1.0
 ; Scaling of reference coordinates, No, All or COM
@@ -169,7 +169,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen_seed                 = 1445953527
+gen_seed                 = -1458751
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds

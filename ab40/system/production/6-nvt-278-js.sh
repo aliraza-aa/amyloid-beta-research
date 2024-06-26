@@ -1,6 +1,4 @@
-#RUNFILE FOR KATHLEEN
-
-#!/bin/bash --l
+#!/bin/bash -l
 
 #$ -S /bin/bash
 

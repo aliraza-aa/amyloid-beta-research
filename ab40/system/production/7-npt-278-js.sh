@@ -8,7 +8,7 @@
 
 #$ -l mem=1G
 
-#$ -N AB40-production-npt
+#$ -N AB40-production-npt-more-replicas
 
 #$ -pe mpi 160
 
@@ -42,4 +42,4 @@ module load gromacs-2022.5-plumed-2.9.0-sp
 cd $WORKDIR
 
 
-gerun gmx_mpi mdrun -multidir r{0..39} -deffnm npt -v &> 7-npt-278-terminal.log
+gerun gmx_mpi mdrun -multidir r{40..119} -deffnm npt -v &> 7-npt-278-terminal-mr.log
