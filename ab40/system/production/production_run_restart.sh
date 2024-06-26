@@ -8,7 +8,7 @@
 
 #$ -l mem=1G
 
-#$ -pe mpi 480
+#$ -pe mpi 400
 
 #$ -N AB42_WM-production-run-1.15
 
@@ -43,4 +43,4 @@ cd $WORKDIR
 
 #RESTART
 
-gerun gmx_mpi mdrun -cpi state -s production_run_input.tpr -multidir ../replica{0..47} -plumed ../../../plumed/plumed.dat -o production_run.trr -x production_run.xtc -c production_run_output.gro -g production_run.log -e production_run.edr -v -noappend -cpt 60 -cpnum -maxh 23 &> production_run15.log
+gerun gmx_mpi mdrun -cpi state -multidir r{0..39} -plumed ../../../plumed/plumed.dat -deffnm production -v -noappend -cpt 60 -cpnum -maxh 23 &> production_run.log

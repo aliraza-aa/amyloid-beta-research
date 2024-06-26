@@ -50,7 +50,7 @@ periodic_molecules        = no
 ; a value of -1 means: use rlist
 verlet-buffer-tolerance   = 0.001
 ; nblist cut-off        
-rlist                     = 1.0
+rlist                     = 1.2
 ; OPTIONS FOR ELECTROSTATICS AND VDW
 ; Method for doing electrostatics
 coulombtype               = pme
