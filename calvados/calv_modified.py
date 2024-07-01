@@ -16,12 +16,29 @@ import numpy as np
 import os
 import shutil
 import subprocess
+import argparse
+
+parser = argparse.ArgumentParser(description="Process some integers.")
+parser.add_argument('--name', type=str, required=True,
+                    help='name of the simulation')
+parser.add_argument('--Hc6', type=float, required=True, help='Charge on His6')
+parser.add_argument('--Hc13', type=float, required=True,
+                    help='Charge on His13')
+parser.add_argument('--Hc14', type=float, required=True,
+                    help='Charge on His14')
+
+args = parser.parse_args()
+
+print(f"starting simulation: {args.name}")
+print(f'The charge on HIS6 is: {args.Hc6}')
+print(f'The charge on HIS13 is: {args.Hc13}')
+print(f'The charge on HIS14 is: {args.Hc14}')
 
 print('Installing libraries...')
 
 # matplotlib_inline.backend_inline.set_matplotlib_formats('pdf', 'svg')
 
-NAME = "ab40_6"
+NAME = args.name
 
 SEQUENCE = "DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV"
 if " " in SEQUENCE:
@@ -39,6 +56,10 @@ charged_C_terminal_carboxyl = True
 charged_histidine = False
 Nc = 1 if charged_N_terminal_amine == True else 0
 Cc = 1 if charged_C_terminal_carboxyl == True else 0
+
+Hc6 = args.Hc6
+Hc13 = args.Hc13
+Hc14 = args.Hc14
 
 pH = 4
 pKa = 6
@@ -90,12 +111,13 @@ def genParamsLJ(df, seq, Nc, Cc):
     return lj_eps, lj_sigma, lj_lambda, fasta, types
 
 
-def genParamsDH(df, seq, temp, ionic, Nc, Cc, Hc):
+def genParamsDH(df, seq, temp, ionic, Nc, Cc, Hc6, Hc13, Hc14):
     kT = 8.3145*temp*1e-3
     fasta = seq.copy()
     r = df.copy()
+
     # Set the charge on HIS based on the pH of the protein solution
-    r.loc['H', 'q'] = Hc
+    # r.loc['H', 'q'] = Hc
     if Nc == 1:
         r.loc['X'] = r.loc[fasta[0]]
         r.loc['X', 'q'] = r.loc[seq[0], 'q'] + 1.
@@ -105,11 +127,28 @@ def genParamsDH(df, seq, temp, ionic, Nc, Cc, Hc):
         r.loc['Z', 'q'] = r.loc[seq[-1], 'q'] - 1.
         fasta[-1] = 'Z'
     # Calculate the prefactor for the Yukawa potential
+
     def fepsw(T): return 5321/T+233.76-0.9297 * \
         T+0.1417*1e-2*T*T-0.8292*1e-6*T**3
     epsw = fepsw(temp)
     lB = 1.6021766**2/(4*np.pi*8.854188*epsw)*6.022*1000/kT
-    yukawa_eps = [r.loc[a].q*np.sqrt(lB*kT) for a in fasta]
+
+    # yukawa_eps = [r.loc[a].q*np.sqrt(lB*kT) for a in fasta]
+    yukawa_eps = []
+    for i in range(len(fasta)):
+        a = fasta[i]
+        if i == 5:
+            print(fasta[i])
+            yukawa_eps.append(Hc6 * np.sqrt(lB*kT))
+        elif i == 12:
+            print(fasta[i])
+            yukawa_eps.append(Hc13 * np.sqrt(lB*kT))
+        elif i == 13:
+            print(fasta[i])
+            yukawa_eps.append(Hc14 * np.sqrt(lB*kT))
+        else:
+            yukawa_eps.append(r.loc[a].q*np.sqrt(lB*kT))
+
     # Calculate the inverse of the Debye length
     yukawa_kappa = np.sqrt(8*np.pi*lB*ionic*6.022/10)
     return yukawa_eps, yukawa_kappa
@@ -129,12 +168,12 @@ def genDCD(name, eqsteps=10):
     traj[int(eqsteps):].save_dcd("{:s}/traj.dcd".format(name))
 
 
-def simulate(residues, name, seq, temp, ionic, Nc, Cc, Hc, nsteps, stride=1e3, eqsteps=1000):
+def simulate(residues, name, seq, temp, ionic, Nc, Cc, Hc6, Hc13, Hc14, nsteps, stride=1e3, eqsteps=1000):
     os.mkdir(name)
 
     lj_eps, _, _, fasta, types = genParamsLJ(residues, seq, Nc, Cc)
     yukawa_eps, yukawa_kappa = genParamsDH(
-        residues, seq, temp, ionic, Nc, Cc, Hc)
+        residues, seq, temp, ionic, Nc, Cc, Hc6, Hc13, Hc14)
 
     N = len(fasta)
     L = (N-1)*0.38+4
@@ -472,7 +511,7 @@ try:
 except:
     pass
 simulate(residues, NAME, list(SEQUENCE), temp=Temperature, ionic=Ionic_strength,
-         Nc=Nc, Cc=Cc, Hc=Hc, nsteps=nsteps, stride=N_save, eqsteps=10)
+         Nc=Nc, Cc=Cc, Hc6=Hc6, Hc13=Hc13, Hc14=Hc14, nsteps=nsteps, stride=N_save, eqsteps=10)
 
 genDCD(NAME, eqsteps=10)
 # @title <b><font color='#45B69C'>3.2 - Simulation analysis</font></b>
