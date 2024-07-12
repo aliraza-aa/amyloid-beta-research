@@ -38,6 +38,7 @@ ab40/system/production-t-12r-120-ranks/
 ab40/system/production-t-24r-120-ranks/
 ab40/system/production-t-30r-120-ranks-a2/
 ab40/system/production-t-30r-120-ranks/
+calvados
 COLVAR_FOR_SIGMA
 *.gro
 /#*
