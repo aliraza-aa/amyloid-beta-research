@@ -6,9 +6,9 @@
 
 #$ -l mem=1G
 
-#$ -N calvados-test
+#$ -N ab42-111-MPI
 
-#$ -pe mpi 80
+#$ -pe mpi 42
 
 #$ -cwd
 
@@ -20,9 +20,9 @@
 WORKDIR=`pwd`
 
 module load python3/recommended
-source calv/bin/activate
+source ~/calvados/calv/bin/activate
 
 cd $WORKDIR
 
 
-gerun python calv.py &> calvados.log
+gerun python calv_modified.py --name ab42-111-MPI --Hc6 1 --Hc13 1 --Hc14 1 &> ab42-111-MPI.log

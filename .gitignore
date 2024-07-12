@@ -34,6 +34,10 @@ ab40/system/production-t-80r-400-ranks/
 ab40/system/production-t-80r-800-ranks/
 ab40/system/production-t-120r-600-ranks/
 ab40/system/production-t-120r-1200-ranks/
+ab40/system/production-t-12r-120-ranks/
+ab40/system/production-t-24r-120-ranks/
+ab40/system/production-t-30r-120-ranks-a2/
+ab40/system/production-t-30r-120-ranks/
 COLVAR_FOR_SIGMA
 *.gro
 /#*

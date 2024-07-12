@@ -40,7 +40,7 @@ print('Installing libraries...')
 
 NAME = args.name
 
-SEQUENCE = "DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV"
+SEQUENCE = "DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIA"
 if " " in SEQUENCE:
     SEQUENCE = ''.join(SEQUENCE.split())
     print('Blank character(s) found in the provided sequence. Sequence has been corrected, but check for integrity:')
@@ -85,7 +85,7 @@ residues = pd.read_csv('residues.csv')
 residues = residues.set_index('one')
 
 # Simulation_time = "AUTO"
-Simulation_time = 1
+Simulation_time = 10
 
 N_res = len(SEQUENCE)
 N_save = 700 if N_res < 150 else int(np.ceil(3e-4*N_res**2)*1000)
@@ -252,10 +252,10 @@ def simulate(residues, name, seq, temp, ionic, Nc, Cc, Hc6, Hc13, Hc14, nsteps, 
     integrator = openmm.openmm.LangevinIntegrator(
         temp*unit.kelvin, 0.01/unit.picosecond, 0.010*unit.picosecond)  # 10 fs timestep
 
-    platform = openmm.Platform.getPlatformByName('CUDA')
+    platform = openmm.Platform.getPlatformByName('CPU')
 
     simulation = app.simulation.Simulation(
-        pdb.topology, system, integrator, platform, dict(CudaPrecision='mixed'))
+        pdb.topology, system, integrator, platform)
 
     check_point = '{:s}/restart.chk'.format(name)
 
@@ -596,11 +596,11 @@ df_means
 
 
 # @title <b><font color='#E3B505'>4 - Download results</font></b>
-try:
-    os.remove('{}/pretraj.dcd'.format(NAME))
-    os.remove('{}/restart.chk'.format(NAME))
-except:
-    pass
+#try:
+#    os.remove('{}/pretraj.dcd'.format(NAME))
+#    os.remove('{}/restart.chk'.format(NAME))
+#except:
+#    pass
 shutil.copy('env_settings.txt', '{}/env_settings.txt'.format(NAME))
 try:
     os.mkdir('{}_data'.format(NAME))
