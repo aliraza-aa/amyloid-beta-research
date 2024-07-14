@@ -1,0 +1,13 @@
+#this is the master plumed.dat file for metadynamic metainference simulations
+
+# define groups
+MOLINFO STRUCTURE=../template.pdb
+WHOLEMOLECULES ENTITY0=1-598
+
+#include file with definition of metadynamics CVs
+INCLUDE FILE=../../plumed/CVs.dat
+
+#print out relevant info
+PRINT ARG=helix.lessthan,beta,rgyr,hydro,salt,dihcor FILE=COLVAR_FOR_SIGMA STRIDE=1
+
+ENDPLUMED
